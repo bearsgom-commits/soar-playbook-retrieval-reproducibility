@@ -84,6 +84,25 @@ def main():
         "B1 same-epsilon entries",
     )
 
+    figure_data = read_json("human_gt/v1/manuscript_v1/figure_source_data.json")
+    figure_guards = figure_data["track_b_utility"]["guard"]
+    check([x["epsilon"] for x in figure_guards] == [0, 2, 4, 8, 16, 32, 64],
+          "Figure utility epsilons")
+    close(figure_data["track_b_utility"]["raw_ndcg_at_10"],
+          ni["16"]["raw_mean_ndcg_at_10"])
+    for entry in figure_guards:
+        x = ni[str(entry["epsilon"])]
+        close(entry["ndcg_at_10"], x["guard_mean_ndcg_at_10"])
+        check(entry["retained_95"] == x["retention_decisions"]["95%"]["retained"],
+              "Figure noninferiority decision")
+    for label, record in [("Track B", b1), ("Track C PRIMARY", cp),
+                          ("Track C BROAD", cb)]:
+        by_pair = record["pair_coverage"]
+        supplied = figure_data["omf_coverage"]["tracks"][label]
+        check(len(supplied) == 6, "Figure pair coverage")
+        for key, observed in zip(figure_data["omf_coverage"]["pairs"], supplied):
+            close(observed, by_pair[key])
+
     print("PASS: frozen aggregate checks.")
     print("B1 Raw nDCG@10 0.382750; Guard epsilon=16 0.431091.")
     print("B1/C-primary/C-broad available coverage: 457/540, 336/450, 342/450.")
