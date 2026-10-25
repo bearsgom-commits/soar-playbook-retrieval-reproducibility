@@ -44,6 +44,10 @@ See [detailed instructions](docs/RUN_PUBLIC_CHECKS.md), [artifact provenance](do
 - Operational coverage fails the study's 95% gate (B1 84.63%, C-primary 74.67%, C-broad 76%). Available-case estimates are exploratory, **not validated joint-operating regions**.
 - Software unit tests and frozen-output checks are **not** a complete encoder/retrieval rerun.
 
+## Verified recovery of original input files
+
+The four original clean-input/token-length JSONL files were recovered and their frozen SHA-256 digests matched **4/4**; all **1,766/1,766** input-to-token digest bindings matched. These are held outside the public repository and are **not yet redistributed**. See the [original input integrity audit](docs/RECOVERED_INPUT_INTEGRITY_AUDIT.md). This does not establish a fresh E5/Guard retrieval rerun.
+
 ## Dataset and software rights
 
 No third-party SOAR playbook source material, individual reviewer identity records, or unreviewed private audit logs are included in this initial release. Provenance, privacy, redistribution rights, and requirements for full scientific replay must be checked before any further publication. No open-source reuse license has yet been adopted; contact the authors before reuse beyond rights provided by law.
