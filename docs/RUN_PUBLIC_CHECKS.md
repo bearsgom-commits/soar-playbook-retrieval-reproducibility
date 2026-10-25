@@ -14,7 +14,8 @@ To run only the available **source-level unit tests**, first install the testing
 python -m pip install -r requirements-public.txt
 PYTHONPATH=src python -m pytest -q \
   tests/test_electronics_bm25_fixed.py \
-  tests/test_electronics_human_gt_scoring.py
+  tests/test_electronics_human_gt_scoring.py \
+  tests/test_public_guard_repr.py
 ```
 
 These commands exercise the **curated subset only**. Their success must not be reported as an execution of the complete original research experiment or a verification of the 357-test private-environment report.
