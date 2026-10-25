@@ -1,0 +1,39 @@
+name: Public subset checks
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "src/**"
+      - "tests/**"
+      - "scripts/verify_public_aggregates.py"
+      - "results/**"
+      - "requirements-public.txt"
+      - ".github/workflows/public-subset-checks.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  curated-subset:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Check out public repository
+        uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install public unit-test subset dependencies
+        run: python -m pip install -r requirements-public.txt
+      - name: Verify frozen aggregate consistency
+        run: python scripts/verify_public_aggregates.py
+      - name: Run available research unit tests
+        env:
+          PYTHONPATH: src
+        run: |
+          python -m pytest -q \
+            tests/test_electronics_bm25_fixed.py \
+            tests/test_electronics_human_gt_scoring.py
