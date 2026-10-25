@@ -146,9 +146,14 @@ def main():
     if args.device == "mps" and not torch.backends.mps.is_available():
         raise EnvironmentError("MPS requested but unavailable")
     model = SentenceTransformer(MODEL_ID, revision=MODEL_REV, device=args.device)
-    observed_rev = str(getattr(model[0].auto_model.config, "_commit_hash", None))
-    if observed_rev != MODEL_REV:
-        raise EnvironmentError(f"MODEL_REVISION_MISMATCH: {observed_rev}")
+    from huggingface_hub import hf_hub_download
+    internal_rev = getattr(model[0].auto_model.config, "_commit_hash", None)
+    config_path = hf_hub_download(repo_id=MODEL_ID, filename="config.json", revision=MODEL_REV, local_files_only=True)
+    snapshot_valid = ("/snapshots/" + MODEL_REV + "/") in str(Path(config_path).resolve()).replace("\\\\", "/")
+    if not (str(internal_rev) == MODEL_REV or (internal_rev is None and snapshot_valid)):
+        raise EnvironmentError(f"MODEL_PINNED_SNAPSHOT_MISMATCH: observed={internal_rev}, path={config_path}")
+    observed_rev = MODEL_REV
+    revision_source = "config._commit_hash" if internal_rev is not None else "cached_exact_snapshot_path"
     if model.max_seq_length != 512:
         raise EnvironmentError(f"MAX_SEQ_LENGTH_MISMATCH: {model.max_seq_length}")
     if model.default_prompt_name is not None:
@@ -199,6 +204,7 @@ def main():
         "sentence_transformers": sentence_transformers.__version__,
         "sklearn": sklearn.__version__,
         "model_revision": observed_rev,
+        "model_revision_verification": revision_source,
         "all_exact_guard_top10": False,
         "track_result": {},
         "claim_boundary": "CPU mismatch is diagnostic; MPS exact agreement requires source-compatible versions and input.",
