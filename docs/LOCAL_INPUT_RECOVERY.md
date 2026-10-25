@@ -43,4 +43,4 @@ Do not commit private local folders, full experimental logs, or the source direc
 5. Compare full rankings, metrics and figure values against the frozen results; report CPU/MPS deviations.
 6. Release only the data and execution outputs lawfully approved for disclosure, with a truthful availability statement.
 
-**Current status: RECOVERY_INSTRUCTIONS_CREATED; LOCAL_FILES_NOT_VERIFIED in the current environment.**
+**Updated status (2026-10-25): ALL FOUR ORIGINAL FILES RECOVERED AND SHA-256 VERIFIED from user-supplied copies. All 1,766 token-to-input digest associations matched. See [recovered input integrity audit](RECOVERED_INPUT_INTEGRITY_AUDIT.md). Files remain excluded from the public repository pending separate publication review.**
