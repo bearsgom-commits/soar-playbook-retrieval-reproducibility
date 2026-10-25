@@ -1,40 +1,51 @@
-# Semantic SOAR Playbook Retrieval: Reproducibility Materials
+# Semantic SOAR Playbook Retrieval — Research Artifacts
 
-This repository is being prepared as the **public research-artifact package** for a study of representation-constrained semantic retrieval and downstream SOAR playbook selection in satellite ground-segment-inspired cybersecurity scenarios.
+Public **curated research artifact subset** for an investigation of representation-constrained semantic retrieval and SOAR playbook selection changes in satellite ground-segment-inspired cybersecurity scenarios.
 
-> **Release status — preparation in progress.** This is not yet a complete reproducibility package. Code, eligible datasets, frozen configuration files, results, and execution instructions will be added only after provenance, licensing, privacy, and consistency checks. Do not treat the current repository as proof that the full scientific experiment has been reproduced.
+> **Status: partial reproducibility package (not final release).**
+> Frozen aggregate outputs and selected research implementation/tests are available. Source playbook snapshots, full ranking inputs, all human-judgment rows, and a validated end-to-end reproduction workflow are **not** available here yet. The existence of this repository must not be interpreted as end-to-end reproduction of the scientific experiment.
 
-## Study scope
+## What is available now
 
-The study examines four distinct aspects of a semantic SOAR playbook retrieval workflow:
+| Paths | What you can inspect |
+| --- | --- |
+| `src/guard_repr.py` | Original Guard projection and quantization source |
+| `src/electronics/bm25_fixed.py` | Fixed lexical BM25 baseline module |
+| `src/electronics/human_gt_scoring.py` | Frozen human-ground-truth metric definitions and helpers |
+| `tests/` | Selected BM25 and metric unit tests |
+| `results/electronics/human_gt/v1/scientific_results/` | Frozen **aggregate** B1 retrieval and operational-attribute result JSON files |
+| `results/electronics/ranking_propagation/v1/scientific_results/` | Frozen aggregate ranking and same-ε robustness CSV files |
+| `scripts/verify_public_aggregates.py` | Bounded consistency checks of published aggregate output |
+| `docs/ARTIFACT_PROVENANCE.md` | Frozen private source commit, all 13 copied-file blob hashes, limitations |
 
-- **Retrieval effectiveness:** graded relevance of retrieved playbooks (primarily nDCG@10).
-- **Ranking stability:** changes in retrieved ranks and Top-1 selections across representation settings and seeds.
-- **Operational attribute propagation:** differences in annotated response-related attributes when the selected playbook changes.
-- **Decision boundary:** whether the predefined retrieval and operational assessment criteria can be jointly evaluated and met.
+Exactly **13 included source files were verified to match their frozen originals** by Git blob hash. This establishes the file transfers' identity, not independent experiment reproduction. Other files in this repository are newly authored release documentation or checks.
 
-The representation-control parameter **ε is an operational setting, not a differential-privacy budget or a formal privacy guarantee**. Observed changes across ε settings must not be read as an isolated causal effect of any single underlying transformation component.
+## Run the currently available checks
 
-## Public artifact release plan
+Python 3.11 or later is suggested for this small public subset, but this does **not** reconstruct the original macOS MPS scientific environment.
 
-| Material | Intended location | Status |
-| --- | --- | --- |
-| Research implementation and tests | `src/`, `tests/`, `scripts/` | Under review |
-| Frozen experimental settings and input provenance | `configs/`, `manifests/` | Under review |
-| Legally redistributable scenario and annotation data | `data/` | Under review |
-| Aggregated paper results and source-to-table mapping | `results/`, `docs/` | Under review |
-| Environment specifications and execution instructions | Root directory and `docs/` | Under review |
+```bash
+python -m pip install -r requirements-public.txt
+python scripts/verify_public_aggregates.py
+PYTHONPATH=src python -m pytest -q \
+  tests/test_electronics_bm25_fixed.py \
+  tests/test_electronics_human_gt_scoring.py
+```
 
-See [Public release checklist](docs/PUBLIC_RELEASE_CHECKLIST.md) for the acceptance criteria.
+See [detailed instructions](docs/RUN_PUBLIC_CHECKS.md), [artifact provenance](docs/ARTIFACT_PROVENANCE.md), and [pre-release checklist](docs/PUBLIC_RELEASE_CHECKLIST.md).
 
-## Reproducibility claim boundaries
+## Core interpretation limits
 
-Software unit tests, file-integrity checks, recomputation from stored results, and **end-to-end reruns of model encoding and retrieval** are distinct types of verification and will be reported separately. Passing one does not imply that the others have been completed. Any cross-device differences between the source environment and Linux CPU execution will be documented.
+- Retrieval effectiveness is measured by graded relevance metrics such as nDCG@10; search-speed or analyst task outcomes are **not** inferred.
+- Guard ε is a joint **representation-control setting**, not a differential-privacy budget. Projection dimension and quantization bits change together across ε.
+- B1 Raw nDCG@10 ≈ 0.38275 and Guard ε=16 nDCG@10 ≈ 0.43109. The 95% noninferiority criterion is met at ε=16, without establishing superiority.
+- Operational coverage fails the study's 95% gate (B1 84.63%, C-primary 74.67%, C-broad 76%). Available-case estimates are exploratory, **not validated joint-operating regions**.
+- Software unit tests and frozen-output checks are **not** a complete encoder/retrieval rerun.
 
-## Citation and data availability
+## Dataset and software rights
 
-The manuscript's final citation information, software release tag, permanent archive DOI (if issued), and exact public-data availability statement will be added **after** the curated artifact package has passed its release checks.
+No third-party SOAR playbook source material, individual reviewer identity records, or unreviewed private audit logs are included in this initial release. Provenance, privacy, redistribution rights, and requirements for full scientific replay must be checked before any further publication. No open-source reuse license has yet been adopted; contact the authors before reuse beyond rights provided by law.
 
-## Source repository
+## Manuscript citation
 
-The original development and research-audit repository is maintained separately. Its contents and commit history are **not automatically licensed, anonymized, or approved for public redistribution**.
+A permanent release tag, scholarly citation and optional archival DOI will be added once the release package, code/data rights, and validation status are finalized. Cite the final tagged release, **not** this incomplete preliminary snapshot, for submission.
