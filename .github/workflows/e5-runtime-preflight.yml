@@ -1,0 +1,45 @@
+name: Scientific runtime preflight (no input data)
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/e5-runtime-preflight.yml"
+      - "requirements-replay.txt"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  macos-source-runtime:
+    runs-on: macos-latest
+    timeout-minutes: 50
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install recorded Python 3.10 family
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.10"
+      - name: Resolve frozen dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install -r requirements-replay.txt
+      - name: Diagnose source-compatible runtime
+        run: |
+          python - <<'PY'
+          import sys, platform
+          import numpy, sklearn, torch, sentence_transformers
+          print("PYTHON_VERSION=", sys.version)
+          print("PLATFORM=", platform.platform())
+          print("PYTORCH=", torch.__version__)
+          print("NUMPY=", numpy.__version__)
+          print("SKLEARN=", sklearn.__version__)
+          print("SENTENCE_TRANSFORMERS=", sentence_transformers.__version__)
+          print("MPS_AVAILABLE=", torch.backends.mps.is_available())
+          assert torch.backends.mps.is_available(), "MPS backend not available: full source-compatible replay cannot run on this runner"
+          PY
+      - name: Check replay driver imports
+        run: |
+          python -m py_compile scripts/rerun_e5_guard_from_frozen_inputs.py
+          python scripts/rerun_e5_guard_from_frozen_inputs.py --help
