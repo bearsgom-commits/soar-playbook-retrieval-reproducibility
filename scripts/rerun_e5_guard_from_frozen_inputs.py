@@ -149,7 +149,7 @@ def main():
     from huggingface_hub import hf_hub_download
     internal_rev = getattr(model[0].auto_model.config, "_commit_hash", None)
     config_path = hf_hub_download(repo_id=MODEL_ID, filename="config.json", revision=MODEL_REV, local_files_only=True)
-    snapshot_valid = ("/snapshots/" + MODEL_REV + "/") in str(Path(config_path).resolve()).replace("\\\\", "/")
+    snapshot_valid = ("/snapshots/" + MODEL_REV + "/") in str(Path(config_path)).replace("\\\\", "/")
     if not (str(internal_rev) == MODEL_REV or (internal_rev is None and snapshot_valid)):
         raise EnvironmentError(f"MODEL_PINNED_SNAPSHOT_MISMATCH: observed={internal_rev}, path={config_path}")
     observed_rev = MODEL_REV
