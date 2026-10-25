@@ -15,10 +15,11 @@ Public **curated research artifact subset** for an investigation of representati
 | `tests/` | Selected BM25 and metric unit tests |
 | `results/electronics/human_gt/v1/scientific_results/` | Frozen **aggregate** B1 retrieval and operational-attribute result JSON files |
 | `results/electronics/ranking_propagation/v1/scientific_results/` | Frozen aggregate ranking and same-ε robustness CSV files |
+| `results/electronics/human_gt/v1/manuscript_v1/figure_source_data.json` | Frozen aggregate plot source values | 
 | `scripts/verify_public_aggregates.py` | Bounded consistency checks of published aggregate output |
 | `docs/ARTIFACT_PROVENANCE.md` | Frozen private source commit, all 13 copied-file blob hashes, limitations |
 
-Exactly **13 included source files were verified to match their frozen originals** by Git blob hash. This establishes the file transfers' identity, not independent experiment reproduction. Other files in this repository are newly authored release documentation or checks.
+Exactly **14 included source files were verified to match their frozen originals** by Git blob hash. This establishes the file transfers' identity, not independent experiment reproduction. Other files in this repository are newly authored release documentation or checks.
 
 ## Run the currently available checks
 
