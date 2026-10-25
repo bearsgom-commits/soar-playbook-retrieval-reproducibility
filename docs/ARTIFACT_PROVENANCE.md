@@ -2,12 +2,12 @@
 
 ## Source identity
 
-The 13 verbatim source artifacts below were copied from an accessible **private research repository** to the public curated repository without modifying the files' contents.
+The 14 verbatim source artifacts below were copied from an accessible **private research repository** to the public curated repository without modifying the files' contents.
 
 - Private source repository: `bearsgom-commits/guard-soar-reproducibility`.
 - Frozen source commit: `7c43a30511cd217cab6bfadf05db77b0c8ab943c`.
 - Public repository: `bearsgom-commits/soar-playbook-retrieval-reproducibility`.
-- Verification performed at public packaging: the Git blob SHA for each of the 13 files was compared against that same path at the frozen private source commit; **13 of 13 matched**.
+- Verification performed at public packaging: the Git blob SHA for each of the 13 files was compared against that same path at the frozen private source commit; **14 of 14 matched**.
 - The parent repository and its full commit history remain private. No private source commit history was transferred.
 
 | Curated path | Git blob SHA-1 (content identity) |
@@ -25,6 +25,7 @@ The 13 verbatim source artifacts below were copied from an accessible **private 
 | `results/electronics/human_gt/v1/scientific_results/track_c_broad_omfr.json` | `2e02597f7d5604e99c59f15d66e8e7405163d6d0` |
 | `results/electronics/ranking_propagation/v1/scientific_results/same_epsilon_seed_robustness.csv` | `9e8bdbcb65a3a5f01cc4ef310847d657a50a18b2` |
 | `results/electronics/ranking_propagation/v1/scientific_results/ranking_pair_summary.csv` | `c8ad821fe59fea45354d3a5f88ab3c23a31257f4` |
+| `results/electronics/human_gt/v1/manuscript_v1/figure_source_data.json` | `d9dd6e2027852114f6d4b5009a244ad8be2bd0be` |
 
 The blob SHA-1 identities confirm **byte-preserving transfers**, not fresh executions or independent replication of the scientific findings.
 
