@@ -37,7 +37,7 @@ jobs:
           from huggingface_hub import hf_hub_download
           observed=getattr(m[0].auto_model.config, "_commit_hash", None)
           config_path=hf_hub_download(repo_id=model_id,filename="config.json",revision=revision,local_files_only=True)
-          cache_revision_present=("/snapshots/"+revision+"/") in str(Path(config_path).resolve()).replace("\\","/")
+          cache_revision_present=("/snapshots/"+revision+"/") in str(Path(config_path)).replace("\\","/")
           print("OBSERVED_MODEL_OBJECT_REVISION=", observed)
           print("MODEL_CONFIG_CACHE_PATH=", config_path)
           print("EXACT_PINNED_SNAPSHOT_FOUND=", cache_revision_present)
