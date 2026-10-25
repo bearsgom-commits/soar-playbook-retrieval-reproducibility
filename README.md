@@ -3,7 +3,7 @@
 Public **curated research artifact subset** for an investigation of representation-constrained semantic retrieval and SOAR playbook selection changes in satellite ground-segment-inspired cybersecurity scenarios.
 
 > **Status: partial reproducibility package (not final release).**
-> Frozen aggregate outputs and selected research implementation/tests are available. Source playbook snapshots, full ranking inputs, all human-judgment rows, and a validated end-to-end reproduction workflow are **not** available here yet. The existence of this repository must not be interpreted as end-to-end reproduction of the scientific experiment.
+> Frozen aggregate outputs and selected research implementation/tests are available. Four-track frozen Guard ranking inputs, 30 scenario queries, and 1,500 final graded relevance judgments are now public. The exact full-source-text input archive is prepared but still awaits publication; the full E5/Guard scientific run has not yet been executed. The existence of this repository must not be interpreted as end-to-end reproduction of the scientific experiment.
 
 ## What is available now
 
@@ -20,6 +20,16 @@ Public **curated research artifact subset** for an investigation of representati
 | `docs/ARTIFACT_PROVENANCE.md` | Frozen private source commit, all 13 copied-file blob hashes, limitations |
 
 Exactly **14 included source files were verified to match their frozen originals** by Git blob hash. This establishes the file transfers' identity, not independent experiment reproduction. Other files in this repository are newly authored release documentation or checks.
+
+## Author-approved dataset and rerun status
+
+- 30 scenario validity queries and 1,500 final graded relevance pairs: **PUBLIC, source-identical**.
+- 830/1606 corpus-membership manifests: **PUBLIC, source-identical**.
+- Original 1606-playbook input bundle (with derived primary 830): **SHA-verified and packaged, but not uploaded to GitHub**.
+- Saved Guard ranks: **4 tracks × 630 records, PUBLIC**; 24 adjacent-setting and 28 same-setting comparisons matched the frozen metrics.
+- Independent B1 graded nDCG: **7/7 ε settings exactly matched** using the public qrels and saved rankings.
+- Apple MPS original-version runtime preflight: **PASS**; full E5/Guard rerun still requires original input bundle publication.
+- Full rerun entry point: [model-pinned science replay](scripts/rerun_e5_guard_from_frozen_inputs.py); triggered by uploading the exact ZIP to [`input_packages/`](input_packages/).
 
 ## Run the currently available checks
 
