@@ -1,0 +1,156 @@
+{
+  "0": {
+    "delta_lower95": -0.16938106302671885,
+    "delta_mean": -0.09824461603579665,
+    "delta_upper95": -0.034761782009686985,
+    "guard_mean_ndcg_at_10": 0.2845057795482943,
+    "query_denominator": 27,
+    "raw_mean_ndcg_at_10": 0.38275039558409096,
+    "retention_decisions": {
+      "90%": {
+        "margin": 0.03827503955840909,
+        "retained": false
+      },
+      "95%": {
+        "margin": 0.019137519779204564,
+        "retained": false
+      },
+      "98%": {
+        "margin": 0.007655007911681826,
+        "retained": false
+      }
+    }
+  },
+  "16": {
+    "delta_lower95": -0.0005323665120514288,
+    "delta_mean": 0.04834036739365271,
+    "delta_upper95": 0.09696624254192619,
+    "guard_mean_ndcg_at_10": 0.4310907629777437,
+    "query_denominator": 27,
+    "raw_mean_ndcg_at_10": 0.38275039558409096,
+    "retention_decisions": {
+      "90%": {
+        "margin": 0.03827503955840909,
+        "retained": true
+      },
+      "95%": {
+        "margin": 0.019137519779204564,
+        "retained": true
+      },
+      "98%": {
+        "margin": 0.007655007911681826,
+        "retained": true
+      }
+    }
+  },
+  "2": {
+    "delta_lower95": -0.1754540706282327,
+    "delta_mean": -0.11433995316789332,
+    "delta_upper95": -0.0569861683690262,
+    "guard_mean_ndcg_at_10": 0.26841044241619766,
+    "query_denominator": 27,
+    "raw_mean_ndcg_at_10": 0.38275039558409096,
+    "retention_decisions": {
+      "90%": {
+        "margin": 0.03827503955840909,
+        "retained": false
+      },
+      "95%": {
+        "margin": 0.019137519779204564,
+        "retained": false
+      },
+      "98%": {
+        "margin": 0.007655007911681826,
+        "retained": false
+      }
+    }
+  },
+  "32": {
+    "delta_lower95": -0.1113163234545406,
+    "delta_mean": -0.06393393505378979,
+    "delta_upper95": -0.01880646630238747,
+    "guard_mean_ndcg_at_10": 0.3188164605303012,
+    "query_denominator": 27,
+    "raw_mean_ndcg_at_10": 0.38275039558409096,
+    "retention_decisions": {
+      "90%": {
+        "margin": 0.03827503955840909,
+        "retained": false
+      },
+      "95%": {
+        "margin": 0.019137519779204564,
+        "retained": false
+      },
+      "98%": {
+        "margin": 0.007655007911681826,
+        "retained": false
+      }
+    }
+  },
+  "4": {
+    "delta_lower95": -0.0978680928838153,
+    "delta_mean": -0.029937515819347452,
+    "delta_upper95": 0.03669871541452753,
+    "guard_mean_ndcg_at_10": 0.3528128797647435,
+    "query_denominator": 27,
+    "raw_mean_ndcg_at_10": 0.38275039558409096,
+    "retention_decisions": {
+      "90%": {
+        "margin": 0.03827503955840909,
+        "retained": false
+      },
+      "95%": {
+        "margin": 0.019137519779204564,
+        "retained": false
+      },
+      "98%": {
+        "margin": 0.007655007911681826,
+        "retained": false
+      }
+    }
+  },
+  "64": {
+    "delta_lower95": -0.0004977490996794571,
+    "delta_mean": -8.71616847949185e-06,
+    "delta_upper95": 0.00047160059424098153,
+    "guard_mean_ndcg_at_10": 0.3827416794156115,
+    "query_denominator": 27,
+    "raw_mean_ndcg_at_10": 0.38275039558409096,
+    "retention_decisions": {
+      "90%": {
+        "margin": 0.03827503955840909,
+        "retained": true
+      },
+      "95%": {
+        "margin": 0.019137519779204564,
+        "retained": true
+      },
+      "98%": {
+        "margin": 0.007655007911681826,
+        "retained": true
+      }
+    }
+  },
+  "8": {
+    "delta_lower95": -0.03053739790743853,
+    "delta_mean": 0.0031145114721610133,
+    "delta_upper95": 0.035760837019160066,
+    "guard_mean_ndcg_at_10": 0.385864907056252,
+    "query_denominator": 27,
+    "raw_mean_ndcg_at_10": 0.38275039558409096,
+    "retention_decisions": {
+      "90%": {
+        "margin": 0.03827503955840909,
+        "retained": true
+      },
+      "95%": {
+        "margin": 0.019137519779204564,
+        "retained": false
+      },
+      "98%": {
+        "margin": 0.007655007911681826,
+        "retained": false
+      }
+    }
+  }
+}
