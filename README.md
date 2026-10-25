@@ -47,6 +47,16 @@ See [detailed instructions](docs/RUN_PUBLIC_CHECKS.md), [artifact provenance](do
 
 No third-party SOAR playbook source material, individual reviewer identity records, or unreviewed private audit logs are included in this initial release. Provenance, privacy, redistribution rights, and requirements for full scientific replay must be checked before any further publication. No open-source reuse license has yet been adopted; contact the authors before reuse beyond rights provided by law.
 
+## Latest verified CI status
+
+- Selected unit tests: **53 passed** on GitHub Actions (Python 3.11 / Linux CPU).
+- Frozen aggregate consistency verification: **PASS**.
+- Two aggregate plots generated from source JSON in CI: **PASS**.
+- [Verification run](https://github.com/bearsgom-commits/soar-playbook-retrieval-reproducibility/actions/runs/40196919959)
+- [Current release-readiness blockers](docs/RELEASE_READINESS.md)
+- [Source-verified experiment settings](docs/EXPERIMENT_SPECIFICATION.md)
+- [Results-to-file mapping](docs/RESULT_TO_ARTIFACT_MAPPING.md)
+
 ## Manuscript citation
 
 A permanent release tag, scholarly citation and optional archival DOI will be added once the release package, code/data rights, and validation status are finalized. Cite the final tagged release, **not** this incomplete preliminary snapshot, for submission.
