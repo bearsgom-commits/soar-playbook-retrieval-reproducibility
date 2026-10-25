@@ -30,7 +30,8 @@ python -m pip install -r requirements-public.txt
 python scripts/verify_public_aggregates.py
 PYTHONPATH=src python -m pytest -q \
   tests/test_electronics_bm25_fixed.py \
-  tests/test_electronics_human_gt_scoring.py
+  tests/test_electronics_human_gt_scoring.py \
+  tests/test_public_guard_repr.py
 ```
 
 See [detailed instructions](docs/RUN_PUBLIC_CHECKS.md), [artifact provenance](docs/ARTIFACT_PROVENANCE.md), and [pre-release checklist](docs/PUBLIC_RELEASE_CHECKLIST.md).
