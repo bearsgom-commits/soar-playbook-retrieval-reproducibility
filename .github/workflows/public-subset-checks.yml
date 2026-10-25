@@ -8,6 +8,7 @@ on:
       - "tests/**"
       - "scripts/verify_public_aggregates.py"
       - "scripts/verify_frozen_ranking_replay.py"
+      - "scripts/rerun_e5_guard_from_frozen_inputs.py"
       - "scripts/render_public_aggregate_figures.py"
       - "results/**"
       - "requirements-public.txt"
@@ -42,6 +43,10 @@ jobs:
             tests/test_electronics_bm25_fixed.py \
             tests/test_electronics_human_gt_scoring.py \
             tests/test_public_guard_repr.py
+      - name: Validate replay runner import and CLI (no model execution)
+        run: |
+          python -m py_compile scripts/rerun_e5_guard_from_frozen_inputs.py
+          python scripts/rerun_e5_guard_from_frozen_inputs.py --help
       - name: Render publication-support plots
         run: python scripts/render_public_aggregate_figures.py
       - name: Archive generated public SVGs
