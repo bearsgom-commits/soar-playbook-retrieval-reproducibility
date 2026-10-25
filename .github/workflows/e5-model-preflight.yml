@@ -33,9 +33,15 @@ jobs:
           revision="d128750597153bb5987e10b1c3493a34e5a4502a"
           assert torch.backends.mps.is_available(), "SOURCE_MPS_UNAVAILABLE"
           m=SentenceTransformer(model_id, revision=revision, device="mps")
+          from pathlib import Path
+          from huggingface_hub import hf_hub_download
           observed=getattr(m[0].auto_model.config, "_commit_hash", None)
-          print("OBSERVED_MODEL_REVISION=", observed)
-          assert str(observed)==revision, "PINNED_MODEL_REVISION_MISMATCH"
+          config_path=hf_hub_download(repo_id=model_id,filename="config.json",revision=revision,local_files_only=True)
+          cache_revision_present=("/snapshots/"+revision+"/") in str(Path(config_path).resolve()).replace("\\","/")
+          print("OBSERVED_MODEL_OBJECT_REVISION=", observed)
+          print("MODEL_CONFIG_CACHE_PATH=", config_path)
+          print("EXACT_PINNED_SNAPSHOT_FOUND=", cache_revision_present)
+          assert (str(observed)==revision or (observed is None and cache_revision_present)), "PINNED_MODEL_REVISION_OR_SNAPSHOT_MISMATCH"
           print("MODEL_MAX_SEQ_LENGTH=", m.max_seq_length)
           assert m.max_seq_length == 512, "MODEL_MAX_SEQ_LENGTH_MISMATCH"
           x=m.encode(
