@@ -7,6 +7,7 @@ on:
       - "src/**"
       - "tests/**"
       - "scripts/verify_public_aggregates.py"
+      - "scripts/verify_frozen_ranking_replay.py"
       - "scripts/render_public_aggregate_figures.py"
       - "results/**"
       - "requirements-public.txt"
@@ -31,6 +32,8 @@ jobs:
         run: python -m pip install -r requirements-public.txt
       - name: Verify frozen aggregate consistency
         run: python scripts/verify_public_aggregates.py
+      - name: Replay frozen ranking summaries
+        run: python scripts/verify_frozen_ranking_replay.py
       - name: Run available research unit tests
         env:
           PYTHONPATH: src
