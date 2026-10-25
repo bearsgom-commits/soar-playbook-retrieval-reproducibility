@@ -1,0 +1,44 @@
+name: Diagnose frozen MPS scientific replay mismatch
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/diagnose_replay_mismatch.py'
+      - '.github/workflows/diagnose-replay-mismatch.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  actions: read
+
+jobs:
+  analyze-comparison:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Check out frozen reference data and diagnostic code
+        uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Download MPS scientific rerun evidence from failed verification
+        uses: actions/download-artifact@v4
+        with:
+          run-id: 40235275466
+          github-token: ${{ github.token }}
+          name: scientific-replay-comparison-mps
+          path: collected-rerun
+      - name: Inspect saved rank/score differences without rerunning science
+        run: |
+          python scripts/diagnose_replay_mismatch.py \
+            --fresh collected-rerun \
+            --reference results/electronics/ranking_propagation/v1/source_rankings \
+            --output replay_mismatch_diagnostics.json
+      - name: Preserve diagnostic report
+        uses: actions/upload-artifact@v4
+        with:
+          name: frozen-mps-rerun-mismatch-diagnostics
+          path: replay_mismatch_diagnostics.json
+          retention-days: 30
