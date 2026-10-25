@@ -1,0 +1,177 @@
+{
+  "coverage_gate_pass": false,
+  "covered_transition_count": 457,
+  "eligible_query_count": 30,
+  "eligible_transition_count": 540,
+  "overall_available_case": {
+    "available_transition_count": 457,
+    "defined_query_count": 30,
+    "lower95": 0.7312362895138631,
+    "omfr": 0.7819822307322307,
+    "undefined_query_count": 0,
+    "upper95": 0.8297484887797388,
+    "valid_bootstrap_resamples": 10000
+  },
+  "overall_coverage": 0.8462962962962963,
+  "pair_coverage": {
+    "0->2": 0.6555555555555556,
+    "16->32": 0.9,
+    "2->4": 0.7444444444444445,
+    "32->64": 0.9666666666666667,
+    "4->8": 0.9111111111111111,
+    "8->16": 0.9
+  },
+  "pair_results": {
+    "0->2": {
+      "available_transition_count": 59,
+      "coverage": 0.6555555555555556,
+      "defined_query_count": 28,
+      "lower95": 0.8392857142857143,
+      "omfr": 0.9107142857142857,
+      "stability_decisions": {
+        "10%": {
+          "ceiling": 0.1,
+          "stable": false
+        },
+        "20%": {
+          "ceiling": 0.2,
+          "stable": false
+        },
+        "5%": {
+          "ceiling": 0.05,
+          "stable": false
+        }
+      },
+      "undefined_query_count": 2,
+      "upper95": 0.9702380952380952,
+      "valid_bootstrap_resamples": 10000,
+      "validated": false
+    },
+    "16->32": {
+      "available_transition_count": 81,
+      "coverage": 0.9,
+      "defined_query_count": 30,
+      "lower95": 0.6722222222222222,
+      "omfr": 0.7833333333333333,
+      "stability_decisions": {
+        "10%": {
+          "ceiling": 0.1,
+          "stable": false
+        },
+        "20%": {
+          "ceiling": 0.2,
+          "stable": false
+        },
+        "5%": {
+          "ceiling": 0.05,
+          "stable": false
+        }
+      },
+      "undefined_query_count": 0,
+      "upper95": 0.8833333333333333,
+      "valid_bootstrap_resamples": 10000,
+      "validated": false
+    },
+    "2->4": {
+      "available_transition_count": 67,
+      "coverage": 0.7444444444444445,
+      "defined_query_count": 30,
+      "lower95": 0.8055555555555556,
+      "omfr": 0.8833333333333333,
+      "stability_decisions": {
+        "10%": {
+          "ceiling": 0.1,
+          "stable": false
+        },
+        "20%": {
+          "ceiling": 0.2,
+          "stable": false
+        },
+        "5%": {
+          "ceiling": 0.05,
+          "stable": false
+        }
+      },
+      "undefined_query_count": 0,
+      "upper95": 0.95,
+      "valid_bootstrap_resamples": 10000,
+      "validated": false
+    },
+    "32->64": {
+      "available_transition_count": 87,
+      "coverage": 0.9666666666666667,
+      "defined_query_count": 30,
+      "lower95": 0.5555555555555556,
+      "omfr": 0.6777777777777778,
+      "stability_decisions": {
+        "10%": {
+          "ceiling": 0.1,
+          "stable": false
+        },
+        "20%": {
+          "ceiling": 0.2,
+          "stable": false
+        },
+        "5%": {
+          "ceiling": 0.05,
+          "stable": false
+        }
+      },
+      "undefined_query_count": 0,
+      "upper95": 0.7888888888888889,
+      "valid_bootstrap_resamples": 10000,
+      "validated": false
+    },
+    "4->8": {
+      "available_transition_count": 82,
+      "coverage": 0.9111111111111111,
+      "defined_query_count": 30,
+      "lower95": 0.6388888888888888,
+      "omfr": 0.7166666666666667,
+      "stability_decisions": {
+        "10%": {
+          "ceiling": 0.1,
+          "stable": false
+        },
+        "20%": {
+          "ceiling": 0.2,
+          "stable": false
+        },
+        "5%": {
+          "ceiling": 0.05,
+          "stable": false
+        }
+      },
+      "undefined_query_count": 0,
+      "upper95": 0.7944444444444444,
+      "valid_bootstrap_resamples": 10000,
+      "validated": false
+    },
+    "8->16": {
+      "available_transition_count": 81,
+      "coverage": 0.9,
+      "defined_query_count": 30,
+      "lower95": 0.6777777777777778,
+      "omfr": 0.7777777777777778,
+      "stability_decisions": {
+        "10%": {
+          "ceiling": 0.1,
+          "stable": false
+        },
+        "20%": {
+          "ceiling": 0.2,
+          "stable": false
+        },
+        "5%": {
+          "ceiling": 0.05,
+          "stable": false
+        }
+      },
+      "undefined_query_count": 0,
+      "upper95": 0.8722222222222222,
+      "valid_bootstrap_resamples": 10000,
+      "validated": false
+    }
+  },
+  "validated_omfr_status": "AVAILABLE_CASE_EXPLORATORY"
+}
