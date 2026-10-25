@@ -1,0 +1,4 @@
+# Dependencies for the PUBLIC UNIT-TEST SUBSET only.
+# This is not the frozen scientific experiment's macOS MPS lockfile.
+numpy>=2.2,<3.0
+pytest>=8,<10
