@@ -1,0 +1,8 @@
+# Reproduction dependencies recorded for the frozen experiment.
+# Install on a source-compatible macOS MPS Python 3.10 environment.
+# CPU, patch-version and hardware differences remain diagnostic and must be reported.
+numpy==2.2.6
+pandas==2.2.2
+scikit-learn==1.7.1
+sentence-transformers==5.3.0
+torch==2.10.0
