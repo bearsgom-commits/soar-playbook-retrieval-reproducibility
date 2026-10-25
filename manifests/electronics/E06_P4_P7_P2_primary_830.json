@@ -1,0 +1,3346 @@
+{
+  "anchor_mapping_sha256": "2c7a67b40a6f54a7edd0448439a8761da1f317d1722cb905a401c457189d231e",
+  "candidate_count": 830,
+  "classifier_sha256": "86afd72c6d2238f47b574944beae456f9820b46d04ff60c5fff3bbd0f8b6b975",
+  "corpus_frozen": false,
+  "corpus_role": "PRIMARY_MACHINE_SELECTED",
+  "corrective_manifest_sha256": "27c327da8fb9ba0c9f69b18d823b04b17b09159a7398ecac88d95f9fcca35af8",
+  "e05_e09_execution_authorized": false,
+  "e07_label_coverage": "NOT_VALIDATED",
+  "eligibility_truth_status": "NOT_HUMAN_VALIDATED",
+  "members": [
+    {
+      "source_file": "Packs/ANYRUN/Playbooks/ANYRUN_Detonate_File_Android.yml",
+      "source_sha256": "1503f9ae39d2fcb89f1f205732678556625e60856a780105e43e04924d7e8863"
+    },
+    {
+      "source_file": "Packs/ANYRUN/Playbooks/ANYRUN_Detonate_File_Linux.yml",
+      "source_sha256": "c67cf2063cfa0acd98f4a63a74c7f43b8eb3c11f20a89437376804108766f621"
+    },
+    {
+      "source_file": "Packs/ANYRUN/Playbooks/ANYRUN_Detonate_File_Windows.yml",
+      "source_sha256": "296739714d8c6c561185952047944c8c0ed5b72dab7872e9cdb8bc1aebeea978"
+    },
+    {
+      "source_file": "Packs/ANYRUN/Playbooks/ANYRUN_Detonate_URL_Android.yml",
+      "source_sha256": "fdfaace9d4f60613fa5346b36ea343ec08401de5dda71bf2139015b1572eb85a"
+    },
+    {
+      "source_file": "Packs/ANYRUN/Playbooks/ANYRUN_Detonate_URL_Linux.yml",
+      "source_sha256": "3e8a807eedf991002fd157cfb1a7786cd4ca460896d91eaafcd94ce86f163a1f"
+    },
+    {
+      "source_file": "Packs/ANYRUN/Playbooks/ANYRUN_Detonate_URL_Windows.yml",
+      "source_sha256": "b606e76294b29a96b2ec1fbe6fa36c2009691831299e7f6835ad34a5ebd3f5a1"
+    },
+    {
+      "source_file": "Packs/AWS-EC2/Playbooks/playbook-IP_Whitelist_-_AWS_Security_Group.yml",
+      "source_sha256": "9c61bc3703595b0973e57565e48b16bfc791ee9b2c042ce8c74a8317dd36d936"
+    },
+    {
+      "source_file": "Packs/AWS-Enrichment-Remediation/Playbooks/AWS_-_Security_Group_Remediation.yml",
+      "source_sha256": "3b95f9f5f178f304cb0b04efe7a15f7cc4fd917a7827b7975913bc73882b4c7f"
+    },
+    {
+      "source_file": "Packs/AWS-Enrichment-Remediation/Playbooks/AWS_-_Security_Group_Remediation_v2.yml",
+      "source_sha256": "7312fc5abfd87b637e32f8e3a9cee9adc516449f94721de38522ad0f760e8756"
+    },
+    {
+      "source_file": "Packs/AWS-Enrichment-Remediation/Playbooks/AWS_-_Unclaimed_S3_Bucket_Remediation.yml",
+      "source_sha256": "208069ff9b64453d00596b413c5b415fe3c313191bc719f2c147f17c0ece4959"
+    },
+    {
+      "source_file": "Packs/AWS-Enrichment-Remediation/Playbooks/playbook-AWS_-_User_Investigation.yml",
+      "source_sha256": "2814ad68131b8c19132a5afd829901e9d5c834fcbeb7dfa3fd8317937998fd28"
+    },
+    {
+      "source_file": "Packs/AWS-Enrichment-Remediation/Playbooks/playbook-Cloud_Credentials_Rotation_-_AWS.yml",
+      "source_sha256": "e3b9de8810938c80a1db206722ed6695a0cd5895c5f322d7e8b9d9a60e89897d"
+    },
+    {
+      "source_file": "Packs/AWS-Enrichment-Remediation/Playbooks/playbook-Cloud_Response_-_AWS.yml",
+      "source_sha256": "a1b7e9bc3fbcabe69c8eeef809da177edc07765d47d58b77c15313f9e0f042fd"
+    },
+    {
+      "source_file": "Packs/AWS-Enrichment-Remediation/Playbooks/playbook-Function_Deployment_-_AWS.yml",
+      "source_sha256": "5fc1fe45a3facbd1d58759d6f5bcc719036892cd89f585ac9c47bda85e25d540"
+    },
+    {
+      "source_file": "Packs/AccentureCTI/Playbooks/playbook-ACTI_Incident_Enrichment.yml",
+      "source_sha256": "ec1c0967b5dd5ad99310b971fb1cf8bf7653f02c98c27185d47a7f3211248f6a"
+    },
+    {
+      "source_file": "Packs/AccessInvestigation/Playbooks/Access_Investigation_-_Generic.yml",
+      "source_sha256": "1c1ec90653f440eb7ac9cd2ebf2de6529777fee6cfe4fcd0f70b3e6a21428ea9"
+    },
+    {
+      "source_file": "Packs/Active_Directory_Query/Playbooks/playbook-Active_Directory_Investigation.yml",
+      "source_sha256": "01c84fa7915bb70471f9160674bdfe5e84c523be1a90a999fee08dff016cd17b"
+    },
+    {
+      "source_file": "Packs/AgariPhishingDefense/Playbooks/playbook-Agari_Message_Remediation_-_Agari_Phishing_Defense.yml",
+      "source_sha256": "cc5c98c24256925dff3e1aa9b974aa70d204afdadac65abd3a7e77c25eea6aea"
+    },
+    {
+      "source_file": "Packs/AgariPhishingDefense/Playbooks/playbook-Remediate_Message_-_Agari_Phishing_Defense.yml",
+      "source_sha256": "fb8dff49dda5751f32c91a91286b7e5b629765d4f0f84c12fdb5a08d09796d09"
+    },
+    {
+      "source_file": "Packs/AgariPhishingDefense/Playbooks/playbook-Retrieve_Email_Data_-_Agari_Phishing_Defense.yml",
+      "source_sha256": "a2865017fd75c8ad8605f6123f5e2f27ff50ee1560ec7e4ca0b8ff675b149dae"
+    },
+    {
+      "source_file": "Packs/Akamai_WAF/Playbooks/playbook-Akamai_WAF_-_Activate_Network_Lists.yml",
+      "source_sha256": "0b407f5a8349ff3150cb553fd388cfd7f571e7338edeebf3121d41e1b5c8effa"
+    },
+    {
+      "source_file": "Packs/AlibabaActionTrail/Playbooks/Alibaba_ActionTrail_-_multiple_unauthorized_action_attempts_detected_by_a_user.yml",
+      "source_sha256": "f321e6f832acce124f48ab31f24bc80ed741af47f8a91c4e3fae4eac5994502d"
+    },
+    {
+      "source_file": "Packs/Anomali_Enterprise/Playbooks/playbook-Anomali_Enterprise-Retro_Forensic_Search.yml",
+      "source_sha256": "b101bdfa1c20d33a58430c28567502e3bb5372e217965b1a19ebb40e77e00791"
+    },
+    {
+      "source_file": "Packs/Anomali_ThreatStream/Playbooks/playbook-Detonate_File_-_ThreatStream.yml",
+      "source_sha256": "10cc4d631cd5bf2d12f04baa530b754bc68d12d77f534da8b8cee47df361d50b"
+    },
+    {
+      "source_file": "Packs/Anomali_ThreatStream/Playbooks/playbook-Detonate_URL_-_ThreatStream.yml",
+      "source_sha256": "c87552fbea7033b2c198c9d324d8c7e6f4103b2c42844110bcecd24407d04136"
+    },
+    {
+      "source_file": "Packs/ArcSightESM/Playbooks/playbook-TIM_-_ArcSight_Add_Bad_Hash_Indicators.yml",
+      "source_sha256": "37a3dd52c21c5492df5707f76bc138e189f6a4745552648e846a9e1804f85ec8"
+    },
+    {
+      "source_file": "Packs/ArcSightESM/Playbooks/playbook-TIM_-_ArcSight_Add_Domain_Indicators.yml",
+      "source_sha256": "f5a2b073521798065281553ec5dced7339f1b1bd163b0142c5cc71d3d0915e8c"
+    },
+    {
+      "source_file": "Packs/ArcSightESM/Playbooks/playbook-TIM_-_ArcSight_Add_IP_Indicators.yml",
+      "source_sha256": "75ec81ed8f6d3b41353b6090bf18695273d61cf79d0714cee3e4e82ea70bc45e"
+    },
+    {
+      "source_file": "Packs/ArcSightESM/Playbooks/playbook-TIM_-_ArcSight_Add_Url_Indicators.yml",
+      "source_sha256": "c1bcd7ecd9281688ce398f19848f5b8ef4aed9f1757a1e2846175ebb8938695a"
+    },
+    {
+      "source_file": "Packs/Arcanna/Playbooks/playbook-Arcanna-Generic-Investigation.yml",
+      "source_sha256": "ec2cb5884833b2ec1592cd3f3ee7fe51a3a06a617953d942095ce15f55f11acc"
+    },
+    {
+      "source_file": "Packs/Armorblox/Playbooks/Armorblox_Needs_Review.yml",
+      "source_sha256": "a114d539f8416c47f58f0e8cf0987048aaae43b1430bcdede5e2cc218d62a53e"
+    },
+    {
+      "source_file": "Packs/Asimily_Insight/Playbooks/playbook-Asimily_Asset_Info_Enrich.yml",
+      "source_sha256": "c92c8b81856a53fab7121b5c6e55cd74312b05ed993221e7fc835e20a6ddfb4e"
+    },
+    {
+      "source_file": "Packs/Automox/Playbooks/Upload_Vulnerability_Report_to_Automox.yml",
+      "source_sha256": "86f7bea86224df206a3e4ebf46cfa485af5fc24c9aa47c9153bed3b02727d59f"
+    },
+    {
+      "source_file": "Packs/Azure-Enrichment-Remediation/Playbooks/Azure_-_Network_Security_Group_Remediation.yml",
+      "source_sha256": "3df15338ed78b097cdc2a99099e9cdf1f0b767f2a57da2e257b0b8bb0be559d0"
+    },
+    {
+      "source_file": "Packs/Azure-Enrichment-Remediation/Playbooks/playbook-Azure_-_User_Investigation.yml",
+      "source_sha256": "c6c2264de71c2b1ac3be129d66aae68d490e267d42f1ab60c329f13b7adba970"
+    },
+    {
+      "source_file": "Packs/Azure-Enrichment-Remediation/Playbooks/playbook-Cloud_Credentials_Rotation_-_Azure.yml",
+      "source_sha256": "b2552e43f3c0fc95bdf92102a43d5e884145df8dab8659eb8a54c3d11a9535f6"
+    },
+    {
+      "source_file": "Packs/Azure-Enrichment-Remediation/Playbooks/playbook-Cloud_Response_-_Azure.yml",
+      "source_sha256": "76a12b2acdea4750836b39340916172b84394df0db94fd43d0a5fcd1c76027c5"
+    },
+    {
+      "source_file": "Packs/BitDam/Playbooks/playbook-BitDam_Scan_File.yml",
+      "source_sha256": "67e6a41134f1bccc96f6df325d35e18c2bf5acb00e62ff94acc5212e8e0e5508"
+    },
+    {
+      "source_file": "Packs/BreachNotification-US/Playbooks/playbook-California_-_Breach_Notification.yml",
+      "source_sha256": "4ccfbead0747cba27fa0a66e499be2ddce46252afd213683f58c0ea4a565c88c"
+    },
+    {
+      "source_file": "Packs/BreachNotification-US/Playbooks/playbook-Illinois_-_Breach_Notification.yml",
+      "source_sha256": "78c8f8793356f8e718c10e63cb07904e993f815cbb552d5ea977c155b990b610"
+    },
+    {
+      "source_file": "Packs/BreachNotification-US/Playbooks/playbook-New_York_-_Breach_Notification.yml",
+      "source_sha256": "3e2f1d7c57643da269a16401b8955e5988e3fa1097bc66d1d19b53ef1ffb7c63"
+    },
+    {
+      "source_file": "Packs/BreachNotification-US/Playbooks/playbook-Residents_Notification_-_Breach_Notification.yml",
+      "source_sha256": "62fadfe9d92ac24f8fd2df6f8b4e473d2d1e0f53b059517dc28b735247d28888"
+    },
+    {
+      "source_file": "Packs/BreachNotification-US/Playbooks/playbook-US_-_Breach_Notification.yml",
+      "source_sha256": "65911f7addfdc29e1c9b9f5460eb00a22c77d052e7555245df8ae7a81c6db487"
+    },
+    {
+      "source_file": "Packs/BreachRx/Playbooks/playbook-Create-Incident-and-Get-Active-Tasks.yml",
+      "source_sha256": "cfe353ea5d8072431b98dbfada1db3aa3cfe0e98581372beaaa730456437c256"
+    },
+    {
+      "source_file": "Packs/BruteForce/Playbooks/Brute_Force_Investigation_-_Generic_6_5.yml",
+      "source_sha256": "4247e5994817de8f14fb9f1a4c9fe6e5740b675b17ecf66a6cc136519d07607d"
+    },
+    {
+      "source_file": "Packs/CTF02/Playbooks/playbook-CTF_2_-_Classify_an_incident_RDP_Brute_force.yml",
+      "source_sha256": "8429b9e4737534b424de6f87fa1dea74d056a5689a44ac000d395bc4a44827f1"
+    },
+    {
+      "source_file": "Packs/CTM360-CyberBlindspot/Playbooks/playbook-CyberBlindspot_Incident_Management.yml",
+      "source_sha256": "aab12a6d7422bf3d59dd405cb9f033509d61ac00114022ab8472e9193317ba32"
+    },
+    {
+      "source_file": "Packs/CTM360-CyberBlindspot/Playbooks/playbook-CyberBlindspot_Incident_Management_V2.yml",
+      "source_sha256": "cfd8fa2c6d756e1e8fbbb3a2d61eb1244f939936045e58a023b5ccdc8944acca"
+    },
+    {
+      "source_file": "Packs/CTM360-CyberBlindspot/Playbooks/playbook-CyberBlindspot_Incident_Management_V3.yml",
+      "source_sha256": "61339bdceb1b930f3906894c15439249e63cbe542f8ccc4bccae186bd338db4d"
+    },
+    {
+      "source_file": "Packs/CTM360-CyberBlindspot/Playbooks/playbook-CyberBlindspot_Retrieve_Incident_Screenshots.yml",
+      "source_sha256": "2b3914fba84f2cd6154d6cab27cba631337944089ec461d7e505a4b1dae87b95"
+    },
+    {
+      "source_file": "Packs/CTM360-CyberBlindspot/Playbooks/playbook-HackerView_Incident_Management.yml",
+      "source_sha256": "9d74b9218c2e93ba7941158959846added2379b9ed2a8914f80535cbbc2094be"
+    },
+    {
+      "source_file": "Packs/CVE_2023_36884_-_Microsoft_Office_and_Windows_RCE/Playbooks/playbook-CVE-2023-36884_-_Microsoft_Office_and_Windows_HTML_RCE.yml",
+      "source_sha256": "db8e849542e12bc76fb298fd08b7d368d2291c260a04eb16cca742bc8163bedb"
+    },
+    {
+      "source_file": "Packs/CVE_2024_47575/Playbooks/playbook-CVE-2024-47575_-_FortiManager_Authentication_Bypass.yml",
+      "source_sha256": "b7c702bdcd66f0f7612203e603d16bffa1e102568edb4f15987c220d67b5ca8c"
+    },
+    {
+      "source_file": "Packs/CVE_2025-59287_-_Microsoft_WSUS_RCE/Playbooks/playbook-CVE-2025-59287_-_Microsoft_WSUS_Remote_Code_Execution.yml",
+      "source_sha256": "1bb4f9c9bd164663e88d1cb4321a0bcb7c3514970c6202212910a684dd7f0924"
+    },
+    {
+      "source_file": "Packs/Campaign/Playbooks/Detect_&_Manage_Phishing_Campaigns.yml",
+      "source_sha256": "69c421b80a0d119e4de2af346fc43ad210be0429376ba0169de44dd0f3d35af6"
+    },
+    {
+      "source_file": "Packs/CarbonBlackProtect/Playbooks/playbook-Carbon_black_Protection_Rapid_IOC_Hunting.yml",
+      "source_sha256": "afcdb95168488983782a49c7a918e7a844bfc94eb239a7c3bdc58a280762c632"
+    },
+    {
+      "source_file": "Packs/CarbonBlackProtect/Playbooks/playbook-Search_Endpoints_By_Hash_-_Carbon_Black_Protection.yml",
+      "source_sha256": "96f9d3834f3d6f3ed407db324d133eef49e4523272e4a8f8284139736a5ac777"
+    },
+    {
+      "source_file": "Packs/Carbon_Black_Enterprise_Live_Response/Playbooks/playbook-Get_File_Sample_From_Path_-_VMware_Carbon_Black_EDR_-_Live_Response_API.yml",
+      "source_sha256": "da572e60d085c39a0b79ccb96fc1495bf305822d625663415db4741ba8785ac3"
+    },
+    {
+      "source_file": "Packs/Carbon_Black_Enterprise_Response/Playbooks/playbook-Block_File_-_Carbon_Black_Response.yml",
+      "source_sha256": "6874b943170a895fd460474ce7ef798374195d1a54fbde9fbc2571f99409fe95"
+    },
+    {
+      "source_file": "Packs/Carbon_Black_Enterprise_Response/Playbooks/playbook-Search_Endpoints_By_Hash_-_Carbon_Black_Response_V2.yml",
+      "source_sha256": "a1dc6224ea02dc9906177ddbb68cd34dd1d7ce6bffe2d6bb8010719a87e552df"
+    },
+    {
+      "source_file": "Packs/CaseManagement-Generic/Playbooks/Case_Management_-_Generic_-_Send_On_Call_Notification.yml",
+      "source_sha256": "d933e8c80a382ff15830b7dd3046469ad2acca7188e5c38b468f6c781f0f849e"
+    },
+    {
+      "source_file": "Packs/CaseManagement-Generic/Playbooks/Case_Management_-_Generic_-_Set_SLAs_based_on_Severity.yml",
+      "source_sha256": "930ca3331f0a8117ecd8bae66cbaae3c3be826e5be55eb0ac8d86d5e8fec8907"
+    },
+    {
+      "source_file": "Packs/CaseManagement-Generic/Playbooks/Case_Management_-_Generic_-_Start_SLA_Timers.yml",
+      "source_sha256": "324c43acb029391835861841d1aa4b3e4c50e18c4ab29193884d5f1c8ad60a08"
+    },
+    {
+      "source_file": "Packs/CaseManagement-Generic/Playbooks/Case_Management_-_Generic_v2.yml",
+      "source_sha256": "2279c3dd7f9eeaa428181994ff701708d606fb1f6a0623352188f5a028562f4a"
+    },
+    {
+      "source_file": "Packs/CaseManagement-Generic/Playbooks/playbook-Case_Management_-_Generic.yml",
+      "source_sha256": "48ac7ddf5eb7743cfeac6057a33e7a3d9dbb4a5b53afe7e5b0f0d4a0a61aeaba"
+    },
+    {
+      "source_file": "Packs/Censys/Playbooks/playbook-Indicator_Enrichment_-_Censys.yml",
+      "source_sha256": "32749ca9d963ae05027f4301cd8850d291ead3b5e994f13cbffeb1c87a7f90ea"
+    },
+    {
+      "source_file": "Packs/Change_Management/Playbooks/playbook-Change_Management.yml",
+      "source_sha256": "d22688e59c31f4712fe4aec35d17b00c3ff1e294214a6b204bf9f66ad741e2a8"
+    },
+    {
+      "source_file": "Packs/Change_Management/Playbooks/playbook-Jira_Change_Management.yml",
+      "source_sha256": "41188bb4c24a4592668d83ef3cbba41d6b906452ebbcf7eda655248a2df64384"
+    },
+    {
+      "source_file": "Packs/Change_Management/Playbooks/playbook-ServiceNow_Change_Management.yml",
+      "source_sha256": "0ca990a8d82d9c81e95dca1ee0cfd65f13d189509aaa882b7b26cc29c18a7d95"
+    },
+    {
+      "source_file": "Packs/CheckPointHEC/Playbooks/CheckPointHEC_Get_email_for_incident.yml",
+      "source_sha256": "612254eceffdba94085109c08bd71886731f154d32d3b9b543ad92702e75f2e9"
+    },
+    {
+      "source_file": "Packs/CheckpointFirewall/Playbooks/Checkpoint_-_Block_IP_-_Append_Group.yml",
+      "source_sha256": "efaaaba46c650c91ccd2869db15023128b49bea9a28a906ceada4265f66d1199"
+    },
+    {
+      "source_file": "Packs/CheckpointFirewall/Playbooks/Checkpoint_-_Block_IP_-_Custom_Block_Rule.yml",
+      "source_sha256": "5875e3bac4b32bab6d483b0b6c2c2996b570ba42194e230a6d3de87896dff8a5"
+    },
+    {
+      "source_file": "Packs/CheckpointFirewall/Playbooks/Checkpoint_-_Block_URL.yml",
+      "source_sha256": "996fe3d738cf6afafa86185282533a10bbaa3aa2774290fa277b7828a49461be"
+    },
+    {
+      "source_file": "Packs/CheckpointFirewall/Playbooks/Checkpoint_-_Publish&Install_configuration.yml",
+      "source_sha256": "80de50deb384e566c7dca4a31283f5516ae34b16772f185a40421444c4379849"
+    },
+    {
+      "source_file": "Packs/CimTrak-SystemIntegrityAssurance/Playbooks/playbook-CimTrak_-_Example_-_Analyze_Intrusion.yml",
+      "source_sha256": "6c70905dfaaacd81803c9e0ee3b7d067556a9608df55af5b2931f6f5304d0286"
+    },
+    {
+      "source_file": "Packs/CiscoStealthwatch/Playbooks/playbook-List_Cisco_Stealthwatch_Security_Events.yml",
+      "source_sha256": "f54e71dd9f7e6c1aaff3dfccebeea7c3702dacade0c5eceba8627a09e0b1e328"
+    },
+    {
+      "source_file": "Packs/CiscoStealthwatch/Playbooks/playbook-block_domain-Cisco_Stealthwatch.yml",
+      "source_sha256": "fdd7e6551ecbc041a7316b82d6e23ffe7cf2bfd7a45d02a7b7fa22a2495783a6"
+    },
+    {
+      "source_file": "Packs/Claroty/Playbooks/playbook-Claroty_Incident.yml",
+      "source_sha256": "92adc1d96c3999a01954cb3ec8775ffa0573b8951ab2520efeaf9b437fc78a6e"
+    },
+    {
+      "source_file": "Packs/Claroty/Playbooks/playbook-Claroty_Manage_Asset_CVEs.yml",
+      "source_sha256": "f299bde92705c6ce35ae6f83146ceb17caaa04d1d4c73c3ab852eb64cdb0c991"
+    },
+    {
+      "source_file": "Packs/CloakedUrsaPhishingCampaign/Playbooks/playbook-Cloaked_Ursa_Diplomatic_Phishing_Campaign.yml",
+      "source_sha256": "d77dc71cc34fdb581687108dc1c35c08de9a5f42c7d0df52454dcf02ffa02832"
+    },
+    {
+      "source_file": "Packs/CloudIDS/Playbooks/Cloud_IDS-IP_Blacklist-GCP_Firewall_Append.yml",
+      "source_sha256": "e1dbe0ce545b729157de2e0c500b88c08884378cd87f9c3075c7e8c0c6667150"
+    },
+    {
+      "source_file": "Packs/CloudIDS/Playbooks/Cloud_IDS-IP_Blacklist-GCP_Firewall_Combine.yml",
+      "source_sha256": "9bfa39650295be379946fc9bf127cf9900e56e0d9c7d4a6323c4216b40c06e6e"
+    },
+    {
+      "source_file": "Packs/CloudIDS/Playbooks/Cloud_IDS-IP_Blacklist-GCP_Firewall_Extract.yml",
+      "source_sha256": "39f4502875fe098f35e9ed59aedbb40bf4cc0018cd6d2806d789a77cc589ea59"
+    },
+    {
+      "source_file": "Packs/CloudIncidentResponse/Playbooks/playbook-Cloud_Data_Exfiltration_Response.yml",
+      "source_sha256": "7cba781c1cf5fd777f1d0abf0931edf03bbd05d07bf6754ce6d1e137d7225a5e"
+    },
+    {
+      "source_file": "Packs/CloudIncidentResponse/Playbooks/playbook-Cloud_IAM_User_Access_Investigation.yml",
+      "source_sha256": "f26e888cd707b996f87cbfb9d23f322485c989acefe963e56f0a759eb3373938"
+    },
+    {
+      "source_file": "Packs/CloudIncidentResponse/Playbooks/playbook-Cloud_Threat_Hunting_-_Persistence.yml",
+      "source_sha256": "640fe9c82193367cb6cea056519823fb50c3a1a3ed0207459f2f61f61c54c93e"
+    },
+    {
+      "source_file": "Packs/CloudIncidentResponse/Playbooks/playbook-Cloud_Token_Theft_-_Set_Verdict.yml",
+      "source_sha256": "b801b3f391256a720c4f40a4b264043713fbde38cfba1a83cdc626519e2f1d48"
+    },
+    {
+      "source_file": "Packs/CloudIncidentResponse/Playbooks/playbook-Cloud_Token_Theft_Response.yml",
+      "source_sha256": "69f752e748255cd2f55614a8d481857769ed47b4ba4dc9561de75a3f097b5d64"
+    },
+    {
+      "source_file": "Packs/CloudIncidentResponse/Playbooks/playbook-Cortex_XDR_-_Cloud_Cryptomining.yml",
+      "source_sha256": "784586ad04654c5c44c80fab63b21e3f8ff571f7c4bb035760ed7986eb41e1d0"
+    },
+    {
+      "source_file": "Packs/CloudIncidentResponse/Playbooks/playbook-Cortex_XDR_-_Cloud_Cryptomining_-_Set_Verdict.yml",
+      "source_sha256": "228cc543b02cecac6e7cd484f6097069b58dc179d6f1fbf401e762aa7b8c43e5"
+    },
+    {
+      "source_file": "Packs/CloudIncidentResponse/Playbooks/playbook-Cortex_XDR_-_Cloud_Data_Exfiltration_Response.yml",
+      "source_sha256": "844d8f0f68a201f070ea436e10856f49d050b943e577199147e0b03f1544cc55"
+    },
+    {
+      "source_file": "Packs/CloudIncidentResponse/Playbooks/playbook-Cortex_XDR_-_Cloud_Enrichment.yml",
+      "source_sha256": "9346ad8b89e1bccb88ad891935de338ef5849390e52e17ff67c4f5cc07dadb10"
+    },
+    {
+      "source_file": "Packs/CloudIncidentResponse/Playbooks/playbook-Cortex_XDR_-_Cloud_IAM_User_Access_Investigation.yml",
+      "source_sha256": "88bf2cf2b69df3bd56a2f1ef595d2a31329073edfea8417b8a87d00a85cf98ed"
+    },
+    {
+      "source_file": "Packs/CloudIncidentResponse/Playbooks/playbook-Cortex_XDR_-_Malicious_Pod_Response_-_Agent.yml",
+      "source_sha256": "0e0af4dac9559582f767f013a6c50c735eeb5b8ee4786531fc78979939c5e0a4"
+    },
+    {
+      "source_file": "Packs/CloudIncidentResponse/Playbooks/playbook-Cortex_XDR_-_XCloud_Token_Theft_-_Set_Verdict.yml",
+      "source_sha256": "bd9bbec293d8dd3a47c911236c260c63849796f31caf91a12e12a4acbbc112ef"
+    },
+    {
+      "source_file": "Packs/CloudIncidentResponse/Playbooks/playbook-Cortex_XDR_-_XCloud_Token_Theft_Response.yml",
+      "source_sha256": "21c4c7462e9dcc1559ff33551dcc11453409c83895867d4e8850df863930790d"
+    },
+    {
+      "source_file": "Packs/CloudIncidentResponse/Playbooks/playbook-XCloud_Alert_Enrichment.yml",
+      "source_sha256": "73dba3c258c1f3311ad209912b12885a2ec70c3e15cc64713cfc47f533d8536f"
+    },
+    {
+      "source_file": "Packs/CloudIncidentResponse/Playbooks/playbook-XCloud_Cryptomining.yml",
+      "source_sha256": "aaf4225b9ad818d1d77740262f156f0e02c52b094082fb0e2d2bee467ab286c9"
+    },
+    {
+      "source_file": "Packs/CloudIncidentResponse/Playbooks/playbook-XCloud_Cryptomining_-_Set_Verdict.yml",
+      "source_sha256": "225332e747198906c4672c06279abee768b92c1766c1c09bb2b5e72ac46651b0"
+    },
+    {
+      "source_file": "Packs/CloudSecurityPolicyManagement/Playbooks/AWS_-_EC2_Instance_Security_Group_Remediation.yml",
+      "source_sha256": "af7df5af35a7d8840bcfa2636802ad99c3dcc3927b8f77e3e7eee8bdd0e3df57"
+    },
+    {
+      "source_file": "Packs/CloudSecurityPolicyManagement/Playbooks/Azure_-_VM_Instance_Network_Security_Group_Remediation.yml",
+      "source_sha256": "3d5253e285ba3a65c23f007c2f0ec8f615b21fc4afcc7772ccd841a1951ef35e"
+    },
+    {
+      "source_file": "Packs/CloudSecurityPolicyManagement/Playbooks/GCP_-_VM_Instance_Firewall_Rule_Remediation.yml",
+      "source_sha256": "af9aef6caeecd10f09346e693b345877fbf8d81d66516aab565fbe053131e47a"
+    },
+    {
+      "source_file": "Packs/CloudSecurityPostureManagement/Playbooks/AWS_EC2_Instance_Misconfiguration_-_Remediate_and_Notify.yml",
+      "source_sha256": "4c9bb68ec95028f8c4ef1cc4e4244a570a5d979c219a72f4b44bc4e79e656785"
+    },
+    {
+      "source_file": "Packs/CloudSecurityPostureManagement/Playbooks/AWS_IAM_Password_Policies_Misconfiguration_-_Remediate_and_Notify.yml",
+      "source_sha256": "68710101532550d89e6dbaf145f8ec5c5f9db1c689c941747e20e8a661428df1"
+    },
+    {
+      "source_file": "Packs/CloudSecurityPostureManagement/Playbooks/AWS_Network_Exposure_-_Auto-remediate.yml",
+      "source_sha256": "9a5e6386a943a0f88fb8c8009cf65e54fd40572774c13c28bf60ceb56d6bd082"
+    },
+    {
+      "source_file": "Packs/CloudSecurityPostureManagement/Playbooks/AWS_Public_Access_Misconfiguration_-_Auto-remediate.yml",
+      "source_sha256": "3ab6448caf13b08e645309f5452af068612e95bd136d227db4a1e040d31fd7e4"
+    },
+    {
+      "source_file": "Packs/CloudSecurityPostureManagement/Playbooks/AWS_S3_Bucket_Publicly_Accessible_-_Remediate_and_Notify.yml",
+      "source_sha256": "f134402905040129be3f1bdb00bbf5bf0078095cabb2ed6b333dde2dedde3ad9"
+    },
+    {
+      "source_file": "Packs/CloudSecurityPostureManagement/Playbooks/Azure_Network_Exposure_-_Auto-remediate.yml",
+      "source_sha256": "ac23d6e229e4d5aa728f9f29f2de2dc0f4651ec668d501584dc5add50cc4a069"
+    },
+    {
+      "source_file": "Packs/CloudSecurityPostureManagement/Playbooks/Azure_Public_Access_Misconfiguration_-_Auto-remediate.yml",
+      "source_sha256": "c1e0d1630c05b2eb6034637eb6e1d4319d3be303dfbf7dc7a13c781b604eb3ac"
+    },
+    {
+      "source_file": "Packs/CloudSecurityPostureManagement/Playbooks/GCP_Network_Exposure_-_Auto-remediate.yml",
+      "source_sha256": "cbc788ee8f468d7f240a9560f68dd87ebbc08cbeff6b26a42159038be6f6935f"
+    },
+    {
+      "source_file": "Packs/CloudSecurityPostureManagement/Playbooks/GCP_Public_Access_Misconfiguration_-_Auto-remediate.yml",
+      "source_sha256": "f1846f1689ed2858d94db54357669dcfca5cac20c3b4e462fdba151cfbbfb6dc"
+    },
+    {
+      "source_file": "Packs/Code42/Playbooks/playbook-Code42_Check_Incydr_Status_And_Close_XSOAR_Incident.yml",
+      "source_sha256": "84854c36393154ea0d01dd91046e4215ea27cf47081f84b2e13f775ac70e64de"
+    },
+    {
+      "source_file": "Packs/Code42/Playbooks/playbook-Code42_Close_Related_XSOAR_And_Incydr_Incidents.yml",
+      "source_sha256": "1f8d26757cf3d1d285809de8011fd521f136ec890ff132ee77af4fc7e5c94979"
+    },
+    {
+      "source_file": "Packs/Code42/Playbooks/playbook-Code42_Exfiltration_Playbook.yml",
+      "source_sha256": "eaffdb8e999ada3a74f78935b22c511e3f71d3140bf5cc80da5083f054e9c950"
+    },
+    {
+      "source_file": "Packs/Code42/Playbooks/playbook-Code42_File_Search.yml",
+      "source_sha256": "81835e5f3fb1972a40ce19a436e349f46292a0a5820247f65f9be2c9b1a4723d"
+    },
+    {
+      "source_file": "Packs/Code42/Playbooks/playbook-Code42_File_Search_v2.yml",
+      "source_sha256": "6ab71eb3a7570a27844f4ec81cc7c3793ae346015b3f5f78a94c7a55c351753a"
+    },
+    {
+      "source_file": "Packs/Code42/Playbooks/playbook-Code42_Security_Alert.yml",
+      "source_sha256": "4e4ac1a40b341ea2bba986e59273f38c122ccb1c3c7a722f151bb45ebed40acf"
+    },
+    {
+      "source_file": "Packs/Code42/Playbooks/playbook-Code42_Suspicious_Activity_Action_v2.yml",
+      "source_sha256": "f4164e53e64a2b1ff6dfcece322ac34c1331a0d875b27034a8c3b7ef4377f204"
+    },
+    {
+      "source_file": "Packs/Code42/Playbooks/playbook-Code42_Suspicious_Activity_Review_v2.yml",
+      "source_sha256": "dde8d0b3c3a4b1c3e836443f382d5f12f4afeb6f6408ae480d74a8f6487702c1"
+    },
+    {
+      "source_file": "Packs/CofenseTriage/Playbooks/playbook-Cluster_Report_Categorization_-_Cofense_Triage_v3.yml",
+      "source_sha256": "4b3e48a61af8c8595357b893762360aaae7b6c45e61f29aa70929baae41baabd"
+    },
+    {
+      "source_file": "Packs/CofenseTriage/Playbooks/playbook-Report_Categorization_-_Cofense_Triage_v3.yml",
+      "source_sha256": "f503c6019a13f3f69607d1daacf8c88a57a2ce767407bce03d7b34b6b7bc6595"
+    },
+    {
+      "source_file": "Packs/CofenseTriage/Playbooks/playbook-Send_Indicators_-_Cofense_Triage_v3.yml",
+      "source_sha256": "a1ee6226b2bcda6f4a0a09ed02997857d06fc717da3a54d628530260d7aa815c"
+    },
+    {
+      "source_file": "Packs/CofenseVision/Playbooks/playbook-Add_IOCs_-_Cofense_Vision.yml",
+      "source_sha256": "402bddcf8ec419fde94ecde8275ac647043c7225c683aaf1c84d24f5061cd9e1"
+    },
+    {
+      "source_file": "Packs/CofenseVision/Playbooks/playbook-Message_Quarantine_-_Cofense_Vision.yml",
+      "source_sha256": "50497693f72cbfb7902d681628902fea3375a12fbdfca4eb9e20ab961ae1b63c"
+    },
+    {
+      "source_file": "Packs/CommonPlaybooks/Playbooks/playbook-Account_Enrichment_-_Generic_v2_2.yml",
+      "source_sha256": "387d392c15c4eb36ba9ec27fe18a6c93d4af98a9248756e7309b60310a96dfd9"
+    },
+    {
+      "source_file": "Packs/CommonPlaybooks/Playbooks/playbook-Block_Account_-_Generic_v2.yml",
+      "source_sha256": "abc10948888b225c3d5c06249e52ac9bdb5d571b671e66e18e20413dd5510d8f"
+    },
+    {
+      "source_file": "Packs/CommonPlaybooks/Playbooks/playbook-Block_Domain_-_Generic_v2.yml",
+      "source_sha256": "cb7e82e2da1b4d28f8267cef6d457b743099a4bc57f154d9dfa012ebb0d9b9f4"
+    },
+    {
+      "source_file": "Packs/CommonPlaybooks/Playbooks/playbook-Block_File_-_Generic_v2.yml",
+      "source_sha256": "cae4881e6daabff826afeb2fd66f155655a596df2520709ab4ebdc2080671374"
+    },
+    {
+      "source_file": "Packs/CommonPlaybooks/Playbooks/playbook-Block_IP_-_Generic_v3.yml",
+      "source_sha256": "0cb7d943117dbe0eacb9d5c175d68ca5b581c095a067d706f48a204d7d9a7b13"
+    },
+    {
+      "source_file": "Packs/CommonPlaybooks/Playbooks/playbook-Block_Indicators_-_Generic_v3.yml",
+      "source_sha256": "e391e2afec15976767cf1939fa6f03466b68c51438f9f548dcf2d2f914f65bc6"
+    },
+    {
+      "source_file": "Packs/CommonPlaybooks/Playbooks/playbook-Block_URL_-_Generic_v2.yml",
+      "source_sha256": "840e9e7566eebb1313c78757ea4db8cc526ea9b5ba54f1755b3062908702e535"
+    },
+    {
+      "source_file": "Packs/CommonPlaybooks/Playbooks/playbook-CVE_Enrichment_-_Generic_v2.yml",
+      "source_sha256": "defac6900a477530b379eda14db5dfdd0c789640b25032683206ac4a7585003f"
+    },
+    {
+      "source_file": "Packs/CommonPlaybooks/Playbooks/playbook-Calculate_Severity_-_3rd-party_integrations.yml",
+      "source_sha256": "4b45a46d8d0fb86a320d07c66f1e66f3cbe8eebd5f49efb4e7fd5f8aaecb3424"
+    },
+    {
+      "source_file": "Packs/CommonPlaybooks/Playbooks/playbook-Calculate_Severity_-_Critical_Assets_v2.yml",
+      "source_sha256": "f25c9bb38002830a323f8519c000ad493e64aa16caac1d2160e41ccd24e011af"
+    },
+    {
+      "source_file": "Packs/CommonPlaybooks/Playbooks/playbook-Calculate_Severity_-_Generic_v2.yml",
+      "source_sha256": "4629ae07813c7d3204c5cdee3bf44ac3d24de7281e4f8c558090c9137c577822"
+    },
+    {
+      "source_file": "Packs/CommonPlaybooks/Playbooks/playbook-Calculate_Severity_-_Indicators_DBotScore.yml",
+      "source_sha256": "8b6f4c8c1bbcebe462e907b524f31bce12ea5c0de56fa08575dfefc2a57c8b05"
+    },
+    {
+      "source_file": "Packs/CommonPlaybooks/Playbooks/playbook-Calculate_Severity_-_Standard.yml",
+      "source_sha256": "98087f8aee55e5d58fec369ab96b2a6e44833c3fdb2f80cd885dbfa0aab8268e"
+    },
+    {
+      "source_file": "Packs/CommonPlaybooks/Playbooks/playbook-Calculate_Severity_By_Highest_DBotScore_6_0.yml",
+      "source_sha256": "61266ee56a067734c23d9031b205d17724de519dbd14eea910d0db963ae32516"
+    },
+    {
+      "source_file": "Packs/CommonPlaybooks/Playbooks/playbook-Cloud_Credentials_Rotation_-_Generic.yml",
+      "source_sha256": "4681137d50f72496495b74fab73c9a9a5a636d2580327f36bdde847bcb521bc1"
+    },
+    {
+      "source_file": "Packs/CommonPlaybooks/Playbooks/playbook-Cloud_Response_-_Generic.yml",
+      "source_sha256": "f638a93afcf9978e7bb302f283c7a7ebc850755112ee836f4e03d1a9a81891e0"
+    },
+    {
+      "source_file": "Packs/CommonPlaybooks/Playbooks/playbook-Cloud_User_Investigation_-_Generic.yml",
+      "source_sha256": "c972dd48d3c8ba8032cc93771a6a553abd48c48361810608e2c47a0adcd2be37"
+    },
+    {
+      "source_file": "Packs/CommonPlaybooks/Playbooks/playbook-Command-Line_Analysis.yml",
+      "source_sha256": "1af09c4a0a9b9020054be2f6743360345c605246270bdc58b77255dcda161a7d"
+    },
+    {
+      "source_file": "Packs/CommonPlaybooks/Playbooks/playbook-Containment_Plan.yml",
+      "source_sha256": "eac3f12da91ad50505dfad517c494233423f76c7b0e82a6e5023246c6c248a78"
+    },
+    {
+      "source_file": "Packs/CommonPlaybooks/Playbooks/playbook-Containment_Plan_-_Block_Indicators.yml",
+      "source_sha256": "7a5e86bb5df03c3b7c7d62d9a52c4f443b71968f1ca1e1c313128edb01e0afd7"
+    },
+    {
+      "source_file": "Packs/CommonPlaybooks/Playbooks/playbook-Containment_Plan_-_Clear_User_Sessions.yml",
+      "source_sha256": "4b5de4ee174a04209505efd85c6b3a05fee7d998f3803958dc5fb9bd2a983a9f"
+    },
+    {
+      "source_file": "Packs/CommonPlaybooks/Playbooks/playbook-Containment_Plan_-_Disable_Account.yml",
+      "source_sha256": "c51a9e48ed0b15846847c13ed7a760b67dd33cb963cf98e7475a9137f03431b7"
+    },
+    {
+      "source_file": "Packs/CommonPlaybooks/Playbooks/playbook-Containment_Plan_-_Isolate_Device.yml",
+      "source_sha256": "215fa6bb6e851eaa97c606d10f3069706a0e6f44bd6830733316d9a3dd122cf1"
+    },
+    {
+      "source_file": "Packs/CommonPlaybooks/Playbooks/playbook-Containment_Plan_-_Quarantine_File.yml",
+      "source_sha256": "839aabc390f1cf486799972636db97a8f5985dc1dd0fddff3055d37c990bf11c"
+    },
+    {
+      "source_file": "Packs/CommonPlaybooks/Playbooks/playbook-Convert_file_hash_to_corresponding_hashes.yml",
+      "source_sha256": "de136274a88ed1a9f259bda4d30d97eb2dd51f7f9071e6bc4481155c2f7dcb2f"
+    },
+    {
+      "source_file": "Packs/CommonPlaybooks/Playbooks/playbook-DBot_Indicator_Enrichment_-_Generic.yml",
+      "source_sha256": "ee786fb7e25c9ced5c9af50d2e1e2d78b546da10fb29c7f0c150cb7fe2fbbc62"
+    },
+    {
+      "source_file": "Packs/CommonPlaybooks/Playbooks/playbook-Dedup_-_Generic_v4.yml",
+      "source_sha256": "a1eecb6a0f0a9460fad8564aebe840d3bfd84155b83d8960d0ee9993d26bfeaf"
+    },
+    {
+      "source_file": "Packs/CommonPlaybooks/Playbooks/playbook-Detonate_File_-_Generic.yml",
+      "source_sha256": "72afe79055b89e72f8c41bde0fce51cabc008fd879761ebf68d229455aea711a"
+    },
+    {
+      "source_file": "Packs/CommonPlaybooks/Playbooks/playbook-Detonate_URL_-_Generic_v1.5.yml",
+      "source_sha256": "5eb2066642282518fd0daa737f87451663b61137d11bb03787c1fa50bd9de2c4"
+    },
+    {
+      "source_file": "Packs/CommonPlaybooks/Playbooks/playbook-Detonate_and_Analyze_File_-_Generic.yml",
+      "source_sha256": "1b4b94de1d2929e396bc10156e198c257bf9c09ec0cf7d160adfb6883c53ded8"
+    },
+    {
+      "source_file": "Packs/CommonPlaybooks/Playbooks/playbook-Domain_Enrichment_-_Generic_v2.yml",
+      "source_sha256": "090a1980b040eac7a6d89e4c522df46d159c12b4c31647c115da8e50cdc888a7"
+    },
+    {
+      "source_file": "Packs/CommonPlaybooks/Playbooks/playbook-Email_Headers_Check_-_Generic.yml",
+      "source_sha256": "898b3377f9987f624c32580eb6756c6e1804f5f88d153c75d7ca74474540c14e"
+    },
+    {
+      "source_file": "Packs/CommonPlaybooks/Playbooks/playbook-Endpoint_Investigation_Plan.yml",
+      "source_sha256": "cff38d4d9e88181a59c4a8dd0356096565da99bfdeb84ed5f2de8b08867bce02"
+    },
+    {
+      "source_file": "Packs/CommonPlaybooks/Playbooks/playbook-Enrichment_for_Verdict.yml",
+      "source_sha256": "44de9c20e1cde7793ff81c70cb16e16eecf4f36e028146e0761fe121f3db0efa"
+    },
+    {
+      "source_file": "Packs/CommonPlaybooks/Playbooks/playbook-Eradication_Plan_-_Reset_Password.yml",
+      "source_sha256": "a841270bc6687700df5ff6544def668f2064eba0753ce8d23779ef6959431603"
+    },
+    {
+      "source_file": "Packs/CommonPlaybooks/Playbooks/playbook-Extract_Indicators_From_File_-_Generic_v2_4_5.yml",
+      "source_sha256": "90c9bb25d2521f183e9c365c94af26832db60fffeb15053c014818deedb99d9d"
+    },
+    {
+      "source_file": "Packs/CommonPlaybooks/Playbooks/playbook-File_Enrichment_-_File_reputation.yml",
+      "source_sha256": "08f696d370770d346107131679de99c51fc8870b477e371d792b494eb096917d"
+    },
+    {
+      "source_file": "Packs/CommonPlaybooks/Playbooks/playbook-File_Enrichment_-_Generic_v2.yml",
+      "source_sha256": "3743a931bd856e6b2369684bb9b764733c2f7d7adcd44acbcdc1fa79e1258806"
+    },
+    {
+      "source_file": "Packs/CommonPlaybooks/Playbooks/playbook-File_Reputation.yml",
+      "source_sha256": "e44b8384fd9cd7d842edff49e8c87ad3a161180f9d68032ed6cd1c5f7d362ec0"
+    },
+    {
+      "source_file": "Packs/CommonPlaybooks/Playbooks/playbook-Get_File_Sample_By_Hash_-_Generic_v3.yml",
+      "source_sha256": "40bb72ed9f1935e3ef818c36a6cac0700160f7542613048590e00a0ca0c6ff7e"
+    },
+    {
+      "source_file": "Packs/CommonPlaybooks/Playbooks/playbook-Get_File_Sample_From_Path_-_Generic_V3.yml",
+      "source_sha256": "311af62e73945c486df25175c570bb303175129180ec31473995c77185a832b8"
+    },
+    {
+      "source_file": "Packs/CommonPlaybooks/Playbooks/playbook-Get_User_Devices_by_Username_-_Generic.yml",
+      "source_sha256": "24ff901dd596380d8651f11b4a4af97d01b6176817ca9a16868a74c5801224e0"
+    },
+    {
+      "source_file": "Packs/CommonPlaybooks/Playbooks/playbook-Get_host_forensics_-_Generic.yml",
+      "source_sha256": "04f3512305f112f9c97b99eb21736e7607a5bf4183c5af92a0d03913698f6c5d"
+    },
+    {
+      "source_file": "Packs/CommonPlaybooks/Playbooks/playbook-Get_prevalence_for_IOCs.yml",
+      "source_sha256": "6c5bce01ea7cc9e805c0df985bf67dfde80d43d94c9f5e0d475e39ea006a3810"
+    },
+    {
+      "source_file": "Packs/CommonPlaybooks/Playbooks/playbook-Handle_False_Positive_Alerts.yml",
+      "source_sha256": "97511705f5fd9c2a72b554680c5cd6d7cf22e49bc7adc172addb0a3474368cfd"
+    },
+    {
+      "source_file": "Packs/CommonPlaybooks/Playbooks/playbook-IP_Enrichment_-_External_-_Generic_v2.yml",
+      "source_sha256": "b43e30ce0b165b3f47e3fc8596d30d19e26727f475a2c3226971329f674a2c33"
+    },
+    {
+      "source_file": "Packs/CommonPlaybooks/Playbooks/playbook-IP_Enrichment_-_Generic_v2.yml",
+      "source_sha256": "513f5df95cbbda6c2a41c70c5ead84e9d4f863c5ec458d878cf154ce4d0b017b"
+    },
+    {
+      "source_file": "Packs/CommonPlaybooks/Playbooks/playbook-Indicator_Registration_Polling_-_Generic.yml",
+      "source_sha256": "a67c06b316f642fc0bf2cf3c7ffb19ec203a8477e2d4faa0b17708ec63497a0a"
+    },
+    {
+      "source_file": "Packs/CommonPlaybooks/Playbooks/playbook-Recovery_Plan.yml",
+      "source_sha256": "7e02ce2c309a336bf8b9117840d3d734425cc889b03f00bc9135ba4acea931d0"
+    },
+    {
+      "source_file": "Packs/CommonPlaybooks/Playbooks/playbook-SIEM_-_Search_for_Failed_logins.yml",
+      "source_sha256": "bb0246ac3db3ad6c65b8f0e0036408ad9039924f51b7f8b6208714b78896c4e5"
+    },
+    {
+      "source_file": "Packs/CommonPlaybooks/Playbooks/playbook-Search_And_Block_Software_-_Generic.yml",
+      "source_sha256": "20f1ca401245e3402b5b816ba97072bd9a2acdb0c585bc2e0e6f4a8292951458"
+    },
+    {
+      "source_file": "Packs/CommonPlaybooks/Playbooks/playbook-Search_And_Delete_Emails_-_Generic_-_v2_6_1.yml",
+      "source_sha256": "23395249e6440518e405d73fcb6d4b3aa7f7f4678134fa91513407bd505a4dda"
+    },
+    {
+      "source_file": "Packs/CommonPlaybooks/Playbooks/playbook-Search_Endpoint_by_CVE_-_Generic.yml",
+      "source_sha256": "613d00262a4f4e71ab7965466717dbced3092eead055bc58e0a91a66f08b8825"
+    },
+    {
+      "source_file": "Packs/CommonPlaybooks/Playbooks/playbook-Search_For_Hash_In_Sandbox_-_Generic.yml",
+      "source_sha256": "a6569b22f71005230a185c61998f1371ef75d99eea8456881f9f2e3f8a7cd758"
+    },
+    {
+      "source_file": "Packs/CommonPlaybooks/Playbooks/playbook-Search_and_Compare_Process_Executions_-_Generic.yml",
+      "source_sha256": "571bedc3687c9864ff03af8a6087ef3670d2ff8806a637629832ae0e3e5f4a76"
+    },
+    {
+      "source_file": "Packs/CommonPlaybooks/Playbooks/playbook-Send_Investigation_Summary_Reports.yml",
+      "source_sha256": "86e7c24c8d12aff58921c636204d7731150f6cbdde0904c17f07c473e5e783b8"
+    },
+    {
+      "source_file": "Packs/CommonPlaybooks/Playbooks/playbook-Send_Investigation_Summary_Reports_Job.yml",
+      "source_sha256": "205ee531374c787d04731422319b6615054fafee2503229a3cc8bda02b27c913"
+    },
+    {
+      "source_file": "Packs/CommonPlaybooks/Playbooks/playbook-Threat_Hunting_-_Generic_6_5.yml",
+      "source_sha256": "f3452a49ad13602f5995e6d68f2a58ac78fcadb0c2c440e51c25826380c94331"
+    },
+    {
+      "source_file": "Packs/CommonPlaybooks/Playbooks/playbook-URL_Enrichment_-_Generic_v2.yml",
+      "source_sha256": "93609bbf149b8e7c749820939d5be0c2975a6618e142494392a0b0fc7fb6683a"
+    },
+    {
+      "source_file": "Packs/CommonPlaybooks/Playbooks/playbook-Unisolate_Endpoint_-_Generic.yml",
+      "source_sha256": "4b5ee2825566d3c6d35708aeebb94a41054472c60e6e46c3cfc518f7f194ca83"
+    },
+    {
+      "source_file": "Packs/CommonPlaybooks/Playbooks/playbook-User_Investigation_-_Generic.yml",
+      "source_sha256": "55a1f92fbed0e547a8ea859cf1a860631b8cd2ca1ce74e9c58872b159dbde339"
+    },
+    {
+      "source_file": "Packs/CommvaultSecurityIQ/Playbooks/playbook-Suspicious_File_Activity_Remediation.yml",
+      "source_sha256": "e6fcb0873745990bfa23d23533874ac7e96de517c6a5ea7827a1c6825a4b12c0"
+    },
+    {
+      "source_file": "Packs/ContentManagement/Playbooks/playbook-Configuration_Setup.yml",
+      "source_sha256": "8df3eb454f78498fe5ae48eef274274f27e60bf9df900d76d0b70db0796bf09c"
+    },
+    {
+      "source_file": "Packs/ContentManagement/Playbooks/playbook-Delete_Custom_Content.yml",
+      "source_sha256": "860b9e8ec2d21b0f124f23ed54560108646119a487ceee27bbc527a16f78ed86"
+    },
+    {
+      "source_file": "Packs/Core/Playbooks/playbook-Get_entity_alerts_by_MITRE_tactics.yml",
+      "source_sha256": "5c0c5bb6c9286dc8722729c494e24f838739fc2345109a1ad51c947374396940"
+    },
+    {
+      "source_file": "Packs/Core/Playbooks/playbook-IOC_Alert.yml",
+      "source_sha256": "114910620d7484b3b12df64019dd0d494a8946d6a4a95b36111c439b183c0163"
+    },
+    {
+      "source_file": "Packs/Core/Playbooks/playbook-Identity_Analytics_-_Alert_Handling.yml",
+      "source_sha256": "4132f3741738baa28781120e5b583974adc8557a231c277f24e52413d31ef6ee"
+    },
+    {
+      "source_file": "Packs/Core/Playbooks/playbook-Impossible_Traveler.yml",
+      "source_sha256": "f217f51e3e988ca50a88e4167bf11adda830ff704e19b0c7f25c6c699e21b5be"
+    },
+    {
+      "source_file": "Packs/Core/Playbooks/playbook-Impossible_Traveler_-_Enrichment.yml",
+      "source_sha256": "4124a038f3034120c798d75b36ed53a2baccf4ed66912c2d08ec23be24a8ec51"
+    },
+    {
+      "source_file": "Packs/Core/Playbooks/playbook-Large_Upload_Alert.yml",
+      "source_sha256": "5f4f7b35e2784ba08aac38b2244637df213fe31f376c69fbb53c0daa0e39936b"
+    },
+    {
+      "source_file": "Packs/Core/Playbooks/playbook-Local_Analysis_alert_Investigation.yml",
+      "source_sha256": "98d5cb822ab0f4fae3abbbdba2ae3ba1056ab4c1e9ea6d41bc75f12dc924b008"
+    },
+    {
+      "source_file": "Packs/Core/Playbooks/playbook-NGFW_Internal_Scan.yml",
+      "source_sha256": "1e259ad0b4877a4ef142f312c27459f10e8e3343f17f6fb9a4f7f7b53e3d51c7"
+    },
+    {
+      "source_file": "Packs/Core/Playbooks/playbook-NGFW_Scan.yml",
+      "source_sha256": "26c1b1cde784018a29c6da7073c570979589bfbc13e1ba453eb2758164cb14aa"
+    },
+    {
+      "source_file": "Packs/Core/Playbooks/playbook-Possible_External_RDP_Brute-Force.yml",
+      "source_sha256": "c474b1fde36217add591585bf473128c1f3eb2640c52c542faf9d3c4bc3ecf69"
+    },
+    {
+      "source_file": "Packs/Core/Playbooks/playbook-Possible_External_RDP_Brute-Force_-_Set_Verdict.yml",
+      "source_sha256": "aacaec1f66e076d098f675ac781418c8edd38682ef5d2b79af33acd600f73f16"
+    },
+    {
+      "source_file": "Packs/Core/Playbooks/playbook-Ransomware_Advanced_Analysis.yml",
+      "source_sha256": "83af30eaf8d8b13994ed7a4709eac8f3e20124979530dc4c087884646e24a963"
+    },
+    {
+      "source_file": "Packs/Core/Playbooks/playbook-Ransomware_Enrich_and_Contain.yml",
+      "source_sha256": "0d4631e04aeb5229b130a564a0f86dc1c3a74eabae88dfc36bc9ab8060b6c714"
+    },
+    {
+      "source_file": "Packs/Core/Playbooks/playbook-Ransomware_Response.yml",
+      "source_sha256": "3f790ab0eb701e385302d83ec855a508d0c46a15f5a84b5e45ee522bf79f41c0"
+    },
+    {
+      "source_file": "Packs/Core/Playbooks/playbook-Remote_PsExec_with_Lolbin_Command_Execution_alert.yml",
+      "source_sha256": "33c7f5e6a0302106d162cd953edcef18b680f5ff6ed08f703afb28c0b14ac487"
+    },
+    {
+      "source_file": "Packs/Core/Playbooks/playbook-T1036_-_Masquerading.yml",
+      "source_sha256": "5b5b83aa4bbcdc992de9d4322dc05c492a291fd47727d579477bdc98202985df"
+    },
+    {
+      "source_file": "Packs/Core/Playbooks/playbook-T1059_-_Command_and_Scripting_Interpreter.yml",
+      "source_sha256": "9629d61d973797a71822ea964955decc72129449ab0159e0c4e361ffd7b8dc21"
+    },
+    {
+      "source_file": "Packs/Core/Playbooks/playbook-WildFire_Malware.yml",
+      "source_sha256": "a484fd9fd026161f3b37be85b85452bbb31e82e0c8e7c57823e42d3434ba0187"
+    },
+    {
+      "source_file": "Packs/CortexAttackSurfaceManagement/Playbooks/Cortex_ASM_-_ASM_Alert.yml",
+      "source_sha256": "e0f9fdf8b96ca84013f59fe3083c7220f956dbcac78066137f648ffe613416a2"
+    },
+    {
+      "source_file": "Packs/CortexAttackSurfaceManagement/Playbooks/Cortex_ASM_-_Cortex_Endpoint_Enrichment.yml",
+      "source_sha256": "170ebe86f5992bf47e4cc749d0af3f630f9e60190fffe3abd9316d448071e76a"
+    },
+    {
+      "source_file": "Packs/CortexAttackSurfaceManagement/Playbooks/Cortex_ASM_-_Cortex_Endpoint_Remediation.yml",
+      "source_sha256": "e61b3fbdb9e4928356fe3c71a56816d86f40a9132962e9d36233a5c728345a74"
+    },
+    {
+      "source_file": "Packs/CortexAttackSurfaceManagement/Playbooks/Cortex_ASM_-_Detect_Service.yml",
+      "source_sha256": "fa76e5df3c7a6f8590cc49c80b6aa5b64bd1bcfb155de7da6f10ed64a0457ef9"
+    },
+    {
+      "source_file": "Packs/CortexAttackSurfaceManagement/Playbooks/Cortex_ASM_-_GCP_Enrichment.yml",
+      "source_sha256": "8f7b3c7f2f2c3570fa0652df36e09d1ac7709996dea3ee78806a7c43747e8dc8"
+    },
+    {
+      "source_file": "Packs/CortexAttackSurfaceManagement/Playbooks/Cortex_ASM_-_On_Prem_Enrichment.yml",
+      "source_sha256": "5ec41aba6e4d3da56dbdc30243d191e038d3d9472f76f0a814d6cab9c8231c4e"
+    },
+    {
+      "source_file": "Packs/CortexAttackSurfaceManagement/Playbooks/Cortex_ASM_-_On_Prem_Remediation.yml",
+      "source_sha256": "a7a9bc4abe27d7df043f6de19b957a4118a3f0a7800e5e8bd4730912ee698294"
+    },
+    {
+      "source_file": "Packs/CortexAttackSurfaceManagement/Playbooks/Cortex_ASM_-_Remediation.yml",
+      "source_sha256": "ca6206c320b440a0be55e6f67ef76041e853b9a97ae0f61650fc048f2458cb21"
+    },
+    {
+      "source_file": "Packs/CortexAttackSurfaceManagement/Playbooks/Cortex_ASM_-_Remediation_Confirmation_Scan.yml",
+      "source_sha256": "b852918fef764d18d8d216e759ab0e236902d22d5d3cce73d7e7d0895be65ba5"
+    },
+    {
+      "source_file": "Packs/CortexAttackSurfaceManagement/Playbooks/Cortex_ASM_-_Remediation_Guidance.yml",
+      "source_sha256": "08d04024142fc70ec5939cfecc520d80d4321ec71faeca3c649d0ffd5e165393"
+    },
+    {
+      "source_file": "Packs/CortexAttackSurfaceManagement/Playbooks/Cortex_ASM_-_Remediation_Objectives.yml",
+      "source_sha256": "7040962ce5da1881157da9eea925efe93dc48e294a4bd758500951abb956e28c"
+    },
+    {
+      "source_file": "Packs/CortexAttackSurfaceManagement/Playbooks/Cortex_ASM_-_Remediation_Path_Rules.yml",
+      "source_sha256": "ed3a5342e65448a5784a2f1231b660d6be080d2bb04fcb90a782c65c63d67c2a"
+    },
+    {
+      "source_file": "Packs/CortexDataLake/Playbooks/Cortex_Data_Lake_-_File_Indicators_Hunting.yml",
+      "source_sha256": "fb534c35c06ce37cf9baba9c87579653e9aa37403dbf89d458003b0fbffe629b"
+    },
+    {
+      "source_file": "Packs/CortexDataLake/Playbooks/Cortex_Data_Lake_-_Indicators_Hunting.yml",
+      "source_sha256": "712ae8bc14e9366c835c3b71b682dce1f9cae6f72822c6621090e9589c1785e8"
+    },
+    {
+      "source_file": "Packs/CortexDataLake/Playbooks/Cortex_Data_Lake_-_Traffic_Indicators_Hunting.yml",
+      "source_sha256": "fc5d0aff516955024afb0895762eab35caa1f95adb709b151660ce239c842185"
+    },
+    {
+      "source_file": "Packs/CortexExposureManagement/Playbooks/Cortex_EM_-_AWS_VM_Exposure_Remediation.yml",
+      "source_sha256": "7ad6e2329829571c31af6bed19a5f7bc4ca9682dab50b8f69e75e64772c8ded3"
+    },
+    {
+      "source_file": "Packs/CortexExposureManagement/Playbooks/Cortex_EM_-_Azure_VM_Exposure_Remediation.yml",
+      "source_sha256": "a75ff8428d97e51df42b5011dd7b4a5f7679248e2c84fe9c3d78faac34a04904"
+    },
+    {
+      "source_file": "Packs/CortexExposureManagement/Playbooks/Cortex_EM_-_Exposure_Issue.yml",
+      "source_sha256": "8cdabef2e5bd05c3942b14fe56a637257c46d18f866ab774384d6b787be1790d"
+    },
+    {
+      "source_file": "Packs/CortexExposureManagement/Playbooks/Cortex_EM_-_GCP_VM_Exposure_Remediation.yml",
+      "source_sha256": "1d5d8ee57785d19c145a129a39ebae9ae3cc68be786e48be24bb24f71a875e62"
+    },
+    {
+      "source_file": "Packs/CortexExposureManagement/Playbooks/Cortex_EM_-_ServiceNow_CMDB.yml",
+      "source_sha256": "d67daa158f320b03c986a729d5baa086d623af06872124bca068e3919f04b3f6"
+    },
+    {
+      "source_file": "Packs/CortexVulnerabilityManagement/Playbooks/Cortex_VM_-_ServiceNow_CMDB.yml",
+      "source_sha256": "55c3036cad3dfedac145edef970a33986a6cb3fd4abc779aa2b1ec5eb55e9d84"
+    },
+    {
+      "source_file": "Packs/CortexVulnerabilityManagement/Playbooks/Cortex_VM_-_Vulnerability_Issue.yml",
+      "source_sha256": "f6b9a59abdac9de3a4adb0e1d85559fbc0cccecec9488b22fa2bd21c1caaeeaf"
+    },
+    {
+      "source_file": "Packs/CortexXDR/Playbooks/Cortex_XDR_-_Check_Action_Status.yml",
+      "source_sha256": "81b785c8e22ab54135faefd530298392375fa38a6b7b58641f7c0b461bd674d8"
+    },
+    {
+      "source_file": "Packs/CortexXDR/Playbooks/Cortex_XDR_-_Large_Upload.yml",
+      "source_sha256": "65084ac8000b2d75437670f057ab27fcd8584e74af44f0c277861d3df0a11407"
+    },
+    {
+      "source_file": "Packs/CortexXDR/Playbooks/Cortex_XDR_-_Malware_Investigation.yml",
+      "source_sha256": "70a2265c894bf3e26e325775391e66a4b1180f61fb34cdc42edb61c9d08d48f5"
+    },
+    {
+      "source_file": "Packs/CortexXDR/Playbooks/Cortex_XDR_-_Port_Scan_-_Adjusted.yml",
+      "source_sha256": "060c3f2f896726d6ddd88d503af4d4eb2c8adb86146697bf0447fb843035738f"
+    },
+    {
+      "source_file": "Packs/CortexXDR/Playbooks/Cortex_XDR_-_Quarantine_File_v2.yml",
+      "source_sha256": "a229fc2ecdd8af05c88629db81a1b6d31c4ba7d35d7dd897b4204ae71c24623a"
+    },
+    {
+      "source_file": "Packs/CortexXDR/Playbooks/Cortex_XDR_-_Retrieve_File_v2.yml",
+      "source_sha256": "cc98cceb098404eb130c9eafd8f52d566555b4a5b81c53c726d1725dcd51266b"
+    },
+    {
+      "source_file": "Packs/CortexXDR/Playbooks/Cortex_XDR_Alerts_Handling_v2.yml",
+      "source_sha256": "5e5bf124e015e2a9f04a38b315cd2f306e165df66b4b08f3e40b382e3b603890"
+    },
+    {
+      "source_file": "Packs/CortexXDR/Playbooks/Cortex_XDR_incident_handling_v3_6_5.yml",
+      "source_sha256": "30478fc83effecde1e17c0998af9ae9bbee95f6a5011b7ebadbe52f85d219a48"
+    },
+    {
+      "source_file": "Packs/CortexXDR/Playbooks/playbook-Calculate_Severity_-_Cortex_XDR_Risky_Assets.yml",
+      "source_sha256": "8593c9dbbcaf75b9eadbef69bc2d91929f03986a4804bd9a34dab0b3f5f569b0"
+    },
+    {
+      "source_file": "Packs/CortexXDR/Playbooks/playbook-Cortex_XDR_-_Block_File.yml",
+      "source_sha256": "75745106238e2e519c7cc67365ba9b28384f209c050dc28268e2abe3892043bc"
+    },
+    {
+      "source_file": "Packs/CortexXDR/Playbooks/playbook-Cortex_XDR_-_Display_Risky_Assets.yml",
+      "source_sha256": "ff115837d35d306a01dd4e3046db5d338b1ef9ee3959a05e8b87a1b86b9806f4"
+    },
+    {
+      "source_file": "Packs/CortexXDR/Playbooks/playbook-Cortex_XDR_-_Endpoint_Investigation.yml",
+      "source_sha256": "4ef239ef7a9ae30f223f623548370e31d2f3e59c176fc6ce762055a85d00175b"
+    },
+    {
+      "source_file": "Packs/CortexXDR/Playbooks/playbook-Cortex_XDR_-_False_Positive_Incident_Handling.yml",
+      "source_sha256": "31e1c5d0c278b70e91550373626ec448fea9ef0eb648169e69b236b2ae54d9e6"
+    },
+    {
+      "source_file": "Packs/CortexXDR/Playbooks/playbook-Cortex_XDR_-_Get_entity_alerts_by_MITRE_tactics.yml",
+      "source_sha256": "f1b4c240db9475ed8adda6894af319d7e192e14277e881632c2ccdf6c9ea1365"
+    },
+    {
+      "source_file": "Packs/CortexXDR/Playbooks/playbook-Cortex_XDR_-_Identity_Analytics.yml",
+      "source_sha256": "aed42d6942110c189cceb70e3c19f9ad23a9d60531cc3d3dcc07a1519a00f652"
+    },
+    {
+      "source_file": "Packs/CortexXDR/Playbooks/playbook-Cortex_XDR_-_Isolate_Endpoint_6_2.yml",
+      "source_sha256": "eac25a1190774cd5f4b789b5ed4e0bc97e4b41305426af8cf3571ec219cdd3ca"
+    },
+    {
+      "source_file": "Packs/CortexXDR/Playbooks/playbook-Cortex_XDR_-_Possible_External_RDP_Brute-Force.yml",
+      "source_sha256": "da8372a4eb3d0ed671d03e5623629524ccfbe2075ad51a683cd1d401e04fa801"
+    },
+    {
+      "source_file": "Packs/CortexXDR/Playbooks/playbook-Cortex_XDR_-_Possible_External_RDP_Brute-Force_-_Set_Verdict.yml",
+      "source_sha256": "2209ad64562ebe4edda5d70532eb85a6df80dc5c84d9e73a9ae515c7f20d1eb8"
+    },
+    {
+      "source_file": "Packs/CortexXDR/Playbooks/playbook-Cortex_XDR_-_Remote_PsExec_with_LOLBIN_command_execution_alert.yml",
+      "source_sha256": "dfbcf703e7bb677f92d445227a56e49c7ff1bb68cf1e4a3247f24ed325cdbdcc"
+    },
+    {
+      "source_file": "Packs/CortexXDR/Playbooks/playbook-Cortex_XDR_-_Retrieve_File_by_sha256.yml",
+      "source_sha256": "0bbba8eeb6efb20ce52b2e930330a3e1df9b63bbdabe2b4cbd21266211620a21"
+    },
+    {
+      "source_file": "Packs/CortexXDR/Playbooks/playbook-Cortex_XDR_-_Search_And_Block_Software_-_XQL_Engine.yml",
+      "source_sha256": "6515ecf487f69946a69ca73b0599a094d95ac64599b86cbd79b26e2ddd35cff9"
+    },
+    {
+      "source_file": "Packs/CortexXDR/Playbooks/playbook-Cortex_XDR_-_Search_and_Compare_Process_Executions_-_XDR_Alerts.yml",
+      "source_sha256": "2f036793dd426716a299d49b2ba25c435084cfe3763808a6921d26da321d90df"
+    },
+    {
+      "source_file": "Packs/CortexXDR/Playbooks/playbook-Cortex_XDR_-_Search_and_Compare_Process_Executions_-_XQL_Engine.yml",
+      "source_sha256": "0d1a9d89c729a5213d7c5d1f9da8bb3a1981ac2fd5836c666728726f9a8d7455"
+    },
+    {
+      "source_file": "Packs/CortexXDR/Playbooks/playbook-Cortex_XDR_-_True_Positive_Incident_Handling.yml",
+      "source_sha256": "03669aa4db673542f5a8590844b77a6f22913fd4d30f4a628a46013d76796750"
+    },
+    {
+      "source_file": "Packs/CortexXDR/Playbooks/playbook-Cortex_XDR_-_Unisolate_Endpoint_6_2.yml",
+      "source_sha256": "5d47442482273a0b09e27d8709befed942f07227f9d568c3bfc1883ddd6da328"
+    },
+    {
+      "source_file": "Packs/CortexXDR/Playbooks/playbook-Cortex_XDR_IOCs_-_Disable_expired_IOCs_in_XDR.yml",
+      "source_sha256": "56f29bb7d922cb05b62b1e5d06f0b9979fff42b7059f59efb7ec76540121c9d7"
+    },
+    {
+      "source_file": "Packs/CortexXDR/Playbooks/playbook-Cortex_XDR_IOCs_-_Push_new_IOCs_to_XDR.yml",
+      "source_sha256": "60a5416a664ba9475aea97b5772e557c51fc14f724f97f11c7333985e9505070"
+    },
+    {
+      "source_file": "Packs/CortexXDR/Playbooks/playbook-Cortex_XDR_IOCs_-_Push_new_IOCs_to_XDR_Main.yml",
+      "source_sha256": "13b68b3510e5be008faa2ad98583379a28f6532420ad26dd3f2bd6d047dd9666"
+    },
+    {
+      "source_file": "Packs/CortexXDR/Playbooks/playbook-Cortex_XDR_Lite_-_Incident_Handling.yml",
+      "source_sha256": "b1d9f3bc8f5c3f91209b458e3556c12f807252f013179a9ccc46f0f9f4c3a92c"
+    },
+    {
+      "source_file": "Packs/CortexXDR/Playbooks/playbook-Cortex_XDR_Malware_-_Incident_Enrichment.yml",
+      "source_sha256": "b4ce06517585d27888c3bbe33f847e9e805c9f371dc289aab358dc93307b894f"
+    },
+    {
+      "source_file": "Packs/CortexXDR/Playbooks/playbook-Cortex_XDR_Malware_-_Investigation_And_Response.yml",
+      "source_sha256": "a374ae26d2d00f182528e5575ff726912943cba0b09f2ad71923c669dfab8e26"
+    },
+    {
+      "source_file": "Packs/CortexXDR/Playbooks/playbook-Cortex_XDR_device_control_violations.yml",
+      "source_sha256": "597e25868b83b5a05c660b8db2daf96d876c5540a009ee724dac56b83daf7285"
+    },
+    {
+      "source_file": "Packs/CortexXDR/Playbooks/playbook-Cortex_XDR_disconnected_endpoints.yml",
+      "source_sha256": "012c19e0c1c722948d0ebca51000e4b7ae6af6befe955a6999970cf856ae0803"
+    },
+    {
+      "source_file": "Packs/CortexXDR/Playbooks/playbook-JOB_-_Cortex_XDR_query_endpoint_device_control_violations.yml",
+      "source_sha256": "8dac6b241ee6f16df987ddf993efb8a7394e177628dd3ee6c8d42821232ac65e"
+    },
+    {
+      "source_file": "Packs/CriminalIP/Playbooks/Criminal_IP_Check_Malicious_Domain.yml",
+      "source_sha256": "76348d9ea756502a90b4bdaec39a451b03b2a97d210f32e2bf0418da59cea461"
+    },
+    {
+      "source_file": "Packs/CrowdStrikeFalcon/Playbooks/playbook-Command_and_Scripting_Interpreter.yml",
+      "source_sha256": "6a1f2930a8ded38b5be7e095122a248a952463cf5981d5b66fa7077d6fb84aa9"
+    },
+    {
+      "source_file": "Packs/CrowdStrikeFalcon/Playbooks/playbook-CrowdStrike_Falcon_-_False_Positive_Incident_Handling.yml",
+      "source_sha256": "c80597ad4c031e7370c0ff18ce8da759764a86ad411833d957ff9e940aaaa3ae"
+    },
+    {
+      "source_file": "Packs/CrowdStrikeFalcon/Playbooks/playbook-CrowdStrike_Falcon_-_Get_Detections_by_Incident.yml",
+      "source_sha256": "4a596aad1e0025d81925f8c8bf156944c5f10a8c00c2d4c4721072007fc70397"
+    },
+    {
+      "source_file": "Packs/CrowdStrikeFalcon/Playbooks/playbook-CrowdStrike_Falcon_-_Get_Endpoint_Forensics_Data.yml",
+      "source_sha256": "78a479d48ad7e2eaee949f3819b0d2c878d4054f05ea38158fd08608f5e0377c"
+    },
+    {
+      "source_file": "Packs/CrowdStrikeFalcon/Playbooks/playbook-CrowdStrike_Falcon_-_Retrieve_File.yml",
+      "source_sha256": "7fb71dba293e9e4c340e4c5953ae23f8e25c57c31a4664df0285fa3878d4b63d"
+    },
+    {
+      "source_file": "Packs/CrowdStrikeFalcon/Playbooks/playbook-CrowdStrike_Falcon_-_Search_Endpoints_By_Hash.yml",
+      "source_sha256": "fa1b5260b6e66e2362f9299fad4787b02f1dda77dfb0db631d625161aaaaa80b"
+    },
+    {
+      "source_file": "Packs/CrowdStrikeFalcon/Playbooks/playbook-CrowdStrike_Falcon_-_Search_Endpoints_By_Indicators.yml",
+      "source_sha256": "8f0ab9b13e2e3bc8d01ee64af51648f2e6673374d3a03ad7deb953441659f826"
+    },
+    {
+      "source_file": "Packs/CrowdStrikeFalcon/Playbooks/playbook-CrowdStrike_Falcon_-_True_Positive_Incident_Handling.yml",
+      "source_sha256": "4e8c2909d2f98b3e02aeba0da3e3eec0c1338215dcd4d463a878dc37dc28b2b8"
+    },
+    {
+      "source_file": "Packs/CrowdStrikeFalcon/Playbooks/playbook-CrowdStrike_Falcon_Malware_-_Incident_Enrichment.yml",
+      "source_sha256": "ec30de161a106958f3363433eda38e19417a9f3912dbb8c80b4fba9c0a1cb8fc"
+    },
+    {
+      "source_file": "Packs/CrowdStrikeFalcon/Playbooks/playbook-CrowdStrike_Falcon_Malware_-_Investigation_and_Response.yml",
+      "source_sha256": "8253add0d89b9a16bd823d17b6f31e291c0f1670f974722b7b2c8f0a5b0857e8"
+    },
+    {
+      "source_file": "Packs/CrowdStrikeFalcon/Playbooks/playbook-CrowdStrike_Falcon_Malware_-_Verify_Containment_Actions.yml",
+      "source_sha256": "ca31feb058fa301ecb45523965dbe7ed08ded216322fb241eaa8dd37d062d78e"
+    },
+    {
+      "source_file": "Packs/CrowdStrikeFalcon/Playbooks/playbook-CrowdStrike_Falcon_SIEM_ingestion_-_Get_Incident_Data.yml",
+      "source_sha256": "d956fbabbbf8c142640bbb7ce430c8d558f79d0009b46f7539d5899362cbfcb3"
+    },
+    {
+      "source_file": "Packs/CrowdStrikeFalcon/Playbooks/playbook-Crowdstrike_Falcon_-_Isolate_Endpoint.yml",
+      "source_sha256": "e1ecf1c01ac22aaa047fae9a569f2a57c87082f7baf533d5c456f7ecfb29196f"
+    },
+    {
+      "source_file": "Packs/CrowdStrikeFalcon/Playbooks/playbook-Crowdstrike_Falcon_-_Unisolate_Endpoint.yml",
+      "source_sha256": "b5c058b61bfaae3c54b8a7ceef6df3fd8660d40343997f42eead46eeb2640d13"
+    },
+    {
+      "source_file": "Packs/CrowdStrikeFalconSandbox/Playbooks/playbook-Detonate_file_-_CrowdStrike_Falcon_Sandbox_v2.yml",
+      "source_sha256": "4cebf396e4140c91ea5b8ecc18ef03e06d029e2cf884e70125ccfd66c052e645"
+    },
+    {
+      "source_file": "Packs/CrowdStrikeFalconX/Playbooks/Detonate_File_-_CrowdStrike_Falcon_Intelligence_Sandbox_v2.yml",
+      "source_sha256": "afb963ce22c8bdd8ae50b6091fbae64aa11b014fb2ba17bf70722961c9956a59"
+    },
+    {
+      "source_file": "Packs/CrowdStrikeFalconX/Playbooks/Detonate_URL_-_CrowdStrike_Falcon_Intelligence_Sandbox_v2.yml",
+      "source_sha256": "bbe09157a56a0d71d48b4bc68ebc0d4013ba8b9f0e0c06e356f3a72134f8a5df"
+    },
+    {
+      "source_file": "Packs/CrowdStrikeFalconX/Playbooks/playbook-FalconX_Detonate_and_Analyze_File.yml",
+      "source_sha256": "c5a0856adbed6bf8b685867bc969e34109ebd3d6c530bd06252e1f2ab73c0d6e"
+    },
+    {
+      "source_file": "Packs/CuckooSandbox/Playbooks/playbook-Detonate_File_-_Cuckoo.yml",
+      "source_sha256": "b8e7e8f1263edfec02bb83af290d946a48cd16a17c22a1e346c9a5a83ec542fe"
+    },
+    {
+      "source_file": "Packs/CuckooSandbox/Playbooks/playbook-Detonate_URL_-_Cuckoo.yml",
+      "source_sha256": "0d042b4482cfc9f2377d2667c095ff84b45cd6b7729034b98db92e43cfca900f"
+    },
+    {
+      "source_file": "Packs/CyberArkEPM/Playbooks/CyberArk_EPM_SOC_Response.yml",
+      "source_sha256": "a377968c18d0f0ebfd885edfe643d52af4f6ad2dc6a6ed6f89bd9ab8d65f4a4a"
+    },
+    {
+      "source_file": "Packs/CyberArkIdentity/Playbooks/CyberArk_-_Brute_Force_Investigation.yml",
+      "source_sha256": "812413ec0c69ec75518e5a0fb23e251f3761ba126535a45d3e1f240d703f4854"
+    },
+    {
+      "source_file": "Packs/CyberTotal/Playbooks/CyberTotal_Auto_Enrichment_-_CyCraft.yml",
+      "source_sha256": "6ab115cd8aeb0b7a761bcbe6b848501ee803608ccc96c14807f2a63df33d7b41"
+    },
+    {
+      "source_file": "Packs/Cybereason/Playbooks/playbook-Isolate_Endpoint_-_Cybereason.yml",
+      "source_sha256": "81ebcadf081afe7104f6a8f83ae40f8357bcf1da08799a4f1275bff0a0e13f3a"
+    },
+    {
+      "source_file": "Packs/Cybereason/Playbooks/playbook-Unisolate_Endpoint_-_Cybereason.yml",
+      "source_sha256": "82d815274a64bc5c3e510718a3776cd34a809ac485b232f65a89376cfe2ebc1c"
+    },
+    {
+      "source_file": "Packs/Cylance_Protect/Playbooks/playbook-Block_File_-_Cylance_Protect_v2.yml",
+      "source_sha256": "ce35b06a0f8e2525c754d437003652f50a12e4fc8cbeaf2dfdd727c8fedde690"
+    },
+    {
+      "source_file": "Packs/Cymulate/Playbooks/Cymulate_IOC_Findings_Mitigation.yml",
+      "source_sha256": "63c213686bc710be52bb684e1e61a107b982e3aad775d536880a9e7539d641a8"
+    },
+    {
+      "source_file": "Packs/Cymulate/Playbooks/Cymulate_Immediate_Threats_Playbook.yml",
+      "source_sha256": "3d7245afe4846031824fff3b1c8b53775163623bb3578c83c2aa65405fa228a9"
+    },
+    {
+      "source_file": "Packs/CyphoThreatIntelligence/Playbooks/Cypho_Default_Playbook.yml",
+      "source_sha256": "c19316d0cb692e6523c2e126ae7c1bb0afec66eb133d0402a32093222076eb00"
+    },
+    {
+      "source_file": "Packs/CyrenInboxSecurity/Playbooks/Cyren_Inbox_Security_Default.yml",
+      "source_sha256": "71e2166d574fc922c36a0555de4b8a3af81fcc2f39c8c26e9a450c1baab017c5"
+    },
+    {
+      "source_file": "Packs/DSPM/Playbooks/playbook-DSPM_Jira_Ticket_Creation.yml",
+      "source_sha256": "23173f75fe63303ba1f34bde3c787916b21d005413fb3f3b9f9b1b5c146bb946"
+    },
+    {
+      "source_file": "Packs/DSPM/Playbooks/playbook-DSPM_Multi-Cloud_Risk_Remediation.yml",
+      "source_sha256": "12513dc8d61e740262f365a1a794a24776836e6bfde2077978b223956b02537e"
+    },
+    {
+      "source_file": "Packs/DSPM/Playbooks/playbook-DSPM_Remediation_for_Empty_storage_asset.yml",
+      "source_sha256": "cdd542be66a693f54aa67a74e613e70361b05f0876d47865261b3e702a945e24"
+    },
+    {
+      "source_file": "Packs/DSPM/Playbooks/playbook-DSPM_Remediation_for_Sensitive_asset_open_to_world.yml",
+      "source_sha256": "1fc05a248a56dc608994f9839a9e360904f2bf03827f6b3c1ec48a83dc549968"
+    },
+    {
+      "source_file": "Packs/DSPM/Playbooks/playbook-DSPM_Send_Slack_Notification_to_User.yml",
+      "source_sha256": "eed4f85606826f10b1f1c54841abd8cb64196c01eaa5e0a5bc328c4f635f75c4"
+    },
+    {
+      "source_file": "Packs/DSPM/Playbooks/playbook-DSPM_Valid_User_Response.yml",
+      "source_sha256": "e707c7279120142dedfefa8b675cc48befded39d024cb0cdadd2554f6120297a"
+    },
+    {
+      "source_file": "Packs/DSPM/Playbooks/playbook-DSPM_notify_user_in_case_of_error.yml",
+      "source_sha256": "508901a1a8ff8f59a72599b1f1dac90a01afe8562d6ca6bc33a140afc315d8fb"
+    },
+    {
+      "source_file": "Packs/Darktrace/Playbooks/playbook-Darktrace_Email_Basic_Email_Handler.yml",
+      "source_sha256": "92bdcf1a27612bdcc6d45f302c4c4c62a75a4f79ca92beca6954ae932b5e3eda"
+    },
+    {
+      "source_file": "Packs/Darktrace/Playbooks/playbook-Darktrace_Email_Update_Incident_Fields.yml",
+      "source_sha256": "3e50b2384dbf2fde1798a8b21d5c1db207b0e9c7390efcbac2401338dff3689e"
+    },
+    {
+      "source_file": "Packs/DataminrPulse/Playbooks/playbook-Enrich_Custom_IOCs_-_Dataminr_Pulse.yml",
+      "source_sha256": "502c4775da20c17ceaeea75075afb2cfba32592274c552c6da93a4152955b31c"
+    },
+    {
+      "source_file": "Packs/DataminrPulse/Playbooks/playbook-Retrieve_Alerts_For_IOCs_-_Dataminr_Pulse.yml",
+      "source_sha256": "d72c1434b3058b4652a91795ca31040e302970118f98c6052602a314b104a6f5"
+    },
+    {
+      "source_file": "Packs/DataminrPulse/Playbooks/playbook-Retrieve_Related_Alerts_-_Dataminr_Pulse.yml",
+      "source_sha256": "7a9e07689a4d635fad5838f6791496180635ba58368a70877a6c976ec9901e90"
+    },
+    {
+      "source_file": "Packs/DataminrPulse/Playbooks/playbook-Update_Live_Briefs_-_Dataminr_Pulse.yml",
+      "source_sha256": "48b5b2b20a517bce8be799f0f417adf1db534d223ef8166246caab2e8af3fea9"
+    },
+    {
+      "source_file": "Packs/DeCYFIR/Playbooks/playbook-DeCYFIR_-_v1.yml",
+      "source_sha256": "d707f2c37a3f963cdc6d11de9539a96313a279459ea1c97e2c943dfd8d1cf4a8"
+    },
+    {
+      "source_file": "Packs/DevSecOps/Playbooks/DevSecOps_-_Fetch_PR_-_Triage.yml",
+      "source_sha256": "047c1b73bb91cfff6c442ca679763b198a75e4aa023c53d867146ff21eb84073"
+    },
+    {
+      "source_file": "Packs/DevSecOps/Playbooks/DevSecOps_-_Fetch_PR_-_Triage_V2.yml",
+      "source_sha256": "c31152ffa0043692c4c3581a4862888989fb25cf50f753a3fbb0c09acd11bee6"
+    },
+    {
+      "source_file": "Packs/DigitalShadows/Playbooks/Digital_Shadows_-_CVE_IoC_Assessment_&_Enrichment.yml",
+      "source_sha256": "e79f67dafdb39131702ad8f75ddbc621273b3e964df8201ad27ddfc1e7b92172"
+    },
+    {
+      "source_file": "Packs/DigitalShadows/Playbooks/Digital_Shadows_-_Domain_IoC_Assessment_&_Enrichment.yml",
+      "source_sha256": "3da9c5781e224e00edf1bccdb84a8826ad25c1f3ad52603cbb0dcc3038676058"
+    },
+    {
+      "source_file": "Packs/DigitalShadows/Playbooks/Digital_Shadows_-_IP_IoC_Assessment_&_Enrichment.yml",
+      "source_sha256": "5f8948b3642d427c2f3e57c610c96457fb3a3542d1c9732ffa218fa4526c6c25"
+    },
+    {
+      "source_file": "Packs/DigitalShadows/Playbooks/Digital_Shadows_-_IoC_Assessment_&_Enrichment.yml",
+      "source_sha256": "fad860d7d185e8c2c86dee65b56a971daa49e9a89f90c08ecd4c98e99b72bb9b"
+    },
+    {
+      "source_file": "Packs/DigitalShadows/Playbooks/Digital_Shadows_-_MD5_IoC_Assessment_&_Enrichment.yml",
+      "source_sha256": "a40f3efbf297f063d52d667cf09f486d1d4fd2df3acadbe9d833d5e69b93bac0"
+    },
+    {
+      "source_file": "Packs/DigitalShadows/Playbooks/Digital_Shadows_-_SHA1_IoC_Assessment_&_Enrichment.yml",
+      "source_sha256": "620d6b83c2c8b7ebab36fee20c31f093875bda002965ab290fb19c97a637e1c2"
+    },
+    {
+      "source_file": "Packs/DigitalShadows/Playbooks/Digital_Shadows_-_SHA256_IoC_Assessment_&_Enrichment.yml",
+      "source_sha256": "a7b1850255016d3f40f8a7a3d9415de4cc7c870665766c220081fbc01ecbed29"
+    },
+    {
+      "source_file": "Packs/DigitalShadows/Playbooks/Digital_Shadows_-_URL_IoC_Assessment_&_Enrichment.yml",
+      "source_sha256": "5aeae52d5a522dc0fe06f31aa879df4b0c7340cabb817c2bf31f733d1735c6bf"
+    },
+    {
+      "source_file": "Packs/Digital_Defense_FrontlineVM/Playbooks/playbook-Digital_Defense_FrontlineVM_-_Old_Vulnerabilities_Found.yml",
+      "source_sha256": "3a9fac495f7338c35344f78bfbfa59e2b20383a703e3fb5fecbc6fba00b7eff0"
+    },
+    {
+      "source_file": "Packs/Digital_Defense_FrontlineVM/Playbooks/playbook-Digital_Defense_FrontlineVM_-_PAN-OS_block_assets.yml",
+      "source_sha256": "ef72dadaa7d385a5bed88e00b642a62e835dcdcf9a24a13ee42afd1bbe1db8b9"
+    },
+    {
+      "source_file": "Packs/Digital_Defense_FrontlineVM/Playbooks/playbook-Digital_Defense_FrontlineVM_-_Scan_Asset_Not_Recently_Scanned.yml",
+      "source_sha256": "e8ad113775576989b66df739b232ee59776b2d5fceb0767d0852a25e3225c29f"
+    },
+    {
+      "source_file": "Packs/DomainTools_Iris/Playbooks/playbook-Indicator_Pivoting-DomainTools_Iris.yml",
+      "source_sha256": "d8008ddd1ba86741ed1190b8f27246ff3c39a13992d618f2eb0f1570cae0d7a9"
+    },
+    {
+      "source_file": "Packs/Doppel/Playbooks/playbook-Doppel_Screenshot_Preview.yml",
+      "source_sha256": "ff0cd751df8a8e752698ac6d12b5bdc947c606eab1b8bcb7baec62e60d190dae"
+    },
+    {
+      "source_file": "Packs/Dropbox/Playbooks/DropBox_-_Massive_scale_operations_on_files.yml",
+      "source_sha256": "ca2b22fb7ccedd118aa46bc3b79f86c44ff49e5586de488421a84a5ac0b73d81"
+    },
+    {
+      "source_file": "Packs/Druva/Playbooks/Druva-Ransomware-Response.yml",
+      "source_sha256": "84b00f9f927fd3c832d9de96660aeaee034e3b68fc33934e97310aa144a5e091"
+    },
+    {
+      "source_file": "Packs/EDL/Playbooks/Modify_EDL.yml",
+      "source_sha256": "815ef7d09590803b35c481a09592a34447f65817dc70780d78626cdae981cd43"
+    },
+    {
+      "source_file": "Packs/EDL/Playbooks/Tag_massive_and_internal_IOCs_to_avoid_EDL_listing.yml",
+      "source_sha256": "dd8a78b166d941e5d5cd4b857cca055c0deba8385eec9ea1a89c7deba62d4297"
+    },
+    {
+      "source_file": "Packs/EDL/Playbooks/playbook-Block_Domain_-_External_Dynamic_List.yml",
+      "source_sha256": "e9c2dd4c001b761e17a240a52c311c50708dda3ab0880fe23784ddf5c8bbdc15"
+    },
+    {
+      "source_file": "Packs/Endace/Playbooks/playbook_Endace_Search_Archive_Download_PCAP_v2.yml",
+      "source_sha256": "6aba168b08fd7705473b44eeac52e89a76f38f8dc5f3b525bf3f3470e35de4a4"
+    },
+    {
+      "source_file": "Packs/ExtraHop/Playbooks/playbook-ExtraHop_-_CVE-2019-0708_BlueKeep.yml",
+      "source_sha256": "9f7329e29ba7ffb2040a6ab672c2baeda83e0811e1830b1ab93de47c34f699a4"
+    },
+    {
+      "source_file": "Packs/ExtraHop/Playbooks/playbook-ExtraHop_-_Default.yml",
+      "source_sha256": "599d751e00094398f127570f232c33b8bb82760ffb811bf93bdcb2618d3a4374"
+    },
+    {
+      "source_file": "Packs/ExtraHop/Playbooks/playbook-ExtraHop_-_Ticket_Tracking_v2.yml",
+      "source_sha256": "f546e66742c18f41da0db6ff8798614ea88450a9a8dfaa5aa213fe6799d9e8eb"
+    },
+    {
+      "source_file": "Packs/FeedLOLBAS/Playbooks/playbook-Compare_Process_Execution_Arguments_To_LOLBAS_Patterns.yml",
+      "source_sha256": "fc35716db3939531379c3f1d3974a39b7837e476c56ced1ace9fef90dfc22d9f"
+    },
+    {
+      "source_file": "Packs/FeedMitreAttackv2/Playbooks/Mitre_Attack_-_Extract_Technique_Information_From_ID.yml",
+      "source_sha256": "0c0ccc795f2245d2053a6f6060b7f26d084b9b16f9fb117420e53c9c3a67838f"
+    },
+    {
+      "source_file": "Packs/FeedRSS/Playbooks/Extract_and_Create_Relationships.yml",
+      "source_sha256": "39fa7f3fd0d4fe2131e2b20e48050747379d2725c91b302be6df2cddcd711716"
+    },
+    {
+      "source_file": "Packs/FeedRSS/Playbooks/RSS_Create_Indicators_From_Report.yml",
+      "source_sha256": "227c34946e787d2f17e39edab93bd8cf7e712e2a42297dfc998d9072db57d9cb"
+    },
+    {
+      "source_file": "Packs/FireEye-Detection-on-Demand/Playbooks/playbook-Detonate_File_-_FireEye_Detection_on_Demand.yml",
+      "source_sha256": "46b85518273fd1d7f7358eeb06e4448cd08af2d56276ad250ddf200f2c4b856e"
+    },
+    {
+      "source_file": "Packs/FireEyeETP/Playbooks/playbook-FireEye_ETP_-_Indicators_Hunting.yml",
+      "source_sha256": "3f2e62cc6537a70b2ba3ac97d795fc52997277679056b2bc3497427c07590226"
+    },
+    {
+      "source_file": "Packs/FireEyeEX/Playbooks/playbook-Block_Domain_-_FireEye_Email_Security.yml",
+      "source_sha256": "0c5dc8b17387aacc78d5a8451e73ee5cfe03da634e6d5b8d22593c49211d05e8"
+    },
+    {
+      "source_file": "Packs/FireEyeHX/Playbooks/playbook-FireEye_HX_-_Execution_Flow_Indicators_Hunting.yml",
+      "source_sha256": "4c170257b5def4a5b10a572bb49424e3f8443b038ab2da4661904d2f52647505"
+    },
+    {
+      "source_file": "Packs/FireEyeHX/Playbooks/playbook-FireEye_HX_-_File_Indicators_Hunting.yml",
+      "source_sha256": "d8e4a1c954c96b63e8b97aaaae565114e37d8a2e59b7a6702bdb6b88b4c58ce3"
+    },
+    {
+      "source_file": "Packs/FireEyeHX/Playbooks/playbook-FireEye_HX_-_Indicators_Hunting.yml",
+      "source_sha256": "27af2aa520440c8dddc43cad13e974507244f88a233bab981946a5305f988dbc"
+    },
+    {
+      "source_file": "Packs/FireEyeHX/Playbooks/playbook-FireEye_HX_-_Isolate_Endpoint.yml",
+      "source_sha256": "0fc962389fa4735b36a87a1e8c5c2a19721f813df6349b42be9d4ebfeb4448a9"
+    },
+    {
+      "source_file": "Packs/FireEyeHX/Playbooks/playbook-FireEye_HX_-_Traffic_Indicators_Hunting.yml",
+      "source_sha256": "8f171c97cf9a82844d76dcea2000ae9cbb93c91722a63ccc76125955103abac9"
+    },
+    {
+      "source_file": "Packs/FireEyeHX/Playbooks/playbook-FireEye_HX_-_Unisolate_Endpoint.yml",
+      "source_sha256": "d917c5e192707c477b43329323b0892cf48e9c0f643d391d092a2d65be6d8510"
+    },
+    {
+      "source_file": "Packs/Flashpoint/Playbooks/playbook-Compromised_Credentials_Match_-_Flashpoint.yml",
+      "source_sha256": "8ff5270aa640634125f60642fb12844833e5a542ac2f47338e38c342a2e39366"
+    },
+    {
+      "source_file": "Packs/FortiManager/Playbooks/FortiManager_-_Install_Policy_Package_on_Device.yml",
+      "source_sha256": "95606513d3504bfbe7da7c5ad9b6044918ca7bfdcbd34593c4ce4ce20fd45746"
+    },
+    {
+      "source_file": "Packs/GCP-Enrichment-Remediation/Playbooks/GCP_-_Enrichment.yml",
+      "source_sha256": "1b4e29bd940dd9424b8bf8d2e134be5f0b0bb160428ff04f9b7d9c1a35122830"
+    },
+    {
+      "source_file": "Packs/GCP-Enrichment-Remediation/Playbooks/GCP_-_Firewall_Remediation.yml",
+      "source_sha256": "8edaee35d8d71668670f9cf6ef0c7f19bf51746484e0e09ba93410436ca48bc1"
+    },
+    {
+      "source_file": "Packs/GCP-Enrichment-Remediation/Playbooks/playbook-Cloud_Credentials_Rotation_-_GCP.yml",
+      "source_sha256": "024d1c7d787d213e34ce6c57f5774f8a84ac234caf32f67017931c808efefc51"
+    },
+    {
+      "source_file": "Packs/GCP-Enrichment-Remediation/Playbooks/playbook-Cloud_Response_-_GCP.yml",
+      "source_sha256": "8a765375a9ab66717e4cade87a9dc7fd8583b96f5fa5090197b7f8031d3aa1e3"
+    },
+    {
+      "source_file": "Packs/GCP-Enrichment-Remediation/Playbooks/playbook-GCP_-_User_Investigation.yml",
+      "source_sha256": "2e82262c94cdfb2001d7859b215f208068c72630e705e47578577027de456fd8"
+    },
+    {
+      "source_file": "Packs/GDPR/Playbooks/playbook-GDPR_Breach_Notification.yml",
+      "source_sha256": "fb6f4ff6320b0b58e75ba9c5b196a8cb819b184704995f986163b9c7f029e480"
+    },
+    {
+      "source_file": "Packs/Gatewatcher-AionIQ/Playbooks/playbook-Malcore_alert_related_file.yml",
+      "source_sha256": "cabe0b849ad1bf9205a13570e7c1920ba8001b20bd5fbc9ba2a5159d48cbb4f2"
+    },
+    {
+      "source_file": "Packs/GitLab/Playbooks/Gitlab_-_Guest_user_permission_change.yml",
+      "source_sha256": "7c9becf9d90e8e2c9ac0a5a24e7d51c8507dd222c4783ce653fb8588e7812490"
+    },
+    {
+      "source_file": "Packs/Gmail/Playbooks/playbook-Search_And_Delete_Emails_-_Gmail.yml",
+      "source_sha256": "05151eca434a1c6dd7b1e260caeb2de84d8dc931f51625e359e16908099dfc9f"
+    },
+    {
+      "source_file": "Packs/GoogleChronicleBackstory/Playbooks/playbook-ChronicleAsset_Investigation_-_Chronicle.yml",
+      "source_sha256": "5d8e49e59ef1225a8815122e2a9ee3d904dbd2c96c04696f7671ddef2d56700a"
+    },
+    {
+      "source_file": "Packs/GoogleChronicleBackstory/Playbooks/playbook-ChronicleAssets_Investigation_And_Remediation_-_Chronicle.yml",
+      "source_sha256": "8f1b2b66af7cfb1da541bc3adcc5847d07bee197c4c04799e4db282354248891"
+    },
+    {
+      "source_file": "Packs/GoogleChronicleBackstory/Playbooks/playbook-Hostname_And_IP_Address_Investigation_And_Remediation_-_Chronicle.yml",
+      "source_sha256": "3689ab9dd7e13cb516b36b7619d5218407a362be197e5f0ad9a1dd1a13cf2a93"
+    },
+    {
+      "source_file": "Packs/GoogleChronicleBackstory/Playbooks/playbook-Investigate_On_Bad_Domain_Matches_-_Chronicle.yml",
+      "source_sha256": "06606354b927c0201e563804925b3b40e5b449d3e0193240f9d47a7d19912bdc"
+    },
+    {
+      "source_file": "Packs/GoogleChronicleBackstory/Playbooks/playbook-Threat_Hunting_-_Chronicle.yml",
+      "source_sha256": "26bdc3e3d63a6b9b702378ae562115627f3d27fa0c265421ecbceeef8020722b"
+    },
+    {
+      "source_file": "Packs/GoogleCloudCompute/Playbooks/playbook-IP_Whitelist_-_GCP_Firewall.yml",
+      "source_sha256": "11ade7ea7d712247b7d78249a2def74bd332108ebd48e7fc9947d5b4c832db79"
+    },
+    {
+      "source_file": "Packs/GoogleThreatIntelligence/Playbooks/playbook-ASM_Issue_Incident_Response_-_Google_Threat_Intelligence.yml",
+      "source_sha256": "8b63732307fec4d19e2115f06c7c7e2402ba0ea6f47cae26665feac695c7600d"
+    },
+    {
+      "source_file": "Packs/GoogleThreatIntelligence/Playbooks/playbook-CVE_Ticket_Creation_-_Google_Threat_Intelligence.yml",
+      "source_sha256": "a8dd70600aab8ee8976dde17f9e7c7d16318e0a14c9001c9bb39c55e7516be0a"
+    },
+    {
+      "source_file": "Packs/GoogleThreatIntelligence/Playbooks/playbook-DTM_Alert_Incident_Response_-_Google_Threat_Intelligence.yml",
+      "source_sha256": "c21b2a905891438f98c01fbc267dbdcbb47d62be35d4b55fa53f38595d0d41e4"
+    },
+    {
+      "source_file": "Packs/GoogleThreatIntelligence/Playbooks/playbook-Email_Collection_by_Enriched_Domain_-_Google_Threat_Intelligence.yml",
+      "source_sha256": "52266e84aaff0d9e6f8179fe07e4c4e2897db6eaf36db30259da25991de21125"
+    },
+    {
+      "source_file": "Packs/GoogleThreatIntelligence/Playbooks/playbook-File_Private_Scanning_-_Google_Threat_Intelligence.yml",
+      "source_sha256": "a96647bc2f34fed29e8c604f1a5223f57320bebecc0a4c2c4ad8d2cb5a365273"
+    },
+    {
+      "source_file": "Packs/GoogleThreatIntelligence/Playbooks/playbook-IOC_Curated_Enrichment_-_Google_Threat_Intelligence.yml",
+      "source_sha256": "89d57dff907ccd6864b16fda8e975b777d9b52274e934602e81c8dfc5bbc3c86"
+    },
+    {
+      "source_file": "Packs/GoogleThreatIntelligence/Playbooks/playbook-IOC_Enrichment_and_Blocking_-_Google_Threat_Intelligence.yml",
+      "source_sha256": "28b7514cc15730298f5fef73cc543e0d4bcdba20225e57268608418a8684eab1"
+    },
+    {
+      "source_file": "Packs/GoogleThreatIntelligence/Playbooks/playbook-IOCs_Curated_Threat_Intelligence_Enrichment_-_Google_Threat_Intelligence.yml",
+      "source_sha256": "de128046ca7b55b33f8c0d72a52da4cf981da7405fcee0b47f5eecc4a83e7d16"
+    },
+    {
+      "source_file": "Packs/GoogleThreatIntelligence/Playbooks/playbook-Phishing_Triage_and_Response_-_Google_Threat_Intelligence.yml",
+      "source_sha256": "5eb6af54a8e9ec5d77cef61baee54a50509d8b1256691dcd01bf851ca453d790"
+    },
+    {
+      "source_file": "Packs/GoogleThreatIntelligence/Playbooks/playbook-URL_Private_Scanning_-_Google_Threat_Intelligence.yml",
+      "source_sha256": "931b0316b4d036f34f04caecc792ac5bb004cca3cd1fd457075ac0d658b925f1"
+    },
+    {
+      "source_file": "Packs/GoogleThreatIntelligence/Playbooks/playbook-URL_Scan_-_Google_Threat_Intelligence.yml",
+      "source_sha256": "9fde7da33f9fa97554f21b65adabe679c7a3201ef53c9299cb70ef820c837383"
+    },
+    {
+      "source_file": "Packs/GoogleThreatIntelligence/Playbooks/playbook-Vulnerability_Enrichment_and_Ticket_Creation_-_Google_Threat_Intelligence.yml",
+      "source_sha256": "7e8143b5cbd0dc3e00b51a61256a4a0a48e558f533a05e53e5b51f91744befd3"
+    },
+    {
+      "source_file": "Packs/GreyNoise/Playbooks/Calculate_Severity_-_GreyNoise.yml",
+      "source_sha256": "b81d97347f8955c78c7f5f37d92cdf5c003231ae23149b3e4a70464036644503"
+    },
+    {
+      "source_file": "Packs/GreyNoise/Playbooks/IP_Reputation-GreyNoise.yml",
+      "source_sha256": "702c2982721597baba32c1b1aa1952845b13d1037d827d7d36f2c24835e6f4db"
+    },
+    {
+      "source_file": "Packs/GroupIB_DigitalRiskProtection/Playbooks/Group-IB_Digital_Risk_Protection_-_Violation_Incident_Postprocessing.yml",
+      "source_sha256": "0c9a29bed2272b05490f52b5969ec454e82a01786035006ea4cc449ed5f05612"
+    },
+    {
+      "source_file": "Packs/GroupIB_ThreatIntelligenceAttribution/Playbooks/Incident_Postprocessing_-_Group-IB_Threat_Intelligence_and_Attribution.yml",
+      "source_sha256": "32e873090025be534a208047686dd5834c17b4121bf5aba2363a38c5f5905d58"
+    },
+    {
+      "source_file": "Packs/HIPAA-BreachNotification/Playbooks/playbook-HIPAA_-_Breach_Notification.yml",
+      "source_sha256": "c6eb3d54a752f3a4c5151da8ac45b08a0627a6d1b548b979403579a578ac1d58"
+    },
+    {
+      "source_file": "Packs/HarfangLabEDR/Playbooks/playbook-Hurukai_-_Add_indicators_to_HarfangLab_EDR.yml",
+      "source_sha256": "b36b85cdca6196c3afac355c3d68fe0145687cb8f41b57f74b75902639b8a1ee"
+    },
+    {
+      "source_file": "Packs/HarfangLabEDR/Playbooks/playbook-Hurukai_-_Hunt_IOCs.yml",
+      "source_sha256": "aa7117c30cd8b4c35fea723443df8cf55b2abf3e0888c87d5d3acefb8c2d6206"
+    },
+    {
+      "source_file": "Packs/HarfangLabEDR/Playbooks/playbook-Hurukai_-_Process_Indicators_-_Manual_Review.yml",
+      "source_sha256": "32d72cb9c9cbb0cdb23b47e335feecc32f5d9b3a44fc9825c0e73e3920909af5"
+    },
+    {
+      "source_file": "Packs/HarfangLabEDR/Playbooks/playbook-Hurukai_alert_management.yml",
+      "source_sha256": "737e72b134b50909c3574e15d3833c26f62b119b60d693f9686ebe5993e6c791"
+    },
+    {
+      "source_file": "Packs/HatchingTriage/Playbooks/playbook-Detonate_URL_-_Hatching_Triage.yml",
+      "source_sha256": "b94d6a251e47290d4a4d4284131fe84cbb618e9690c009b38e7de60ff7ef487c"
+    },
+    {
+      "source_file": "Packs/Hunting/Playbooks/playbook-Hunt_Extracted_Hashes_V2.yml",
+      "source_sha256": "4ffafac9c8c0a09df4c14f99baa53939cd4abd341c1fa24596d9ae167284d8ea"
+    },
+    {
+      "source_file": "Packs/Illumio/Playbooks/playbook-Rapid_ransomware_containment_-_Illumio.yml",
+      "source_sha256": "bc7b7ae0792b5cad36f9c15adfcb8bb559cd9f163f18edec73473a657b3c13bf"
+    },
+    {
+      "source_file": "Packs/IllusiveNetworks/Playbooks/playbook-Illusive-Collect-Forensics-On-Demand.yml",
+      "source_sha256": "005c75d7db73663cce10d7c284e3bf39885f615757b420d726f0658e7f1aae05"
+    },
+    {
+      "source_file": "Packs/IllusiveNetworks/Playbooks/playbook-Illusive-Data-Enrichment.yml",
+      "source_sha256": "4ac262f468a57251dd24601ca02ec1f3f475e309d046b6ab27bc44bf9cd815dc"
+    },
+    {
+      "source_file": "Packs/IllusiveNetworks/Playbooks/playbook-Illusive-Incident-Escalation.yml",
+      "source_sha256": "d4d0cd9fa0f3cf33584731afa5eb2a0e310ba9d448b0feea8fa6ced8696bc697"
+    },
+    {
+      "source_file": "Packs/IllusiveNetworks/Playbooks/playbook-Illusive-Retrieve-Incident.yml",
+      "source_sha256": "74f34dd99fc227519a9c4ec76ca7c8a1b364e917fea05972c9e9fa9ea60030e9"
+    },
+    {
+      "source_file": "Packs/ImpossibleTraveler/Playbooks/Impossible_Traveler_6_0.yml",
+      "source_sha256": "e1b40fc40aa2e037d969d155a48c1e39ba03f6567f11432499ed7873b20661c6"
+    },
+    {
+      "source_file": "Packs/Infoblox/Playbooks/playbook-Block_Indicator_-_Infoblox_NIOS.yml",
+      "source_sha256": "59e084e5645f42172d8036f768ff35b320cf03a7fcb1da41cce752b1f7dd6261"
+    },
+    {
+      "source_file": "Packs/Infoblox/Playbooks/playbook-Unblock_Indicator_-_Infoblox_NIOS.yml",
+      "source_sha256": "d35be4755eaab75e7640a0979d0111727e5b59558f22595c877a540432d4c456"
+    },
+    {
+      "source_file": "Packs/InfobloxBloxOne/Playbooks/playbook-Block_Indicator_-_Infoblox_Cloud.yml",
+      "source_sha256": "0032c9ad0c8488e8bfbca4907b876a42b7ad0f0070965b0d9ea73782e61549a0"
+    },
+    {
+      "source_file": "Packs/InfobloxBloxOne/Playbooks/playbook-Domain_Enrichment_-_Infoblox_Cloud.yml",
+      "source_sha256": "f0e6fcad7adbc0661ac0081a22e023966ff30ac1d744376b179355e22b049a92"
+    },
+    {
+      "source_file": "Packs/InfobloxBloxOne/Playbooks/playbook-IP_Enrichment_-_Infoblox_Cloud.yml",
+      "source_sha256": "63e002e9323afe45f605905c72e911d92c91333f6558aeb3eb2c608dc4843aa8"
+    },
+    {
+      "source_file": "Packs/InfobloxBloxOne/Playbooks/playbook-Incident_Response_-_Infoblox_Cloud.yml",
+      "source_sha256": "1630bdaa9a17422c8b09fa33b2a13d124e82daa209613bf0ebfb5460544d29dc"
+    },
+    {
+      "source_file": "Packs/InfobloxBloxOne/Playbooks/playbook-Indicator_Enrichment_-_Infoblox_Cloud.yml",
+      "source_sha256": "3b1cab86260544f7f03771604995aee59b101a6006fd603f1e306cac767c5e33"
+    },
+    {
+      "source_file": "Packs/InfobloxBloxOne/Playbooks/playbook-MAC_Enrichment_-_Infoblox_Cloud.yml",
+      "source_sha256": "b0f25896124cc4dc34a686fbfbaccf09e5873b27a3b93355daf5f01b51159b06"
+    },
+    {
+      "source_file": "Packs/InfobloxBloxOne/Playbooks/playbook-URL_Enrichment_-_Infoblox_Cloud.yml",
+      "source_sha256": "76cba0761d2c02f1801c5d4c86f3762feeb38de35db01b234452d0272afd86c6"
+    },
+    {
+      "source_file": "Packs/InfobloxBloxOne/Playbooks/playbook-Unblock_Indicator_-_Infoblox_Cloud.yml",
+      "source_sha256": "bb7a30cb79fdb6da165663350b3315c90ef7ee1fcf05e0fabd9a0e7f377fa7fa"
+    },
+    {
+      "source_file": "Packs/IntSight/Playbooks/playbook-Retrieve_Alert_Attachments_-_Rapid7_ThreatCommand.yml",
+      "source_sha256": "070920b59005c332f5e856b047dc302d58aed222462c6aa584f852a42ba3df89"
+    },
+    {
+      "source_file": "Packs/IntegrationsAndIncidentsHealthCheck/Playbooks/playbook-Integrations_and_Playbooks_Health_Check_-_Running_Scripts.yml",
+      "source_sha256": "fbd7aa781e933c8ff71ef29fe53f9f835970637e7c38ff0d32679daa9e2e2fa3"
+    },
+    {
+      "source_file": "Packs/IntegrationsAndIncidentsHealthCheck/Playbooks/playbook-JOB_-_Integrations_and_Playbooks_Health_Check.yml",
+      "source_sha256": "9852c4b6316e8ec4d01a5d2d44e55b1a6023de612af4be2a16da5e97e78af8dd"
+    },
+    {
+      "source_file": "Packs/IntegrationsAndIncidentsHealthCheck/Playbooks/playbook-JOB_-_Integrations_and_Playbooks_Health_Check_-_Lists_handling.yml",
+      "source_sha256": "cc78729de6e0d08c65a02b92ab53797e436050cf8484953c42612ac6d04deed6"
+    },
+    {
+      "source_file": "Packs/Ironscales/Playbooks/playbook-Ironscales-Classify-Incident.yml",
+      "source_sha256": "b65449c33cea746d7a2972e16df7a0eacbd7f47dd3a648262985476d92551045"
+    },
+    {
+      "source_file": "Packs/Jira/Playbooks/playbook-Create_Jira_Issue.yml",
+      "source_sha256": "17bbdbbe931e427262e66fa2f5de58627ce4c4fc4c5b399aad22880abc32de8f"
+    },
+    {
+      "source_file": "Packs/JoeSecurity/Playbooks/playbook-Detonate_File_-_JoeSecurity_V2.yml",
+      "source_sha256": "8088848d825fc9e264c207b0ccf472213ce25b3134cbb5bd9f3bee8b27b78531"
+    },
+    {
+      "source_file": "Packs/KELARaDark/Playbooks/Get_RaDark_Detailed_Items.yml",
+      "source_sha256": "c500cd382a44ebe154ddd250f488eaca42388d33f41b7c2e9b4b9f764c5be6a5"
+    },
+    {
+      "source_file": "Packs/KELARaDark/Playbooks/Set_RaDark_Grid_For_Compromised_Accounts.yml",
+      "source_sha256": "8baaa4f9538f3722b4d0ade001e6a247512eea1b8b71da97ccd948dddf6637b0"
+    },
+    {
+      "source_file": "Packs/KELARaDark/Playbooks/Set_RaDark_Grid_For_Credit_Cards.yml",
+      "source_sha256": "c31b887b6d01de937ef78be8533e1303d2adc15eb603660679174e9930d98037"
+    },
+    {
+      "source_file": "Packs/KELARaDark/Playbooks/Set_RaDark_Grid_For_Hacking_Discussions.yml",
+      "source_sha256": "7c3fa489072d45ac8a953356e5b6c0bf92074094131bcd81a1561b87fd2e0efe"
+    },
+    {
+      "source_file": "Packs/KELARaDark/Playbooks/Set_RaDark_Grid_For_Leaked_Credentials.yml",
+      "source_sha256": "02f49a171afc6d939d559754dede4e3a2114a0589fc5ff510998b157748ed0e5"
+    },
+    {
+      "source_file": "Packs/KELARaDark/Playbooks/Set_RaDark_Grid_For_Network_Vulnerabilities.yml",
+      "source_sha256": "f6225bee4153009695d6b876ac1d0e8c17c4948e1f673cd2282d77d9a280e58f"
+    },
+    {
+      "source_file": "Packs/Kenna/Playbooks/playbook-Kenna_-_Vulnerability_Handling.yml",
+      "source_sha256": "210c02d71a9edf7263fddfdb28643d43a621c94d17639799d47b4d4215007439"
+    },
+    {
+      "source_file": "Packs/LSASSCredentialDumping/Playbooks/playbook-LSASS_Credential_Dumping.yml",
+      "source_sha256": "71a72358dcda4bb77a3423a81917edbad2ccd35c5703edb5ad4055f9be54bd91"
+    },
+    {
+      "source_file": "Packs/Lastline/Playbooks/playbook-Detonate_File_-_Lastline.yml",
+      "source_sha256": "d617f9ddb276cc608434d8f14e027b213715f1eaf5981ef186fbe4915a5b6915"
+    },
+    {
+      "source_file": "Packs/Lastline/Playbooks/playbook-Detonate_File_-_Lastline_v2.yml",
+      "source_sha256": "48ec80266a4b653feddcb3b13534e4a4b935a81da7b35ef4df69d265092db60b"
+    },
+    {
+      "source_file": "Packs/Lastline/Playbooks/playbook-Detonate_URL_-_Lastline.yml",
+      "source_sha256": "fe2fa8ceb5b0dc056f2053da99fbaea83ca76b1d5ddf4dc4525619641c805916"
+    },
+    {
+      "source_file": "Packs/Lastline/Playbooks/playbook-Detonate_URL_-_Lastline_v2.yml",
+      "source_sha256": "1af3eb529b387ce1434a2617673cf532895b6c334df17148f8da8eb0edbaf4fc"
+    },
+    {
+      "source_file": "Packs/LogPoint_SIEM_Integration/Playbooks/Playbook-LogPoint_SIEM_Playbook.yml",
+      "source_sha256": "cc7112015dab9b528fcbfd5cdb0fe56d852d4f948c152599703410bd0e1dff37"
+    },
+    {
+      "source_file": "Packs/LogRhythmRest/Playbooks/playbook-Logrhythm_Alarm_Handling.yml",
+      "source_sha256": "08a08e95f250631e4b53b94023eb958eb77a66a02093b1170b1390399066156e"
+    },
+    {
+      "source_file": "Packs/Logzio/Playbooks/Logzio_Indicator_Hunting.yml",
+      "source_sha256": "8c98233ff6ff93aec30b76b13b6823ccbb332403954dc7c743793db7346d026b"
+    },
+    {
+      "source_file": "Packs/Lost_Stolen_Device/Playbooks/playbook-lost_stolen_device.yml",
+      "source_sha256": "d6e524834cb295974a726e174d034ad3efba76a66bd1d2650b1e713ff923388e"
+    },
+    {
+      "source_file": "Packs/MITRECoA/Playbooks/playbook-CoA_-_T1003_-_OS_Credential_Dumping.yml",
+      "source_sha256": "e012893baec3070ddda9a99258729eac2329d8db9cacc0e2fe2c33d1df028711"
+    },
+    {
+      "source_file": "Packs/MITRECoA/Playbooks/playbook-CoA_-_T1005_-_Data_from_Local_System.yml",
+      "source_sha256": "339570c2ebcffd66e993340e2f9715d4da6c92294d2e5a72c27dcf0ccba7bc0c"
+    },
+    {
+      "source_file": "Packs/MITRECoA/Playbooks/playbook-CoA_-_T1027_-_Obfuscated_Files_or_Information.yml",
+      "source_sha256": "3540e6c9a5acb86ed9ef55376a7df07273468ad7ea07e6ade99dfd2d49b770f4"
+    },
+    {
+      "source_file": "Packs/MITRECoA/Playbooks/playbook-CoA_-_T1041_-_Exfiltration_Over_C2_Channel.yml",
+      "source_sha256": "18177b19089eb7455bc0961ad483cb07cdaa6f051963d628bcd1f695baf0fce3"
+    },
+    {
+      "source_file": "Packs/MITRECoA/Playbooks/playbook-CoA_-_T1048_-_Exfiltration_Over_Alternative_Protocol.yml",
+      "source_sha256": "2a88bff4ea5d0dd975d032e5ddc3b56d35b966ebdcc8bc5a8ae1e0585fa17f89"
+    },
+    {
+      "source_file": "Packs/MITRECoA/Playbooks/playbook-CoA_-_T1057_-_Process_Discovery.yml",
+      "source_sha256": "ca0b2e2c9977af65844a0314fe32ad43196be66a294092d69b39a7a57e5240c4"
+    },
+    {
+      "source_file": "Packs/MITRECoA/Playbooks/playbook-CoA_-_T1071_-_Application_Layer_Protocol.yml",
+      "source_sha256": "5a78f894401a2773fb55780670c3751aea891251843b7f6b4807b98bae9645e2"
+    },
+    {
+      "source_file": "Packs/MITRECoA/Playbooks/playbook-CoA_-_T1078_-_Valid_Accounts.yml",
+      "source_sha256": "39972f0a288fb90a6473bc9b6019d227bbf16a9085e280fc8aa51e9495fee6fd"
+    },
+    {
+      "source_file": "Packs/MITRECoA/Playbooks/playbook-CoA_-_T1082_-_System_Information_Discovery.yml",
+      "source_sha256": "05c3f9751eb178f5fc0fea64c532efe5d99f2a40db3e704cccc7e0cefca8ca21"
+    },
+    {
+      "source_file": "Packs/MITRECoA/Playbooks/playbook-CoA_-_T1083_-_File_and_Directory_Discovery.yml",
+      "source_sha256": "fb3b727562118f0c19f8223ad46e94f44a4db84f012a6ae56fb89bd841c33386"
+    },
+    {
+      "source_file": "Packs/MITRECoA/Playbooks/playbook-CoA_-_T1105_-_Ingress_tool_transfer.yml",
+      "source_sha256": "e5d0df150a8dd13e857c30c521f3e44f950512386e0ce179f236e09c82599e73"
+    },
+    {
+      "source_file": "Packs/MITRECoA/Playbooks/playbook-CoA_-_T1110_-_Brute_Force.yml",
+      "source_sha256": "97db6285f7f5643532e3ccc1f0998c9167b94bb454894ec06f2631e87401d4f0"
+    },
+    {
+      "source_file": "Packs/MITRECoA/Playbooks/playbook-CoA_-_T1133_-_External_Remote_Services.yml",
+      "source_sha256": "8e0c42c22dfa9de000ca969d3053af9a3554d21fa2bcf2688897b3e738f880bc"
+    },
+    {
+      "source_file": "Packs/MITRECoA/Playbooks/playbook-CoA_-_T1135_-_Network_Share_Discovery.yml",
+      "source_sha256": "0869678f5acdb3de2fb95516d9c4c8b24e58a4e29cfd7b310f1482790e89e444"
+    },
+    {
+      "source_file": "Packs/MITRECoA/Playbooks/playbook-CoA_-_T1189_-_Drive-by_Compromise.yml",
+      "source_sha256": "b4a1402d3d08b3f9b842935199136f881edc4927d7aa5b2e1b360da487c60478"
+    },
+    {
+      "source_file": "Packs/MITRECoA/Playbooks/playbook-CoA_-_T1204_-_User_Execution.yml",
+      "source_sha256": "6122b2d69c9e3b57925392bc17c32563b27542ce6ce3237f74e438ba5a7f6357"
+    },
+    {
+      "source_file": "Packs/MITRECoA/Playbooks/playbook-CoA_-_T1486_-_Data_Encrypted_for_Impact.yml",
+      "source_sha256": "ad8d1614870d825c6b3206a52db500b7382660f77bc128abf5185cda4ec3249b"
+    },
+    {
+      "source_file": "Packs/MITRECoA/Playbooks/playbook-CoA_-_T1518_-_Software_Discovery.yml",
+      "source_sha256": "8f0f7ef0d475b74651badeabc3525a34a35d48881ae1ca4cb9e1719a8329f552"
+    },
+    {
+      "source_file": "Packs/MITRECoA/Playbooks/playbook-CoA_-_T1564.004_-_NTFS_File_Attributes.yml",
+      "source_sha256": "60a8d1189aef5c1432d3439d06eee6c7070255ccbcbb38289510bf8cee4407fb"
+    },
+    {
+      "source_file": "Packs/MITRECoA/Playbooks/playbook-CoA_-_T1566.001_-_Spear-Phishing_Attachment.yml",
+      "source_sha256": "f2b06c55cba9b1e4d7573ea29222e80d6ba17225fbcd8f173f9a1bf7dc3e9b3b"
+    },
+    {
+      "source_file": "Packs/MITRECoA/Playbooks/playbook-CoA_-_T1566_-_Phishing.yml",
+      "source_sha256": "87e774dc9a9b3c476d3f54e1cbcc9c382b01cc6a7d9e559a3febb8a80ebd8140"
+    },
+    {
+      "source_file": "Packs/MITRECoA/Playbooks/playbook-CoA_-_T1573.002_-_Asymmetric_Cryptography.yml",
+      "source_sha256": "d0ce2ed320525482fbc13517a3472ed7f3c4bd7715e542030aee4f4188a6c8f8"
+    },
+    {
+      "source_file": "Packs/MITRECoA/Playbooks/playbook-Courses_of_Action_-_Collection.yml",
+      "source_sha256": "b59224723e8a369c3252074ed95b4fe60311ac8f338bceda4e938aa8360405d8"
+    },
+    {
+      "source_file": "Packs/MITRECoA/Playbooks/playbook-Courses_of_Action_-_Command_and_Control.yml",
+      "source_sha256": "e1d8024ea86bcf79b904ec13363c8b25117495d9354f5aa0d7b3cfd046e25330"
+    },
+    {
+      "source_file": "Packs/MITRECoA/Playbooks/playbook-Courses_of_Action_-_Credential_Access.yml",
+      "source_sha256": "00ac0ed0c5342c8e4ad8824e8210874674cf7a3f26245fbcde2e3ccb65da9540"
+    },
+    {
+      "source_file": "Packs/MITRECoA/Playbooks/playbook-Courses_of_Action_-_Defense_Evasion.yml",
+      "source_sha256": "69cc04ea4c62715852f43574ed4213faba261d7cb5880aa019c776b4228e853f"
+    },
+    {
+      "source_file": "Packs/MITRECoA/Playbooks/playbook-Courses_of_Action_-_Discovery.yml",
+      "source_sha256": "7113fc9e57e2c87bed31e9b8fee3c967ac53f826a1448e4f7a8f4a0a790015bd"
+    },
+    {
+      "source_file": "Packs/MITRECoA/Playbooks/playbook-Courses_of_Action_-_Execution.yml",
+      "source_sha256": "31af3f2f61e5dc6c57c017850931c193a78d9e841942abc51e0eb5850d7a4aeb"
+    },
+    {
+      "source_file": "Packs/MITRECoA/Playbooks/playbook-Courses_of_Action_-_Exfiltration.yml",
+      "source_sha256": "89b624900b261aef91dd8eed9fd9ec55bcb62a57a12e2d37e8ad50c53bb9c99b"
+    },
+    {
+      "source_file": "Packs/MITRECoA/Playbooks/playbook-Courses_of_Action_-_Impact.yml",
+      "source_sha256": "92219b794df531c255ea63a1af065bd416113c43b8fca0f603f38cee40047883"
+    },
+    {
+      "source_file": "Packs/MITRECoA/Playbooks/playbook-Courses_of_Action_-_Initial_Access.yml",
+      "source_sha256": "418347aa6f59e9491c6b03fe4a487bb1f8835822485555f7798ed03291015e8c"
+    },
+    {
+      "source_file": "Packs/MITRECoA/Playbooks/playbook-Courses_of_Action_-_Lateral_Movement.yml",
+      "source_sha256": "01a68f38ab0e730345ed9de7b50b9bb16846d3e2c18c75cd7a63da889ca4422e"
+    },
+    {
+      "source_file": "Packs/MITRECoA/Playbooks/playbook-Courses_of_Action_-_Persistence.yml",
+      "source_sha256": "ffeaa2d6124258a076de4ce89da41b1650c0287f288594d759d997b3174b198c"
+    },
+    {
+      "source_file": "Packs/MITRECoA/Playbooks/playbook-Courses_of_Action_-_Privilege_Escalation.yml",
+      "source_sha256": "fc7f6ef8c6f2bd1a9514f4011472b62ed37397c3820a3fb5f1d19ab98030c481"
+    },
+    {
+      "source_file": "Packs/MITRECoA/Playbooks/playbook-MITRE_-_Courses_of_Action.yml",
+      "source_sha256": "9cf7bb8b0fe257112a92623050ab7ecd6d5cdc1448e559691638e89543689744"
+    },
+    {
+      "source_file": "Packs/MITRECoA/Playbooks/playbook-MITRE_-_Courses_of_Action_Trigger_Job.yml",
+      "source_sha256": "408780bd83511da9fdb1d058219cf22527e04dc33333dae4848752acfd1cc257"
+    },
+    {
+      "source_file": "Packs/MITRECoA/Playbooks/playbook-PAN-OS_-_Enforce_Anti-Spyware_Best_Practices_Profile.yml",
+      "source_sha256": "464f7dbb0cd51489f399a3277d64afaf31fb050fc62f3dcd93766e674bda92c6"
+    },
+    {
+      "source_file": "Packs/MITRECoA/Playbooks/playbook-PAN-OS_-_Enforce_Anti-Virus_Best_Practices_Profile.yml",
+      "source_sha256": "31cd76afed8d01f6dedb8d8a47d2db67bdd4646037d6e58f249a4f426a8cb053"
+    },
+    {
+      "source_file": "Packs/MITRECoA/Playbooks/playbook-PAN-OS_-_Enforce_File_Blocking_Best_Practices_Profile.yml",
+      "source_sha256": "a3f1200cb56c79902f26cceb4c4c8b1c953d560879b4fba6396cea07038313d6"
+    },
+    {
+      "source_file": "Packs/MITRECoA/Playbooks/playbook-PAN-OS_-_Enforce_URL_Filtering_Best_Practices_Profile.yml",
+      "source_sha256": "8d19872e7a66a2cf6e3c0239583775ead36646dbc8882e62e3a108f10824631b"
+    },
+    {
+      "source_file": "Packs/MITRECoA/Playbooks/playbook-PAN-OS_-_Enforce_Vulnerability_Protection_Best_Practices_Profile.yml",
+      "source_sha256": "445e07fa10e2d4905064b31e6452154889d17ba112181b87f9eb4bdbed0c2b0d"
+    },
+    {
+      "source_file": "Packs/MITRECoA/Playbooks/playbook-PAN-OS_-_Enforce_WildFire_Best_Practices_Profile.yml",
+      "source_sha256": "e4312144432b76ef7f01c3b509c11cea381b4de156eb8ed87272d80dde9b2317"
+    },
+    {
+      "source_file": "Packs/ML/Playbooks/playbook-DBot_Create_Phishing_Classifier_V2.yml",
+      "source_sha256": "ef661dba0ca871e6b88bd14fb63d668030153916759ebd3748de9555b9689e10"
+    },
+    {
+      "source_file": "Packs/ML/Playbooks/playbook-DBot_Create_Phishing_Classifier_V2_Job.yml",
+      "source_sha256": "566ba212c0c3fa28b3144b1e10747034f04da4d326e2bfb5a5496360fdf8953f"
+    },
+    {
+      "source_file": "Packs/MajorBreachesInvestigationandResponse/Playbooks/playbook-FireEye_Red_Team_Tools_Investigation_and_Response.yml",
+      "source_sha256": "bda3f5db79a3159eff000f17367227e4c798d08bc4c082a1f8f56ba6eff54a96"
+    },
+    {
+      "source_file": "Packs/MajorBreachesInvestigationandResponse/Playbooks/playbook-Rapid_Breach_Response_-_Set_Incident_Info.yml",
+      "source_sha256": "d4631c15a48c77b7c2e721c29ec11d9ec355a752057e21293953c4fb59927685"
+    },
+    {
+      "source_file": "Packs/MajorBreachesInvestigationandResponse/Playbooks/playbook-SolarStorm_Activity_Behavior_Hunting_playbook.yml",
+      "source_sha256": "682e8b2239b61c3ac148352d455ca6b1783f25cadcbf4d84a3e6ce7855688f1b"
+    },
+    {
+      "source_file": "Packs/MalwareInvestigationAndResponse/Playbooks/playbook-Malware_Investigation_and_Response_-_Set_Alerts_Grid.yml",
+      "source_sha256": "3c3acad663889fcb1e8bcd245178bf05df68fa36137864920cd5d8881e91ccc5"
+    },
+    {
+      "source_file": "Packs/MalwareInvestigationAndResponse/Playbooks/playbook-Malware_Investigation_and_Response_Incident_Handler.yml",
+      "source_sha256": "dddff45df645501c9c1cb5928d917d090b7dacbe832b6be3a9a34e8316e06afc"
+    },
+    {
+      "source_file": "Packs/MalwareInvestigationAndResponse/Playbooks/playbook-Malware_SIEM_Ingestion_-_Get_Incident_Data.yml",
+      "source_sha256": "6f22364b5f2cb84348dcf47420489be92913ac480f32d1df49b375bf95be49dc"
+    },
+    {
+      "source_file": "Packs/Malwarebytes/Playbooks/Malwarebytes_Endpoint_Isolation.yml",
+      "source_sha256": "e130d6e74654db9ab1ff0067696698b65ecb5b801dad4013572affaa3037b216"
+    },
+    {
+      "source_file": "Packs/Malwarebytes/Playbooks/Malwarebytes_Endpoint_Scan_and_Remediate.yml",
+      "source_sha256": "52881e1a60cf45bc8c14753da1a39e28a91a2a70f8f929345c835f28f84d472a"
+    },
+    {
+      "source_file": "Packs/McAfee-TIE/Playbooks/playbook-TIE_-_IOC_Hunt.yml",
+      "source_sha256": "666989631a2e0baa2c51fecc20bee8364d35b3d140324cb48fd434496c651ac6"
+    },
+    {
+      "source_file": "Packs/McAfee_Advanced_Threat_Defense/Playbooks/playbook-Detonate_File_-_McAfee_ATD.yml",
+      "source_sha256": "156320dd3c8a3a2d12256d42c8098d6995bc04e0400759b28c5cf2aecdc22a8c"
+    },
+    {
+      "source_file": "Packs/McAfee_Advanced_Threat_Defense/Playbooks/playbook-Detonate_Remote_File_from_URL_-_McAfee_ATD.yml",
+      "source_sha256": "f6230c3f5fa475a4cf66df172767018dbe895c254258498c01cfd30a95c5cbb9"
+    },
+    {
+      "source_file": "Packs/McAfee_Advanced_Threat_Defense/Playbooks/playbook-Detonate_URL_-_McAfee_ATD.yml",
+      "source_sha256": "1296c63afd962dfee64bbce2f3ef63a250d7bd3d8bada6c2db14ae5d5fd2a919"
+    },
+    {
+      "source_file": "Packs/McAfee_DXL/Playbooks/playbook-Enrich_DXL_with_ATD_verdict_v2.yml",
+      "source_sha256": "4fbc86bc48cb567fc97fa5c32ce3aed143fb040a093a0e74ae02b62a9e8315c0"
+    },
+    {
+      "source_file": "Packs/McAfee_DXL/Playbooks/playbook-Enrich_McAfee_DXL_using_3rd_party_sandbox_v2.yml",
+      "source_sha256": "b0ec7c9d5b71d5142305e85158e358e405b5b0bcc7fce561783f2201bcb02ce2"
+    },
+    {
+      "source_file": "Packs/Microsoft365Defender/Playbooks/playbook-Microsoft_365_Defender_-_Emails_Indicators_Hunt.yml",
+      "source_sha256": "42b2bd200c7cd4a99c4e4d3e7770d334db3eb2a29b74725e9edc3212cc7ef516"
+    },
+    {
+      "source_file": "Packs/Microsoft365Defender/Playbooks/playbook-Microsoft_365_Defender_-_Threat_Hunting_Generic.yml",
+      "source_sha256": "57853e2d9dc45cc12dd046ce213fcc83998eb66ce99fc4d719ca0251f57200de"
+    },
+    {
+      "source_file": "Packs/MicrosoftDefenderAdvancedThreatProtection/Playbooks/Microsoft_Defender_Advanced_Threat_Protection_Get_Machine_Action_Status.yml",
+      "source_sha256": "19008dadc42ce28b7692050f51e883120ea5b8741f6d0f9081e802e97cfc8368"
+    },
+    {
+      "source_file": "Packs/MicrosoftDefenderAdvancedThreatProtection/Playbooks/Microsoft_Defender_For_Endpoint_-_Collect_investigation_package_.yml",
+      "source_sha256": "b6e3b7eedabb8fa8141bbc89ad4adcd39365e85e2380a5e3a18d36a91b206492"
+    },
+    {
+      "source_file": "Packs/MicrosoftDefenderAdvancedThreatProtection/Playbooks/playbook-MDE_-_False_Positive_Incident_Handling.yml",
+      "source_sha256": "59a58cdeee06a4dada8a7a3f54a8720bc402e22b04be3b6ae3147cf7472d17cb"
+    },
+    {
+      "source_file": "Packs/MicrosoftDefenderAdvancedThreatProtection/Playbooks/playbook-MDE_-_Host_Advanced_Hunting.yml",
+      "source_sha256": "b3f578d4b31d699ca38aaf137200258fb35d247c729af3bf81236dc57a79ad5d"
+    },
+    {
+      "source_file": "Packs/MicrosoftDefenderAdvancedThreatProtection/Playbooks/playbook-MDE_-_Host_Advanced_Hunting_For_Network_Activity.yml",
+      "source_sha256": "52cd2bb5c1b3d4321ad2ef781f36806fffd4a9292fb8d35e944ad8ff93dcb19a"
+    },
+    {
+      "source_file": "Packs/MicrosoftDefenderAdvancedThreatProtection/Playbooks/playbook-MDE_-_Host_Advanced_Hunting_For_Persistence.yml",
+      "source_sha256": "ea680df268c36ba730454063e517d4b5fc567e8babb14c1395dae4bdf7a04360"
+    },
+    {
+      "source_file": "Packs/MicrosoftDefenderAdvancedThreatProtection/Playbooks/playbook-MDE_-_Host_Advanced_Hunting_For_Powershell_Executions.yml",
+      "source_sha256": "b1b6363218594bbee45a701c7def9a627e7e472e258635759c268794c8f1831b"
+    },
+    {
+      "source_file": "Packs/MicrosoftDefenderAdvancedThreatProtection/Playbooks/playbook-MDE_-_Pro-Active_Actions.yml",
+      "source_sha256": "dec6e05bdb322b2a10283f5414445f97172fa0ac847baddea1e82a34e4dab2ca"
+    },
+    {
+      "source_file": "Packs/MicrosoftDefenderAdvancedThreatProtection/Playbooks/playbook-MDE_-_Retrieve_File.yml",
+      "source_sha256": "8802c8f2ac4e5929370cf37c4aa11377dc00ad1f347a2034c180d72ef60cdefe"
+    },
+    {
+      "source_file": "Packs/MicrosoftDefenderAdvancedThreatProtection/Playbooks/playbook-MDE_-_True_Positive_Incident_Handling.yml",
+      "source_sha256": "1a4a63a01340e0e12e5b4600fd31684a75e64836a41c2882220d802fe0111165"
+    },
+    {
+      "source_file": "Packs/MicrosoftDefenderAdvancedThreatProtection/Playbooks/playbook-MDE_Malware_-_Incident_Enrichment.yml",
+      "source_sha256": "2f0419f221234b516c89ac9a6ed43c411c2d7adc9ba669fd9ad68b5e0605ef82"
+    },
+    {
+      "source_file": "Packs/MicrosoftDefenderAdvancedThreatProtection/Playbooks/playbook-MDE_Malware_-_Investigation_and_Response.yml",
+      "source_sha256": "a90ac0d09615776cd47dd6458a61e02029a5c6981b4325790ebce74bbb40fba1"
+    },
+    {
+      "source_file": "Packs/MicrosoftDefenderAdvancedThreatProtection/Playbooks/playbook-MDE_SIEM_ingestion_-_Get_Incident_Data.yml",
+      "source_sha256": "86b70c7baac6884395d106d9ecce71ba4f23ab1fd24302dcafeaec3402f1f987"
+    },
+    {
+      "source_file": "Packs/MicrosoftDefenderAdvancedThreatProtection/Playbooks/playbook-Microsoft_Defender_For_Endpoint_-_Isolate_Endpoint.yml",
+      "source_sha256": "b6d8ea5295e9b857af6c13c326bea7f484133c9d4b903f146deac3d19191d068"
+    },
+    {
+      "source_file": "Packs/MicrosoftDefenderAdvancedThreatProtection/Playbooks/playbook-Microsoft_Defender_For_Endpoint_-_Unisolate_Endpoint.yml",
+      "source_sha256": "ab1e71d6a18f7719204dc553fd98e526760dfeb42550daa908a39d0e3b51c07b"
+    },
+    {
+      "source_file": "Packs/MicrosoftDefenderAdvancedThreatProtection/Playbooks/playbook-Microsoft_Defender_for_Endpoint_-_Malware_Detected.yml",
+      "source_sha256": "3d78a52e7d896bd5c7d59269ca198e83d695bf365c5caf12c4cc5e61460cdb86"
+    },
+    {
+      "source_file": "Packs/MicrosoftExchangeOnPremise/Playbooks/playbook-Search_And_Delete_Emails_-_EWS.yml",
+      "source_sha256": "2de377dc7c87d1d6a43b5ded21d048212fbccf9c003d1b33f5f7a34930b80cc0"
+    },
+    {
+      "source_file": "Packs/Microsoft_SharePoint_ToolShell_Vulnerability/Playbooks/playbook-Cortex_XDR_-_CVE-2025-49704_and_CVE-2025-49706_and_CVE-2025-53770_and_CVE-2025-53771_-_Microsoft_SharePoint_ToolShell_vulnerability_chain.yml",
+      "source_sha256": "38f9b7468125cc56c00608260ff00962c1f61d1bfc8b27b77318a650cadac930"
+    },
+    {
+      "source_file": "Packs/MobileIronUEM/Playbooks/MobileIron_Cloud_Incident_Action_Playbook.yml",
+      "source_sha256": "fb32a0957c7bcc095383355df1e34456cfd1c15eaffdb35d6731798dc4bb5b49"
+    },
+    {
+      "source_file": "Packs/MobileIronUEM/Playbooks/MobileIron_Core_Incident_Action_Playbook.yml",
+      "source_sha256": "cbe0562b64e8350254956a2dd42c98eac2fa865d9c69b8cd4ed901d376215189"
+    },
+    {
+      "source_file": "Packs/NCSCCyberAsssessmentFramework/Playbooks/playbook-NCSC_CAF_Assessment.yml",
+      "source_sha256": "3f5a0bd99989e4866595c6fa4a868876ccf925985658728148812328375225be"
+    },
+    {
+      "source_file": "Packs/NIST/Playbooks/playbook-NIST_-_Access_Investigation_-_Generic_6_0.yml",
+      "source_sha256": "82354d9f45e676b38080efa7ca821f4ccb77647b59a1c939e023529faf6f39bd"
+    },
+    {
+      "source_file": "Packs/NIST/Playbooks/playbook-NIST_-_Handling_an_Incident.yml",
+      "source_sha256": "a7b8ccfee537a5cf34743a9d579dca4e5e7e17f818e5db6013ebec0d70f3eb22"
+    },
+    {
+      "source_file": "Packs/NIST/Playbooks/playbook-NIST_-_Lessons_Learned.yml",
+      "source_sha256": "dd1428981b707a5cb0101a134a719dbac9e37592830c46ead71b47dc83294b22"
+    },
+    {
+      "source_file": "Packs/OTSecurity/Playbooks/OTSecurity_-_Rogue_Device_Investigation.yml",
+      "source_sha256": "dc65145dd1d7e90d0566532acf9e444e3e5cf2ad03a190ad9307b011c131a55c"
+    },
+    {
+      "source_file": "Packs/Office365AndAzureAuditLog/Playbooks/playbook-Office_365_and_Azure_Hunting_playbook.yml",
+      "source_sha256": "3ab48440e96aca24e34cfe63b897664de7b0339e97ad74a327ff48279270715a"
+    },
+    {
+      "source_file": "Packs/Okta/Playbooks/playbook-Allow_IP_-_Okta_Zone.yml",
+      "source_sha256": "5efd7fdb36c6062dcf8c050fe1b9d7aed258a14ee915815dd915f493a1851025"
+    },
+    {
+      "source_file": "Packs/Okta/Playbooks/playbook-Okta_-_User_Investigation.yml",
+      "source_sha256": "eeeda17caa500c24dcb9e2bda0121d5eb6e90582d099d86e0f4202a432add901"
+    },
+    {
+      "source_file": "Packs/Oletools/Playbooks/Microsoft_Office_File_Enrichment_-_Oletools.yml",
+      "source_sha256": "b8cadbd2e16cd80f60f72a7ac227730615ffdea942fabcc5bf8affc4b13030f5"
+    },
+    {
+      "source_file": "Packs/OnboardingIntegration/Playbooks/playbook-PhishingDemo-Onboarding.yml",
+      "source_sha256": "2137bba9cb8752735140a0ff42bd419c7e36901127a5731b33e3ad7d021dc981"
+    },
+    {
+      "source_file": "Packs/OrionMalware/Playbooks/Detonate_File_-_OrionMalware.yml",
+      "source_sha256": "0cddd1215ff01b25d1e1f3533d618497b27a2ed4a620045028aaed211e80eb9c"
+    },
+    {
+      "source_file": "Packs/PAN-OS/Playbooks/PAN-OS_-_Add_Anti-Spyware_Security_Profile_To_Rule.yml",
+      "source_sha256": "9c5a5b9ec7af3d370569c7f0d9f42429c925761ceb6b9082a5521f3f5b43c583"
+    },
+    {
+      "source_file": "Packs/PAN-OS/Playbooks/PAN-OS_-_Configure_DNS_Sinkhole.yml",
+      "source_sha256": "2ac801a747d91602eed636a43d185fd44d7d3b1d86f5507ef5f39c7e7d6292ed"
+    },
+    {
+      "source_file": "Packs/PAN-OS/Playbooks/PAN-OS_-_Download_and_Install_Dynamic_Content_Updates.yml",
+      "source_sha256": "23119ccc11a4258577e3ec547414b94a73d5ea679782feae1ea4838f7f21f6a2"
+    },
+    {
+      "source_file": "Packs/PAN-OS/Playbooks/PAN-OS_-_Extract_IPs_From_Traffic_Logs_To_Sinkhole.yml",
+      "source_sha256": "7f315daf0f1510d87906ff7b23ef3bf6c19c4a55c4b143764ddef8e700a8a1ca"
+    },
+    {
+      "source_file": "Packs/PAN-OS/Playbooks/PAN-OS_-_Firewall_Upgrade_Readiness_Checks.yml",
+      "source_sha256": "b488e6b33fcc3fd2b11e08d1743215eb70f0dca7684fc234992b52cd01350ab0"
+    },
+    {
+      "source_file": "Packs/PAN-OS/Playbooks/PAN-OS_-_Identify_Unused_Policy_Rules.yml",
+      "source_sha256": "1ef1f25a2494efa7bd5eb0e878fae49b6d713124d5297d9858d8aec9313e30ac"
+    },
+    {
+      "source_file": "Packs/PAN-OS/Playbooks/PAN-OS_-_Job_-_Add_Malicious_Domains_To_Sinkhole.yml",
+      "source_sha256": "58e5207db59adb8196a996604bcc69dc6d83c7dceec9fe1f22e87ca58c4ad745"
+    },
+    {
+      "source_file": "Packs/PAN-OS/Playbooks/PAN-OS_-_Job_-_Remove_Malicious_Domains_From_Sinkhole.yml",
+      "source_sha256": "65dc2adba635955407aad06af7d5db2d3439651dac45007494c40cf19fd3866a"
+    },
+    {
+      "source_file": "Packs/PAN-OS/Playbooks/PAN-OS_-_Run_Security_Configuration_Hygiene_Checks.yml",
+      "source_sha256": "6875433b77b1c55b10258408f9de6166358b72dbc4b4b224b8dc1aa73856cfcd"
+    },
+    {
+      "source_file": "Packs/PAN-OS/Playbooks/PAN-OS_-_Security_Advisories_Vulnerability_Check.yml",
+      "source_sha256": "a6715f2c38ab7450d8a6a7cacc00cf42423e0266db8110dfb889550841a35957"
+    },
+    {
+      "source_file": "Packs/PAN-OS/Playbooks/PAN-OS_Commit_Configuration_v2.yml",
+      "source_sha256": "dd9b76d8109801601f9b09fadb4f8b6bc7dd431b0aa64e9b1f6d060624dff6f5"
+    },
+    {
+      "source_file": "Packs/PAN-OS/Playbooks/playbook-NetOps_-_Firewall_Version_Content_Upgrade.yml",
+      "source_sha256": "7ab905b38c076e5a25a52bfde1f9e785e55b0fdefb83e98ead15ce21f3b850d7"
+    },
+    {
+      "source_file": "Packs/PAN-OS/Playbooks/playbook-NetOps_Panorama_coverage_by_CVE.yml",
+      "source_sha256": "1334203bace9bf2a0bbe6718bc91839cd6f0fa0fbc11e7057d187d66b428a9dc"
+    },
+    {
+      "source_file": "Packs/PAN-OS/Playbooks/playbook-PAN-OS_-_Add_Domains_EDL_To_Anti-Spyware.yml",
+      "source_sha256": "ea2ab746ae2c015e119c5b82d99fe4b054a5f73f3be5f47feb2aac4d61fe8ebf"
+    },
+    {
+      "source_file": "Packs/PAN-OS/Playbooks/playbook-PAN-OS_-_Block_IP.yml",
+      "source_sha256": "2f21ace4bc87d3f4c0c034cc5ba985fab63fde84a15118f0da662a029abc0e2c"
+    },
+    {
+      "source_file": "Packs/PAN-OS/Playbooks/playbook-PAN-OS_-_Block_IP_-_Custom_Block_Rule.yml",
+      "source_sha256": "1d8b2bc301c2f5055da814d0e9c69eb109fb85be025d6ea9d76df44e5d7c37ac"
+    },
+    {
+      "source_file": "Packs/PAN-OS/Playbooks/playbook-PAN-OS_-_Block_IPs_From_EDL_-_Custom_Block_Rule.yml",
+      "source_sha256": "3b4852d9f79660cdf93dee63ed1148e1b43ad162281fc80ab2384fbf4c8923d5"
+    },
+    {
+      "source_file": "Packs/PAN-OS/Playbooks/playbook-PAN-OS_Query_Logs_For_Indicators_6_2.yml",
+      "source_sha256": "b49e094de6416417cce615cd1a04074f6fdb0516cf772ec47eff586de9f3af03"
+    },
+    {
+      "source_file": "Packs/PAN-OS/Playbooks/playbook-Panorama_Query_Logs_6_2.yml",
+      "source_sha256": "0f33dc0a71e16191b47bb135bb2c5cbed4ba2e578b83e6b90f152527e04b2dd9"
+    },
+    {
+      "source_file": "Packs/PANOSPolicyOptimizer/Playbooks/playbook-Policy_Optimizer_-_Generic.yml",
+      "source_sha256": "6405829a2c3e74f401ae12cea3e4b3ed2df5e137c8440b41c56203a1d3425944"
+    },
+    {
+      "source_file": "Packs/PANOSPolicyOptimizer/Playbooks/playbook-Policy_Optimizer_-_Manage_Port_Based_Rules.yml",
+      "source_sha256": "66f41e69df18e6c59633c60ca51f75655bb7e199b1713cca8a067e081774287b"
+    },
+    {
+      "source_file": "Packs/PANOSPolicyOptimizer/Playbooks/playbook-Policy_Optimizer_-_Manage_Rules_with_Unused_Applications.yml",
+      "source_sha256": "8c40440f317711aabb40ce48a1231c5e8975eaa9fb61badd993f0fd8fec656ed"
+    },
+    {
+      "source_file": "Packs/PANOStoCDLMonitoring/Playbooks/PAN-OStoCDLMonitoring-Action_Required.yml",
+      "source_sha256": "393f43d701c27ba762fcc5b00e7bcc4a2b0e50715e2b09d7f84608e48edc78cf"
+    },
+    {
+      "source_file": "Packs/PANWComprehensiveInvestigation/Playbooks/Palo_Alto_Networks_-_Hunting_And_Threat_Detection.yml",
+      "source_sha256": "8f3b46a2afc4c72eed457a3f00807877f382bcf315ac33c8842a578975307003"
+    },
+    {
+      "source_file": "Packs/PaloAltoNetworksPQCHunting_Community/Playbooks/PAN-OS_Search_for_Post_Quantum_Crypto_Vuln_Sigs.yml",
+      "source_sha256": "d1b216ac45d2180fd2a47a75163209104ec67544557a2072593f6700b812d9ba"
+    },
+    {
+      "source_file": "Packs/PaloAltoNetworks_IoT/Playbooks/playbook-iot-with-servicenow-playbook.yml",
+      "source_sha256": "bbd71a5ecbaa068c7c41aecc644c3d65634f412323220a2c3d1346d6496bc872"
+    },
+    {
+      "source_file": "Packs/PaloAltoNetworks_IoT3rdParty/Playbooks/Bulk_Export_to_SIEM_-_PANW_IoT_3rd_Party_Integration.yml",
+      "source_sha256": "a3dd62d5645942238a7f18b6ccdc5c1ce84eab5b1e7a74820d76f2b321cac4c3"
+    },
+    {
+      "source_file": "Packs/PaloAltoNetworks_IoT3rdParty/Playbooks/Export_Single_Alert_to_ServiceNow_-_PANW_IoT_3rd_Party_Integration.yml",
+      "source_sha256": "ef4b151dd83752c78d84b15bce4332c3e4613557f15ed7d4905d33ac532aa7af"
+    },
+    {
+      "source_file": "Packs/PaloAltoNetworks_IoT3rdParty/Playbooks/Export_Single_Asset_to_SIEM_-_PANW_IoT_3rd_Party_Integration.yml",
+      "source_sha256": "005e8a42926ed8e5eda4d1acfae46c339c0d354814c543d370ed1d58e912978e"
+    },
+    {
+      "source_file": "Packs/PaloAltoNetworks_IoT3rdParty/Playbooks/Export_Single_Vulnerability_to_ServiceNow_-_PANW_IoT_3rd_Party_Integration.yml",
+      "source_sha256": "4058cf37339cf363f264e1d23f10e57789b52f2cc79b382ce0d267674bb9a89a"
+    },
+    {
+      "source_file": "Packs/PaloAltoNetworks_IoT3rdParty/Playbooks/Incremental_Export_to_SIEM_-_PANW_IoT_3rd_Party_Integration.yml",
+      "source_sha256": "fbb013be4000d19a2c181f228dd2a9760ed18d1eab83f21188712e90896ad8cd"
+    },
+    {
+      "source_file": "Packs/PaloAltoNetworks_IoT3rdParty/Playbooks/Quarantine_Device_in_Cisco_ISE_-_PANW_IoT_3rd_Party_Integration.yml",
+      "source_sha256": "84f7b4c95fa3fb4a23ebd9442001cbb7f91e8b4cd1eb7e542354b1dc2a8fe15e"
+    },
+    {
+      "source_file": "Packs/PaloAltoNetworks_IoT3rdParty/Playbooks/Un-quarantine_Device_in_Cisco_ISE_-_PANW_IoT_3rd_Party_Integration.yml",
+      "source_sha256": "baf7360f979e0077a5b06228024e7d527271ef59ee33d0d12e3b0f6e95fc3880"
+    },
+    {
+      "source_file": "Packs/Palo_Alto_Networks_WildFire/Playbooks/Detonate_File_From_URL_-_WildFire_v2.yml",
+      "source_sha256": "bdbc85589705218cb3647654281c23bab4d1c7ae307c2a1773d6bd97afd73d54"
+    },
+    {
+      "source_file": "Packs/Palo_Alto_Networks_WildFire/Playbooks/Detonate_URL_-_WildFire_v2_2.yml",
+      "source_sha256": "f9c1cedd889d2be5c7d723f8d52c6512dbfe4ed9542f24979b1280adf2df304b"
+    },
+    {
+      "source_file": "Packs/Palo_Alto_Networks_WildFire/Playbooks/WildFire_-_Detonate_file_v2.yml",
+      "source_sha256": "19e3df7bf0b46af24b118adaa133661e0c9b92fe9ac080bdedbaeb753e6567d2"
+    },
+    {
+      "source_file": "Packs/Palo_Alto_Networks_WildFire/Playbooks/playbook-Wildfire_Detonate_and_Analyze_File.yml",
+      "source_sha256": "c2b84a8e120232b427ade9e9ffb4490133273a4e02c0309a7bcbfe1fb9199476"
+    },
+    {
+      "source_file": "Packs/PasswordResetViaChatbot/Playbooks/Reset_User_Password_via_Chatbot.yml",
+      "source_sha256": "8d0746aabd71153c4272a420cd9b7b669d51bc89e11e4620bf644811712d177c"
+    },
+    {
+      "source_file": "Packs/PcapAnalysis/Playbooks/playbook-PCAP_Analysis.yml",
+      "source_sha256": "2b1999635b88dd612af0ad5a05164498010764c1b815df80940f0acdc2ff3d04"
+    },
+    {
+      "source_file": "Packs/PcapAnalysis/Playbooks/playbook-PCAP_File_Carving.yml",
+      "source_sha256": "b2a2fc49a9b40c18d9cfa92880bb152e904d6a7d0f7538b2b04de6157b368963"
+    },
+    {
+      "source_file": "Packs/PcapAnalysis/Playbooks/playbook-PCAP_Parsing_And_Indicator_Enrichment.yml",
+      "source_sha256": "e830340635866bd72d069b8eb7ec8a8a19ffa41f8dc3a76d42a9ae3ae9fdf56f"
+    },
+    {
+      "source_file": "Packs/PcapAnalysis/Playbooks/playbook-PCAP_Search.yml",
+      "source_sha256": "f237d41c9c31a61a453b95ef78a5f83a92a4c77f20637baa2bd893973b618734"
+    },
+    {
+      "source_file": "Packs/Pcysys/Playbooks/playbook-Pentera_Filter_And_Create_Incident.yml",
+      "source_sha256": "f43cce1d88bd3826449a6742acd987a3665620f48599529eeaf105536d846808"
+    },
+    {
+      "source_file": "Packs/Pcysys/Playbooks/playbook-Pentera_Run_Scan_and_Create_Incidents.yml",
+      "source_sha256": "c6b9033c35527c2fc6edf8a0d7c2ed5ca2d12c032d7c612a2ca812463b4e557f"
+    },
+    {
+      "source_file": "Packs/PenfieldAI/Playbooks/Penfield_Assign.yml",
+      "source_sha256": "6360256bf0ee882de7dfe643120cf152d0c92f5427629402bfcbf717b6135737"
+    },
+    {
+      "source_file": "Packs/PhishLabs/Playbooks/playbook-PhishLabsPopulateIndicators.yml",
+      "source_sha256": "e61797a80b0620b00958dd40d38d83d4a6d90c9898608b528def2cc510a62996"
+    },
+    {
+      "source_file": "Packs/PhishLabs/Playbooks/playbook-PhishLabsWhitelistIndicators.yml",
+      "source_sha256": "f4b202415dcae14a45f2bdbee34909fc44cd60fb870770c12477ed9df3dc7429"
+    },
+    {
+      "source_file": "Packs/Phishing/Playbooks/Entity_Enrichment_-_Phishing_v2.yml",
+      "source_sha256": "ee7ab3550cda2e48e4e3008897bfac442c3eabff858bb6bea10afc78b3f9aed2"
+    },
+    {
+      "source_file": "Packs/Phishing/Playbooks/Phishing_-_Core_v2.yml",
+      "source_sha256": "281eca531ea8321dc5744a4d7d40dc5aef4224871ca86d99a7dbd5cf2d28f340"
+    },
+    {
+      "source_file": "Packs/Phishing/Playbooks/Phishing_-_Machine_Learning_Analysis.yml",
+      "source_sha256": "bdb34599dab2e434e5dbf7a4a588b87add2d3065bed42a80db5f4a8c1d1f6e59"
+    },
+    {
+      "source_file": "Packs/Phishing/Playbooks/Process_Email_-_Generic_v2.yml",
+      "source_sha256": "5a2f6ccd51c10925cae8082e4cb73be12f7349e0480527d869a6780c3b6b1adc"
+    },
+    {
+      "source_file": "Packs/Phishing/Playbooks/Process_Microsoft's_Anti-Spam_Headers.yml",
+      "source_sha256": "d5d066445e9e340a191eb02074ba5170c7fbd0ac77db6840beb0525c08e3f9b7"
+    },
+    {
+      "source_file": "Packs/Phishing/Playbooks/playbook-Get_Original_Email_-_Generic_v2.yml",
+      "source_sha256": "49efc43b0a3e3b4e182d8c973511e3649d5f9954b6e4e8001327512b5a70610a"
+    },
+    {
+      "source_file": "Packs/Phishing/Playbooks/playbook-Phishing_-_Get_Original_Email_Loop.yml",
+      "source_sha256": "7d08561040971214cd0e4351832bf327b4d5656a65ddf6702f1962a20ed8e7b1"
+    },
+    {
+      "source_file": "Packs/Phishing/Playbooks/playbook-Phishing_-_Handle_Microsoft_365_Defender_Results.yml",
+      "source_sha256": "b43b7316f740367f8ebc238da8a985c57e4b5aa5ce01e96321a70924364f7f53"
+    },
+    {
+      "source_file": "Packs/Phishing/Playbooks/playbook-Phishing_-_Indicators_Hunting.yml",
+      "source_sha256": "f2e45b67be089a232bd39fe34718f436ac20643bd1edac75c3890a2b6220f7c9"
+    },
+    {
+      "source_file": "Packs/Phishing/Playbooks/playbook-Phishing_-_Phishing.yml",
+      "source_sha256": "0d21dff04cf19ee47fa9f53627762de50f435b1f78791b25ee0686e7923a558b"
+    },
+    {
+      "source_file": "Packs/Phishing/Playbooks/playbook-Phishing_-_Search_Related_Incidents_Defender_365.yml",
+      "source_sha256": "e760efc3a197bd506868708c1cdff6d316b0f64a618ff9231a7f2e54d1d842d9"
+    },
+    {
+      "source_file": "Packs/Phishing/Playbooks/playbook-Spear_Phishing_Investigation.yml",
+      "source_sha256": "a1f9853bb972ecb788d956d57fc2abf9fa8105b27ce3dd02b399663881e5b606"
+    },
+    {
+      "source_file": "Packs/PhishingAlerts/Playbooks/playbook-Phishing_Alerts_-_Check_Severity.yml",
+      "source_sha256": "c3fb0d10f4fe25914a84c256ed637c17904a963f78a69f02c2ea04064469fb88"
+    },
+    {
+      "source_file": "Packs/PhishingAlerts/Playbooks/playbook-Phishing_Alerts_Investigation_6_5.yml",
+      "source_sha256": "da3e1c50f093158c0bde439aa2c52d770eae73be68dc0e8631da40f734955650"
+    },
+    {
+      "source_file": "Packs/PicusAutomation/Playbooks/Picus.yml",
+      "source_sha256": "bfa69a0533ece0ab624f2d804e966e5428a2ec7c7e10a2f835d62488f144513f"
+    },
+    {
+      "source_file": "Packs/Polygon/Playbooks/playbook-Detonate_File_-_Group-IB_TDS_Polygon.yml",
+      "source_sha256": "b97a18141274189a1a8a96d11000248ce2bb8e391eae2b56f8b1212ccf3dec13"
+    },
+    {
+      "source_file": "Packs/Polygon/Playbooks/playbook-Detonate_URL_-_Group-IB_TDS_Polygon.yml",
+      "source_sha256": "f6bcbeacb1bf55bfb059b6973930a3fbc0d3d443638d902e27e4905695392c1d"
+    },
+    {
+      "source_file": "Packs/PortScan/Playbooks/Port_Scan_-_External_Source_6_0.yml",
+      "source_sha256": "6a435256919eb49cfed52d7660d30d5e49df96860f773bfe99f2c4f6df687263"
+    },
+    {
+      "source_file": "Packs/PortScan/Playbooks/Port_Scan_-_Generic.yml",
+      "source_sha256": "509ab5c1e557022fdcefbf39803f51b4317483ffc687d2247c23a40f053c473e"
+    },
+    {
+      "source_file": "Packs/PortScan/Playbooks/Port_Scan_-_Internal_Source_6_0.yml",
+      "source_sha256": "c437a78bfbc25d3cc3a6e53bcde7d9ce6d4f501b29fa879769de59fa52a643e3"
+    },
+    {
+      "source_file": "Packs/PowershellPayloadResponse/Playbooks/Powershell_Payload_Response.yml",
+      "source_sha256": "c454c1ebed4538dbf66dabe9706f6f80700c196ae7c055efeb2926196ce2cd3e"
+    },
+    {
+      "source_file": "Packs/PrismaAccess/Playbooks/playbook-Prisma_Access_-_Connection_Health_Check.yml",
+      "source_sha256": "48e9c8ce983ae64bbe2d1f83bedd3b8feee0d04332de2f519811c8ec28bc3855"
+    },
+    {
+      "source_file": "Packs/PrismaAccess/Playbooks/playbook-Prisma_Access_Whitelist_Egress_IPs_on_SaaS_Services.yml",
+      "source_sha256": "6b354b32949d0072c2f418de257f501d6bd788c3c822f02cc8ab242ac1d3e099"
+    },
+    {
+      "source_file": "Packs/PrismaAccess/Playbooks/playbook-Prisma_SASE_-_Create_a_security_pre-rule_for_EDL.yml",
+      "source_sha256": "b9969a621c12b04cadd32607b86ebfd09a4dc86349c681a07f9583dcc5ca15c8"
+    },
+    {
+      "source_file": "Packs/PrismaAccess/Playbooks/playbook-Prisma_SASE_-_Quarantine_Host_With_Active_Threat.yml",
+      "source_sha256": "c23494fced22d9df9b4b965bd2c16f25b6b179e04535e4194e77c903d4e64b88"
+    },
+    {
+      "source_file": "Packs/PrismaCloud/Playbooks/Prisma_Cloud_-_Get_Owner_By_Namespace.yml",
+      "source_sha256": "1a2d6dd9b01a72aa489d8c1c40b12d01b36445129b52b3f5c6472df83bfe4a18"
+    },
+    {
+      "source_file": "Packs/PrismaCloud/Playbooks/playbook-PCR_-_AWS_CloudTrail_Integrated_CloudWatchLogs.yml",
+      "source_sha256": "6f0bb4ab0b1a5c2f782bc8b63e0f6b4a05f38e483496c3e93fff914f87e56162"
+    },
+    {
+      "source_file": "Packs/PrismaCloud/Playbooks/playbook-PCR_-_AWS_CloudTrail_Misconfig_v2.yml",
+      "source_sha256": "6c635d42eb3708d28fb3abe3265b3c7901b0530bce25d61644184014bf9e8df4"
+    },
+    {
+      "source_file": "Packs/PrismaCloud/Playbooks/playbook-PCR_-_AWS_CloudTrail_Trail_Misconfig.yml",
+      "source_sha256": "d53f749f168f5150938cd08e0bfa15666cb1c56b176c3671a4a55b01f1c60387"
+    },
+    {
+      "source_file": "Packs/PrismaCloud/Playbooks/playbook-PCR_-_AWS_EC2_Instance_Misconfig_v2.yml",
+      "source_sha256": "f03e6314f23e1e6549c577a17911a70c1bca8caaaa9eb28fb48b0b948ce061f3"
+    },
+    {
+      "source_file": "Packs/PrismaCloud/Playbooks/playbook-PCR_-_AWS_EC2_SG_Misconfig.yml",
+      "source_sha256": "bb2178dfaf7ed90cd5e30b09cb92f5e068418c7fde7e66cce134d08b543ac1cf"
+    },
+    {
+      "source_file": "Packs/PrismaCloud/Playbooks/playbook-PCR_-_AWS_IAM_Password_Policy_Misconfig.yml",
+      "source_sha256": "fa80bbea4e245b6c363b9dec6eafa7e37be2c8f52fb34d9db8204823cc5c2d45"
+    },
+    {
+      "source_file": "Packs/PrismaCloud/Playbooks/playbook-PCR_-_AWS_IAM_Policy_Misconfig_v2.yml",
+      "source_sha256": "29055ee68c84ff378b5afc234ca07764e9ad1ab525ef40f04840981b4d7a076f"
+    },
+    {
+      "source_file": "Packs/PrismaCloud/Playbooks/playbook-PCR_-_AWS_IAM_User_Policy_Misconfig.yml",
+      "source_sha256": "19591f37756c554fe848bd20b935c9032e16d914bc48af00907be2b0eafeb8cd"
+    },
+    {
+      "source_file": "Packs/PrismaCloud/Playbooks/playbook-PCR_-_Azure_AKS_Cluster_Misconfig.yml",
+      "source_sha256": "df463fc4bdd433409db32611e40bfda2f3db9fca355a9ba9af657382af49e209"
+    },
+    {
+      "source_file": "Packs/PrismaCloud/Playbooks/playbook-PCR_-_Azure_AKS_Misconfig_v2.yml",
+      "source_sha256": "79a251bb2899a4c8f14f4d9ae449f6f04ea53cd2340933e2e9fb741c57542547"
+    },
+    {
+      "source_file": "Packs/PrismaCloud/Playbooks/playbook-PCR_-_Azure_Network_Misconfig_v2.yml",
+      "source_sha256": "643b62429afa00007f74db5004149f0a9e97eab51a9d96f1aa09cb1a5b43465f"
+    },
+    {
+      "source_file": "Packs/PrismaCloud/Playbooks/playbook-PCR_-_Azure_Network_Security_Group_Misconfig.yml",
+      "source_sha256": "c75cf6650380b5077861c0c2831c966603d40bf61ecef5743f382a48a73f924f"
+    },
+    {
+      "source_file": "Packs/PrismaCloud/Playbooks/playbook-PCR_-_Azure_SQL_Database_Misconfig.yml",
+      "source_sha256": "d8aa51f526c821bb1b4c7dc0aed213997486cced2de84e7821df74eba683847b"
+    },
+    {
+      "source_file": "Packs/PrismaCloud/Playbooks/playbook-PCR_-_Azure_SQL_Misconfig_v2.yml",
+      "source_sha256": "aaaa8dbc1720344a0297baace5919417e0b3c5769c81defcb8bc40e85a4b66ba"
+    },
+    {
+      "source_file": "Packs/PrismaCloud/Playbooks/playbook-PCR_-_Azure_Storage_Blob_Misconfig.yml",
+      "source_sha256": "5a397a135e9a7d573879d1fe35d61e3f53221db120065409bdc2aa54ae3c153e"
+    },
+    {
+      "source_file": "Packs/PrismaCloud/Playbooks/playbook-PCR_-_Azure_Storage_Misconfig_v2.yml",
+      "source_sha256": "2ddc0b36eb4e7cd6d793241932c60c166d8f8bd51b16cf3f0fc507d59cb7e6a3"
+    },
+    {
+      "source_file": "Packs/PrismaCloud/Playbooks/playbook-PCR_-_GCP_Compute_Engine_Instance_Misconfig.yml",
+      "source_sha256": "77c448ea34f5360d99c1268575ea16c4480088d11b7defa9ec4b5e126e2e8dd0"
+    },
+    {
+      "source_file": "Packs/PrismaCloud/Playbooks/playbook-PCR_-_GCP_Compute_Engine_Misconfig_v2.yml",
+      "source_sha256": "0802689c728d8d38fd5bdb7f5417d937692c318393b7cbf1ea66b725bcd634b1"
+    },
+    {
+      "source_file": "Packs/PrismaCloud/Playbooks/playbook-PCR_-_GCP_Kub_Engine_Cluster_Misconfig.yml",
+      "source_sha256": "8f3d2d0e6a64fa4c38d914f4473b7e800f39c5dc6392e65e2f6b94ca542fdc70"
+    },
+    {
+      "source_file": "Packs/PrismaCloud/Playbooks/playbook-PCR_-_GCP_Kub_Engine_Misconfig_v2.yml",
+      "source_sha256": "50c900bf60d42307c8edc29e2fb02af86abafdcf8115f5114df6d641f8b95af9"
+    },
+    {
+      "source_file": "Packs/PrismaCloud/Playbooks/playbook-PCR_-_GCP_VPC_Network_Firewall_Misconfig.yml",
+      "source_sha256": "99821b5c4e8cb6284a58fb03665dc6d10fee9402aa273af1155b719a37071eb1"
+    },
+    {
+      "source_file": "Packs/PrismaCloud/Playbooks/playbook-PCR_-_GCP_VPC_Network_Misconfig_v2.yml",
+      "source_sha256": "470cdeefbee6d52085fdabf225d7073d5678fd028deec1f50cbfbb0292f49473"
+    },
+    {
+      "source_file": "Packs/PrismaCloud/Playbooks/playbook-PCR_-_GCP_VPC_Network_Project_Misconfig.yml",
+      "source_sha256": "470dcd3ba5a43a9ed78923921b6a3c379f193bfd91bb10d5b1c38e2913c2fbdc"
+    },
+    {
+      "source_file": "Packs/PrismaCloud/Playbooks/playbook-PrismaCloudRemediation_-_AWSCloudTrailIsNotEnabledOnTheAccount.yml",
+      "source_sha256": "41b809d2e654d5d567a3a45e2cc8cae2dfe3560bc3330e81b451bd5aba81481c"
+    },
+    {
+      "source_file": "Packs/PrismaCloud/Playbooks/playbook-PrismaCloudRemediation_-_AWSInactiveUsersForMoreThan30Days.yml",
+      "source_sha256": "5f3db3c994f0ef438ae428e83a3709d11d872be8cf2bf76d63b0d08e51707420"
+    },
+    {
+      "source_file": "Packs/PrismaCloud/Playbooks/playbook-PrismaCloudRemediation_-_AWSSecurityGroupsTrafficToTCPPort.yml",
+      "source_sha256": "cfab12a71fcf410be0c95c0f67b7ca5a59844dda3b4439c1a5bff281070c02bb"
+    },
+    {
+      "source_file": "Packs/PrismaCloud/Playbooks/playbook-Prisma_Cloud_-_Network__API_and_Anomaly_Incidents.yml",
+      "source_sha256": "232ed44368e3e8b9df967f721335b4cfe3940e6ed2c271eb3477bd993acf47cb"
+    },
+    {
+      "source_file": "Packs/PrismaCloud/Playbooks/playbook-Prisma_Cloud_-_VM_Alert_Prioritization.yml",
+      "source_sha256": "7b50dead1cb6840e3bfc84a84029e58f88bab640bbd2a57231cbba908193fc9a"
+    },
+    {
+      "source_file": "Packs/PrismaCloudCompute/Playbooks/Prisma_Cloud_Compute_-_Audit_Alert_Enrichment.yml",
+      "source_sha256": "4a7fdf48f03df30b34d18407638ecfa0d118918b81e20307c51dddaed64c2ecf"
+    },
+    {
+      "source_file": "Packs/PrismaCloudCompute/Playbooks/Prisma_Cloud_Compute_-_Audit_Alert_Vulnerabilities_Enrichment.yml",
+      "source_sha256": "55131701bae3472c2eec956b521d6436ad2b09ce3a1ab56e01c604d359a8cd96"
+    },
+    {
+      "source_file": "Packs/PrismaCloudCompute/Playbooks/Prisma_Cloud_Compute_-_Audit_Alert_v3.yml",
+      "source_sha256": "12ffc95e8f776409945595f83641696ab87c5f6edfbb1972f1d24fd5e3f087bc"
+    },
+    {
+      "source_file": "Packs/PrismaCloudCompute/Playbooks/Prisma_Cloud_Compute_-_Container_Forensics.yml",
+      "source_sha256": "b15aa83f2626ecefa0b9b150555449a92eb8fde4966a93d11e59fc1a8597c20e"
+    },
+    {
+      "source_file": "Packs/PrismaCloudCompute/Playbooks/Prisma_Cloud_Compute_-_Vulnerability_Alert.yml",
+      "source_sha256": "694def4034077bc7a7add60d461f164f0c7c80b64aeefb1bf413f45df546f3a9"
+    },
+    {
+      "source_file": "Packs/PrismaSaasSecurity/Playbooks/Saas_Security_-_Incident_Processor.yml",
+      "source_sha256": "88331251d290caeb0d9d350770c1e3cfdecb4fa2ec0b3d6c74c12dcfeeda1444"
+    },
+    {
+      "source_file": "Packs/PrismaSaasSecurity/Playbooks/Saas_Security_-_Remediate_an_asset.yml",
+      "source_sha256": "4fc512282037e3e8f66891bc5df4d97518e881f0bc10310a0d8a98805b58653e"
+    },
+    {
+      "source_file": "Packs/PrismaSaasSecurity/Playbooks/Saas_Security_-_Take_Action_on_the_Incident.yml",
+      "source_sha256": "e85f85017efd499291602393770debd9f48d9fa5bd7a43977fe47e2d3618b170"
+    },
+    {
+      "source_file": "Packs/ProactiveThreatHunting/Playbooks/playbook-Proactive_Threat_Hunting.yml",
+      "source_sha256": "064d870ff5a7d94b1c59c2b465de00a7eceb55914e1c91ac05a40867557f01ef"
+    },
+    {
+      "source_file": "Packs/ProactiveThreatHunting/Playbooks/playbook-Proactive_Threat_Hunting_-_Block_Account.yml",
+      "source_sha256": "511321022cb9be8b6e65f7b6b81291aa7f001bbdea92bcbcd1c412b70417449f"
+    },
+    {
+      "source_file": "Packs/ProactiveThreatHunting/Playbooks/playbook-Proactive_Threat_Hunting_-_Block_Indicators.yml",
+      "source_sha256": "365a316ab5fdcf424eaafe534843ef1bb146f6138bd54a8c33a6f2715139074c"
+    },
+    {
+      "source_file": "Packs/ProactiveThreatHunting/Playbooks/playbook-Proactive_Threat_Hunting_-_Endpoint_Isolation.yml",
+      "source_sha256": "10c7c9f6a56a124865ea28313e169af8007c7312c0cc0fe687a2a932fca638ab"
+    },
+    {
+      "source_file": "Packs/ProactiveThreatHunting/Playbooks/playbook-Proactive_Threat_Hunting_-_Entity_Enrichment.yml",
+      "source_sha256": "f59d39cf13246250e4b60bb7b28e110d7d2c0e47793e9e412fecd668900f7f1c"
+    },
+    {
+      "source_file": "Packs/ProactiveThreatHunting/Playbooks/playbook-Proactive_Threat_Hunting_-_Execute_Query.yml",
+      "source_sha256": "a0881fe3dbae9161c1006fa1f52fc8a2a26f650ea196652864f13bb484d18cc6"
+    },
+    {
+      "source_file": "Packs/ProactiveThreatHunting/Playbooks/playbook-Proactive_Threat_Hunting_-_Quarantine_File.yml",
+      "source_sha256": "aa530f3745c2c32acc98c57383469dfba1e3b1b4a564c4ef15b1a9efc94155f1"
+    },
+    {
+      "source_file": "Packs/ProactiveThreatHunting/Playbooks/playbook-Proactive_Threat_Hunting_-_SDO_Threat_Hunting.yml",
+      "source_sha256": "45cdfa9c737f14309dd226564a8cb31628bd9d070859fdf70a0c4ad9cadf8453"
+    },
+    {
+      "source_file": "Packs/ProofpointTAP/Playbooks/playbook-Event_Enrichment.yml",
+      "source_sha256": "17d262b072c7af4c6ce5b8e21fe6b2949a813d79b35c8429089b6837207b05e3"
+    },
+    {
+      "source_file": "Packs/ProofpointThreatResponse/Playbooks/playbook-Block_Domain_-_Proofpoint_Threat_Response.yml",
+      "source_sha256": "d2c09c07162d1a97c2ad5e3db4d5831db57d0a0b7438532c649b3063fdc9519b"
+    },
+    {
+      "source_file": "Packs/QRadar/Playbooks/playbook-QRadar_Build_Query_and_Search.yml",
+      "source_sha256": "867c0cab821e8eb087d7345a0a2d8309c4076e58eacd85d3074ebbc9dd5fd5be"
+    },
+    {
+      "source_file": "Packs/QRadar/Playbooks/playbook-QRadar_Generic.yml",
+      "source_sha256": "4eaea7f8dc7ac43538b99ceb24b2d5a77f638265815af49482a69950d0f7c12c"
+    },
+    {
+      "source_file": "Packs/QRadar/Playbooks/playbook-QRadar_Indicator_Hunting_V2.yml",
+      "source_sha256": "3a5925c75f0cc0df5a4fb577189ce325b798d0788fb1c33142b79bf94d345409"
+    },
+    {
+      "source_file": "Packs/QRadar/Playbooks/playbook-TIM_-_QRadar_Add_Bad_Hash_Indicators.yml",
+      "source_sha256": "3feed92765c214173c738c52f39572163ebfe100fed2cfc1a78eae0158288789"
+    },
+    {
+      "source_file": "Packs/QRadar/Playbooks/playbook-TIM_-_QRadar_Add_Domain_Indicators.yml",
+      "source_sha256": "d7d9bf29317e555125ce80fb069a122c273a33ebb30efa09b1e28abe32f7fc60"
+    },
+    {
+      "source_file": "Packs/QRadar/Playbooks/playbook-TIM_-_QRadar_Add_IP_Indicators.yml",
+      "source_sha256": "7bacc62bf698472ff77ed0ade674c2d7f6bdde5cbb499b71d35845b34898ca46"
+    },
+    {
+      "source_file": "Packs/QRadar/Playbooks/playbook-TIM_-_QRadar_Add_Url_Indicators.yml",
+      "source_sha256": "f61250d6f6f3e10b1c840f642d8339c8c8e530bd8765df4b36ca7b1f0804bc0a"
+    },
+    {
+      "source_file": "Packs/Qintel/Playbooks/playbook-Indicator_Enrichment_-_Qintel.yml",
+      "source_sha256": "0821b5319bb07985cb9e23c800fea62245ff90a6bf4c728678746aaf360da542"
+    },
+    {
+      "source_file": "Packs/RDPCacheHunting/Playbooks/playbook-RDP_Bitmap_Cache_-_Detect_and_Hunt.yml",
+      "source_sha256": "466167dddf127b1d5fbecb2cf3c5cfee30a0efa4d984ce5d960ea9d82fc1abcc"
+    },
+    {
+      "source_file": "Packs/RSTCloud/Playbooks/Domain_Enrichment_-_RST_Threat_Feed.yml",
+      "source_sha256": "fc5574e35c6ccc80bd41972f9fbd3f1b76207d3217469ab9a04b9bd0b036f15b"
+    },
+    {
+      "source_file": "Packs/RSTCloud/Playbooks/File_Enrichment_-_RST_Threat_Feed.yml",
+      "source_sha256": "4f7f50c6d0a3e840a03b95101d0c00b5a50e44b3e35db4e22698ed0abaf47d2c"
+    },
+    {
+      "source_file": "Packs/RSTCloud/Playbooks/IP_Enrichment_-_External_-_RST_Threat_Feed.yml",
+      "source_sha256": "699f634d625a86815c71f76fc6d8052466d4084a76ff42f749ba40ce23647cc5"
+    },
+    {
+      "source_file": "Packs/RSTCloud/Playbooks/URL_Enrichment_-_RST_Threat_Feed.yml",
+      "source_sha256": "a9b8eae700d9eb4828b2ffc95aa1541e6d11529536b58ef729ef2646f1c00da7"
+    },
+    {
+      "source_file": "Packs/Ransomware/Playbooks/playbook-Post_Intrusion_Ransomware_Investigation_6_5.yml",
+      "source_sha256": "2b984e3fa9715a973f99cadf328484a9d81cdf363eea1660860b546b74f35f5d"
+    },
+    {
+      "source_file": "Packs/Ransomware/Playbooks/playbook-ransomware.yml",
+      "source_sha256": "da34a3205fb0b81fa5023d4693656044dc34bd8bd0840bbc421dc807d3d4a40b"
+    },
+    {
+      "source_file": "Packs/Rapid7_InsightIDR/Playbooks/playbook-Rapid7_InsightIDR_-_Execution_Flow_Indicators_Hunting.yml",
+      "source_sha256": "cbf80587f7d79a9eb362c21591112be82682433c3222175bd32ea05c76e29861"
+    },
+    {
+      "source_file": "Packs/Rapid7_InsightIDR/Playbooks/playbook-Rapid7_InsightIDR_-_File_Indicators_Hunting.yml",
+      "source_sha256": "8707b6cad2db2b9a3f835189000a00582d4b4adee3a840b829537af10a8dc5dc"
+    },
+    {
+      "source_file": "Packs/Rapid7_InsightIDR/Playbooks/playbook-Rapid7_InsightIDR_-_HTTP_Requests_Indicators_Hunting.yml",
+      "source_sha256": "c651417343521964120dccf5be403337cdc4f6fec82ac7488ef9ee12a96159fd"
+    },
+    {
+      "source_file": "Packs/Rapid7_InsightIDR/Playbooks/playbook-Rapid7_InsightIDR_-_Indicators_Hunting.yml",
+      "source_sha256": "123afd29797602a6e1b7d83759e121e76fd3dcd61195892a15840e1927c0b8be"
+    },
+    {
+      "source_file": "Packs/Rapid7_InsightIDR/Playbooks/playbook-Rapid7_InsightIDR_-_Traffic_Indicators_Hunting.yml",
+      "source_sha256": "66f52d9fed8d1b372b148a31e88a92fdb5d9518130cad88c923e6f2709779403"
+    },
+    {
+      "source_file": "Packs/Rapid7_Nexpose/Playbooks/playbook-Vulnerability_Handling_-_Nexpose.yml",
+      "source_sha256": "f675b992a9f1a58f7d8a9354494d7f2bbfb07bcd9263330888a97f5cd3fa8dff"
+    },
+    {
+      "source_file": "Packs/Reco/Playbooks/Reco_Google_Drive_Automation.yml",
+      "source_sha256": "2e7a297bf77220a83a0d8c935bb44a9736a077e05f7cd67aabfbd556ee358b60"
+    },
+    {
+      "source_file": "Packs/Reco/Playbooks/Reco_Reduce_Risk_Google_Publicly_Exposed_Files.yml",
+      "source_sha256": "dc6a2bfa62c5c4d60d7501c0f04c50196898576e6530159372c066e21237d59f"
+    },
+    {
+      "source_file": "Packs/RecordedFuture/Playbooks/playbook-Recorded_Future_CVE_Intelligence.yml",
+      "source_sha256": "23e47f31e82356b5941f6581a5bbf9b69e90a9fffa7136899a0cd8d9bad61609"
+    },
+    {
+      "source_file": "Packs/RecordedFuture/Playbooks/playbook-Recorded_Future_CVE_Reputation.yml",
+      "source_sha256": "beb2aa11fa897868b18466a2477634e804eb80bff2d16ed9c7ca74da74bd1d65"
+    },
+    {
+      "source_file": "Packs/RecordedFuture/Playbooks/playbook-Recorded_Future_Domain_Reputation.yml",
+      "source_sha256": "f619938f7a2e7f9e67d5582be3e864e3b904039210ca77d3ea5c51349dc12742"
+    },
+    {
+      "source_file": "Packs/RecordedFuture/Playbooks/playbook-Recorded_Future_Entity_Enrichment.yml",
+      "source_sha256": "73605e7a8221a1809f4c68ef3570e90a4b4b885d3c6d83f0b419eb1cbd71aff6"
+    },
+    {
+      "source_file": "Packs/RecordedFuture/Playbooks/playbook-Recorded_Future_File_Reputation.yml",
+      "source_sha256": "05f9e7344a3b86f3958e8c0f12153b2f3d04cd6c3f8c35a4adc3876f4e2ff942"
+    },
+    {
+      "source_file": "Packs/RecordedFuture/Playbooks/playbook-Recorded_Future_IP_Reputation.yml",
+      "source_sha256": "09b0722fc5379b03b7dab29ad9e2bbb31451d665607a05c1266b4dff6bbc2dbf"
+    },
+    {
+      "source_file": "Packs/RecordedFuture/Playbooks/playbook-Recorded_Future_Leaked_Credential_Alert_Handling.yml",
+      "source_sha256": "d7f53d0c38f8538cfef6db17b80029f52227eab118dcb5749966da9e9e8393d5"
+    },
+    {
+      "source_file": "Packs/RecordedFuture/Playbooks/playbook-Recorded_Future_Sandbox.yml",
+      "source_sha256": "8ae6055fbfd3fa42d81caa8379fb1cc0a9dffac2f98a83fd3cd9a9f520f3d99e"
+    },
+    {
+      "source_file": "Packs/RecordedFuture/Playbooks/playbook-Recorded_Future_Threat_Actor_Search.yml",
+      "source_sha256": "699585f4ddf26aed874aafdffaf189db9b614f240521eea8f0182957385a3e20"
+    },
+    {
+      "source_file": "Packs/RecordedFuture/Playbooks/playbook-Recorded_Future_Threat_Assessment.yml",
+      "source_sha256": "5b0199512877be8d3a5b2986d9cfd6003e0b15e97da90548219de03c2906aced"
+    },
+    {
+      "source_file": "Packs/RecordedFuture/Playbooks/playbook-Recorded_Future_Typosquat_Alert_Handling.yml",
+      "source_sha256": "48b9e3334ebe69d898d1aaa53d75f1950449f52c3a761cbb99f91d6d4d55c0d8"
+    },
+    {
+      "source_file": "Packs/RecordedFuture/Playbooks/playbook-Recorded_Future_Vulnerability.yml",
+      "source_sha256": "65df4057ba359d6d457fee99969059ba008acb0e90e324c25642b39217ab625f"
+    },
+    {
+      "source_file": "Packs/RecordedFuture/Playbooks/playbook-Recorded_Future_Vulnerability_Alert_Handling.yml",
+      "source_sha256": "f9572151ae9656b5f96a00faa0a175765b69723ab54e402f6ff6329e8f7796d1"
+    },
+    {
+      "source_file": "Packs/ReversingLabs_A1000/Playbooks/Detonate_File_-_ReversingLabs_A1000.yml",
+      "source_sha256": "7c1a0c1427327700f52922d26d66c7fa6a80279ed000efcf9897d0a761146472"
+    },
+    {
+      "source_file": "Packs/ReversingLabs_TitaniumScale/Playbooks/Detonate_File_-_ReversingLabs_TitaniumScale.yml",
+      "source_sha256": "ee76663200d28b84f16a9be5a3c1bfa137e7cd598d88e98026dca656eff268aa"
+    },
+    {
+      "source_file": "Packs/ReversingLabs_Titanium_Cloud/Playbooks/Analyze_URL_-_ReversingLabs_TitaniumCloud.yml",
+      "source_sha256": "8a408e39f4179970646f5c709cd68236e7eafdbb70fcba50cf76fa8513ea6007"
+    },
+    {
+      "source_file": "Packs/ReversingLabs_Titanium_Cloud/Playbooks/File_Reputation_-_ReversingLabs_TitaniumCloud.yml",
+      "source_sha256": "7ce8a7f027312c6b7f1b20ef1156a05ba03cb45d34766305964047d3321f5b05"
+    },
+    {
+      "source_file": "Packs/ReversingLabs_Titanium_Cloud/Playbooks/Malware_Triage_-_ReversingLabs_TitaniumCloud.yml",
+      "source_sha256": "e413b1a5767c0759c3eb12654b10ff6a80d47a4a251b002251f1f49a84b00645"
+    },
+    {
+      "source_file": "Packs/RiskIQDigitalFootprint/Playbooks/playbook-Add_Unknown_Indicators_To_Inventory_-_RiskIQ_Digital_Footprint.yml",
+      "source_sha256": "245d4afb2da58eb363e62a3d1d6fb2257a43fd7986082df8de5f8fc8a84c976c"
+    },
+    {
+      "source_file": "Packs/RiskIQDigitalFootprint/Playbooks/playbook-Check_IP_Address_For_Whitelisting_-_RiskIQ_Digital_Footprint.yml",
+      "source_sha256": "b0f7bb14b8eb1b2dd721710b71ba35e45cb5648fc9609180ea2f8661fb73636b"
+    },
+    {
+      "source_file": "Packs/RiskIQDigitalFootprint/Playbooks/playbook-Check_Indicators_For_Unkown_Assets_-_RiskIQ_Digital_Footprint.yml",
+      "source_sha256": "219196a1fb80a69855deda3ed59a3874d4b86a0bb17829370d2048c5d569b603"
+    },
+    {
+      "source_file": "Packs/RiskIQDigitalFootprint/Playbooks/playbook-Enrich_Incident_With_Asset_Details_-_RiskIQ_Digital_Footprint.yml",
+      "source_sha256": "ef8c025054475d470f27d5c74e7ecbc9f5620ccee583699602d23df9cf3d3cda"
+    },
+    {
+      "source_file": "Packs/RiskIQDigitalFootprint/Playbooks/playbook-IP_Whitelist_And_Exclusion_-_RiskIQ_Digital_Footprint.yml",
+      "source_sha256": "707b642d43b56d4a71eec1c832b6edabf247a4310f98970ec6ed78902727467a"
+    },
+    {
+      "source_file": "Packs/RiskIQDigitalFootprint/Playbooks/playbook-RiskIQAsset_Basic_Information_Enrichment_-_RiskIQ_Digital_Footprint.yml",
+      "source_sha256": "42f1e71394a16559c1761b5da23543f7e145d2ab03c6c07a8d72895c9ff7bea8"
+    },
+    {
+      "source_file": "Packs/RiskIQDigitalFootprint/Playbooks/playbook-RiskIQAsset_Enrichment_-_RiskIQ_Digital_Footprint.yml",
+      "source_sha256": "ce7c0bf1cec3b555adb85e62848c843e4061cd117c495835e0621c3c1388b138"
+    },
+    {
+      "source_file": "Packs/RiskIQDigitalFootprint/Playbooks/playbook-Vulnerability_Scan_-_RiskIQ_Digital_Footprint_-_Tenable_io.yml",
+      "source_sha256": "f308a9e483955e66471777f8259cf3d0bbbd9d91a0e3cb2014844359a11caced"
+    },
+    {
+      "source_file": "Packs/RiskSense/Playbooks/playbook-CVE_Exposure_-_RiskSense.yml",
+      "source_sha256": "8a33f08cb98f82a0bf24af9fd54daf0c0a67c6612399d2c523f7fd0c144b9c49"
+    },
+    {
+      "source_file": "Packs/RiskSense/Playbooks/playbook-Ransomware_Exposure_-_RiskSense.yml",
+      "source_sha256": "0501503c8a0990ae9eac680dee52928d89313ed3b8c3f99d2097f5783e8b431a"
+    },
+    {
+      "source_file": "Packs/RubrikPolaris/Playbooks/playbook-Rubrik_Anomaly_Incident_Response_-_Rubrik_Polaris.yml",
+      "source_sha256": "47b4f881740e7e761039ae2a5dc2b05897190e294866acf67522d1e28cbbc001"
+    },
+    {
+      "source_file": "Packs/RubrikPolaris/Playbooks/playbook-Rubrik_DSPM_Violation_Remediation_-_Rubrik_Security_Cloud.yml",
+      "source_sha256": "aa9886cb6477ff30b8acb30b5c77686bb51310cce681fd0c9ae7f2f682822898"
+    },
+    {
+      "source_file": "Packs/RubrikPolaris/Playbooks/playbook-Rubrik_Data_Object_Discovery_-_Rubrik_Polaris.yml",
+      "source_sha256": "bfc6ccb91eefe4c54153a367c0d934a5026cb44bd3571e2b48fd9a2e77cab7e4"
+    },
+    {
+      "source_file": "Packs/RubrikPolaris/Playbooks/playbook-Rubrik_Fileset_Ransomware_Discovery_-_Rubrik_Polaris.yml",
+      "source_sha256": "0108f5d147d4719c26275ccba416435a4051d7749536f1f0cbe163ca40d40bab"
+    },
+    {
+      "source_file": "Packs/RubrikPolaris/Playbooks/playbook-Rubrik_IOC_Scan_-_Rubrik_Polaris.yml",
+      "source_sha256": "4bdb15fbeb3c330cbdae7729e94d30d82ae3badd17571c63d1ba883457696d10"
+    },
+    {
+      "source_file": "Packs/RubrikPolaris/Playbooks/playbook-Rubrik_IOC_Scan_v2_-_Rubrik_Polaris.yml",
+      "source_sha256": "52222f26faf7c3d3565babae4d94dd0e2ef69a78bc4eb9f1cc6be1a5cdf90e95"
+    },
+    {
+      "source_file": "Packs/RubrikPolaris/Playbooks/playbook-Rubrik_Object_Context_Analysis_-_Rubrik_Polaris.yml",
+      "source_sha256": "c10daa326effecb4817491ed1ff990a7d0bfde022024c7e97596403e74809bc2"
+    },
+    {
+      "source_file": "Packs/RubrikPolaris/Playbooks/playbook-Rubrik_Quarantine_Files_General.yml",
+      "source_sha256": "bdbd2a0ac080a567dde706f875016ac8e691ee1f5be7dbce7d8421edbeff5dbe"
+    },
+    {
+      "source_file": "Packs/RubrikPolaris/Playbooks/playbook-Rubrik_Quarantine_Files_using_MS_Graph_Search.yml",
+      "source_sha256": "a04c464890ff0d7d3411e9466355b1e4daf3d027241be7dea17ac59fb74d45db"
+    },
+    {
+      "source_file": "Packs/RubrikPolaris/Playbooks/playbook-Rubrik_Ransomware_Discovery_and_File_Recovery_-_Rubrik_Polaris.yml",
+      "source_sha256": "0cf52b4f78d5c2ec2f9b9d0cabca6c09320aff040facb6f03c552807a451ff7f"
+    },
+    {
+      "source_file": "Packs/RubrikPolaris/Playbooks/playbook-Rubrik_Ransomware_Discovery_and_VM_Recovery_-_Rubrik_Polaris.yml",
+      "source_sha256": "6d25c6ca931df43debc4087e7300bae6c79195155bc5bdcfc61322d3ac90f78e"
+    },
+    {
+      "source_file": "Packs/RubrikPolaris/Playbooks/playbook-Rubrik_Turbo_IOC_Scan_-_Rubrik_Polaris.yml",
+      "source_sha256": "2f0bf6dcf054323f01af339db5d3a62973daf15f0e6ed4cd7f6221c661232710"
+    },
+    {
+      "source_file": "Packs/RubrikPolaris/Playbooks/playbook-Rubrik_User_Access_Analysis_-_Rubrik_Polaris.yml",
+      "source_sha256": "93f952990f3492328dbde48299ff5542c7b53e0d476368b087ee74e2ab678272"
+    },
+    {
+      "source_file": "Packs/RubrikPolaris/Playbooks/playbook-Rubrik_Workload_Analysis_-_Rubrik_Security_Cloud.yml",
+      "source_sha256": "7c2ad4b66057ed50253d8fad525df7f9de5ae68846d1cd97bc37da57fa8fecaa"
+    },
+    {
+      "source_file": "Packs/SANS/Playbooks/playbook-Brute_Force_Investigation_-_Generic_-_SANS_6_5.yml",
+      "source_sha256": "24335dd520db5c2c49904c95785a351e3c8a3288d94f67f952cc9138bb5f2fdf"
+    },
+    {
+      "source_file": "Packs/SANS/Playbooks/playbook-SANS_-_Incident_Handlers_Checklist.yml",
+      "source_sha256": "9e44236f0181d2634baa3fd58aaced417109bf1a80e2750bdc98ffe665d49f85"
+    },
+    {
+      "source_file": "Packs/SANS/Playbooks/playbook-SANS_-_Incident_Handlers_Handbook_Template.yml",
+      "source_sha256": "6d21bba64612cbd16a7b2b5591a6db913993a2be80dce30fb978c9d2ef913f5e"
+    },
+    {
+      "source_file": "Packs/SANS/Playbooks/playbook-SANS_-_Lessons_Learned.yml",
+      "source_sha256": "f903c3ea183934ad079cd9eed2f4d413dd9f03b8853cb0562dddf15b5984bfac"
+    },
+    {
+      "source_file": "Packs/SOCRadar/Playbooks/playbook-SOCRadar_Incident.yml",
+      "source_sha256": "a5e2d94b86437b2aff9e63d7c36d77e62cdd1825f992624f473fdef8a369a791"
+    },
+    {
+      "source_file": "Packs/SailPointIdentityIQ/Playbooks/SailPoint_IdentityIQ_Disable_User_Account_Access.yml",
+      "source_sha256": "c8fbe97b56f7240defffc4873d4df7eaceeb620f6738ba880370e400832d7b3a"
+    },
+    {
+      "source_file": "Packs/SecneurXAnalysis/Playbooks/Detonate_File_-_SecneurX_Analysis.yml",
+      "source_sha256": "6128c0ab35f03cdd0a581bd561653e72e54226a3a6aeeca52fd3aeb4d01a3e5c"
+    },
+    {
+      "source_file": "Packs/SecneurXAnalysis/Playbooks/Detonate_URL_-_SecneurX_Analysis.yml",
+      "source_sha256": "3c80e1e5252768831851afc4043fc39535d0e5db6d1ea6a220a3d308dd7a88a4"
+    },
+    {
+      "source_file": "Packs/Securonix/Playbooks/playbook-Update_Incident_Status_And_Fetch_Attachments_-_Securonix.yml",
+      "source_sha256": "7ab9a33c85c81602f27e210f4c625cf0aa0fbcca1103433dacfe21f7fb6146dd"
+    },
+    {
+      "source_file": "Packs/ServiceNow/Playbooks/playbook-Create_ServiceNow_Ticket.yml",
+      "source_sha256": "ff29a876c83b0b97b02ec16db2f6ec6821e07409a96d73fb3b59e276310a09ef"
+    },
+    {
+      "source_file": "Packs/ShadowIT/Playbooks/playbook-Handle_Shadow_IT_Incident.yml",
+      "source_sha256": "1cc8432bb452e91f11594b131dfdca11e0fd5622dfefcc0969d610a68d953ec7"
+    },
+    {
+      "source_file": "Packs/ShiftManagement-AssignToNextShift/Playbooks/playbook-Assign_Active_Incidents_to_Next_Shift.yml",
+      "source_sha256": "f78e2a67bba72b375f9973f965673276882c7602c5d80a3163e90a4bfd6bded7"
+    },
+    {
+      "source_file": "Packs/ShiftManagement/Playbooks/playbook-ShiftManagment_Assign_Active_Incidents_to_Next_Shift.yml",
+      "source_sha256": "8e2e33b3c48d8ad4c8456468e28fe41cf7cccb490e29c38cacdd1d638a737d95"
+    },
+    {
+      "source_file": "Packs/ShiftManagement/Playbooks/playbook-ShiftManagment_Shift_handover.yml",
+      "source_sha256": "5d9c372259f9de4fdf8f00822e2b5f8397481357411a31dacf94614d84bfe492"
+    },
+    {
+      "source_file": "Packs/Sigma/Playbooks/playbook-Sigma_-_Query_using_Sigma_rules.yml",
+      "source_sha256": "bd6b6b513ce2f56e93ed0b809ca86e8b85e54f6134623e27edca4739601b3901"
+    },
+    {
+      "source_file": "Packs/Silverfort/Playbooks/Silverfort_Update_Risk_for_Domain_Admins_Incidents.yml",
+      "source_sha256": "f1ce1a6a3d55712072572c3208378da56cea7160a018e1ba72549b32bb31155e"
+    },
+    {
+      "source_file": "Packs/Sixgill-Darkfeed/Playbooks/Darkfeed_-_malware_download_from_feed.yml",
+      "source_sha256": "fb9b25c01da7178bf5e94c518c16092dae05f77d4df0be7007e9467f246685bc"
+    },
+    {
+      "source_file": "Packs/Sixgill-Darkfeed/Playbooks/Darkfeed_IOC_detonation_and_proactive_blocking.yml",
+      "source_sha256": "a5b4afdc1c5b7b16975c2e2efcb986f712cb95fb82c669e4dc98a8aa586ff6ba"
+    },
+    {
+      "source_file": "Packs/Sixgill-Darkfeed/Playbooks/Darkfeed_Threat_hunting_research.yml",
+      "source_sha256": "51c2c0127dc01383513be79625573e1552019c0842c241ab29254e90bb1a7638"
+    },
+    {
+      "source_file": "Packs/Slack/Playbooks/playbook-Slack_-_General_Failed_Logins_v2_1.yml",
+      "source_sha256": "bb16689a7140dabe13c18d29db956e5fed7c5808d4baed85d0fa05d5946f026b"
+    },
+    {
+      "source_file": "Packs/Smokescreen_IllusionBLACK/Playbooks/Smokescreen_IllusionBLACK_Default.yml",
+      "source_sha256": "dd182b10ad72a0b0176528f4683d71c42dc2dc6b1ceba2552231ed8b7b7e275b"
+    },
+    {
+      "source_file": "Packs/SocialEngineeringDomainAnalysis/Playbooks/Social_Engineering_Domain_Investigation.yml",
+      "source_sha256": "17edae48dcd57b31b24258e56975ec2d5c7bb3b4b7534aaf1dfff53896ddb886"
+    },
+    {
+      "source_file": "Packs/SophosXGFirewall/Playbooks/Sophos_Firewall_-_Block_IP.yml",
+      "source_sha256": "38f355458af1afd70628c9760ea12b5f2a605132ddd8b2816c71e0512f69b281"
+    },
+    {
+      "source_file": "Packs/SophosXGFirewall/Playbooks/Sophos_Firewall_-_Block_URL.yml",
+      "source_sha256": "6d0bc89f759c5a8775106b6d0114dd064af0e939d997313f488151765302057f"
+    },
+    {
+      "source_file": "Packs/SpecterOpsBHE/Playbooks/playbook-SpecterOpsBHE.yml",
+      "source_sha256": "1dcf50c79bfecddc0e9a828adca58f0f936789f729dd26374864ef6ca250b153"
+    },
+    {
+      "source_file": "Packs/SplunkPy/Playbooks/playbook-Splunk_Generic.yml",
+      "source_sha256": "06a225173f63e8e659415964007d4031a995084801f9b73bd2bc8226e65cdbce"
+    },
+    {
+      "source_file": "Packs/SplunkPy/Playbooks/playbook-Splunk_Indicator_Hunting.yml",
+      "source_sha256": "66e093e17701647531637f646f43f77ac173126752bd7c11bf13864a1ad28ae6"
+    },
+    {
+      "source_file": "Packs/SpringRCEs/Playbooks/playbook-Spring_Core_and_Cloud_Function_SpEL_RCEs.yml",
+      "source_sha256": "60592231e2e3d36dfc28f0e50884419172c21b33f7ccfffe0b5e529643cdeaf2"
+    },
+    {
+      "source_file": "Packs/SpyCloudEnterpriseProtection/Playbooks/playbook-SpyCloud_Breach_Playbook.yml",
+      "source_sha256": "ab425153d8301aaacf1238eaf9e907a1374689a51b107a64dba77d4586664b4b"
+    },
+    {
+      "source_file": "Packs/SpyCloudEnterpriseProtection/Playbooks/playbook-SpyCloud_Malware_Playbook.yml",
+      "source_sha256": "9bf130b2241a98e15f458957d591687fe65e45a87c6ea70fd2cfca92d0201b66"
+    },
+    {
+      "source_file": "Packs/Stamus/Playbooks/Stamus_Networks_-_Get_Extra_Data.yml",
+      "source_sha256": "533c2d7ba569bec5db50a1d60b277b8b292807d692ca3eddc7b6ffa62db04ec3"
+    },
+    {
+      "source_file": "Packs/SupernaZeroTrust/Playbooks/Superna_Zero_Trust_Snapshot.yml",
+      "source_sha256": "c4098cbe590fc41eb2b1a6ff57677bffe061c7d233d90c626b5f3e771507307b"
+    },
+    {
+      "source_file": "Packs/SuspiciousDomainHunting/Playbooks/playbook-Suspicious_Domain_Hunting_Incident_Handling.yml",
+      "source_sha256": "cc4d1ca3a66f879a42cee7d908ccc7a548d157dd0db556f2f0e620d702d87b70"
+    },
+    {
+      "source_file": "Packs/SymantecBlueCoatMalwareAnalysis/Playbooks/playbook-SymantecBlueCoatMalwareAnalysis_DetonateFile.yml",
+      "source_sha256": "f54c31fa57570f434a5d46b7b8aa257a8e38123d2878c0d41d355905c94b6dff"
+    },
+    {
+      "source_file": "Packs/SymantecBlueCoatMalwareAnalysis/Playbooks/playbook-SymantecBlueCoatMalwareAnalysis_DetonateURL.yml",
+      "source_sha256": "c83e2ccf8fe361b2f9e8ca861864b9ab2ed512e43fbf693ca8ae9db759a73612"
+    },
+    {
+      "source_file": "Packs/Symantec_Messaging_Gateway/Playbooks/playbook-Block_Domain_-_Symantec_Messaging_Gateway.yml",
+      "source_sha256": "630fa52daffec4297925833f0590ab5d1a75a83895207d8e5b34eaa952245c13"
+    },
+    {
+      "source_file": "Packs/Sysdig/Playbooks/Sysdig_Trigger_System_Capture_Playbook.yml",
+      "source_sha256": "671dcb2c319f945a43db77921b854f0ac8224ab6fd12990ebe6f35496e72ccb8"
+    },
+    {
+      "source_file": "Packs/TIMCampaignTracking/Playbooks/playbook-TIM_-_Intel_Tracking.yml",
+      "source_sha256": "7d88450bd400a5047f54e0a5721a9597f1689c8960f13db8eeb871f20cce4289"
+    },
+    {
+      "source_file": "Packs/TIM_Processing/Playbooks/playbook-TIM_-_Indicator_Auto_Processing.yml",
+      "source_sha256": "e59d4a964ffd50932862fc60ea0373f6427cc0d74c729221e22229d2f4578370"
+    },
+    {
+      "source_file": "Packs/TIM_Processing/Playbooks/playbook-TIM_-_Indicator_Relationships_Analysis.yml",
+      "source_sha256": "45f261edbd305c39077033f02c1221973194266a5bbae271ca574c9df364eda7"
+    },
+    {
+      "source_file": "Packs/TIM_Processing/Playbooks/playbook-TIM_-_Process_Indicators_-_Fully_Automated.yml",
+      "source_sha256": "f1e2c4a3dc4aed38a51c348be5745cbb49c26641dca276337995ebdefa6e6459"
+    },
+    {
+      "source_file": "Packs/TIM_Processing/Playbooks/playbook-TIM_-_Process_Indicators_Against_Approved_Hash_List.yml",
+      "source_sha256": "077ba48eb20fbc8ae2249df34459fa80e927268028cbbd18538a814e696e78f8"
+    },
+    {
+      "source_file": "Packs/TIM_Processing/Playbooks/playbook-TIM_-_Process_Indicators_Against_Business_Partners_Domains.yml",
+      "source_sha256": "4cc88fb378d38250f339132eb3123ee7f885763221362b513fea87b889d6b3f7"
+    },
+    {
+      "source_file": "Packs/TIM_Processing/Playbooks/playbook-TIM_-_Process_Indicators_Against_Business_Partners_IP_List.yml",
+      "source_sha256": "623476007bf64679e38f5a02f9adfc37dd342d722772f4c2cf5fc6b49983c7a2"
+    },
+    {
+      "source_file": "Packs/TIM_Processing/Playbooks/playbook-TIM_-_Process_Indicators_Against_Business_Partners_URL_List.yml",
+      "source_sha256": "9297b57d625a8429c62704ff0ab95d6f2422e93cf9d627986c32c28b918674d2"
+    },
+    {
+      "source_file": "Packs/TIM_Processing/Playbooks/playbook-TIM_-_Process_Indicators_Against_Organizations_External_IP.yml",
+      "source_sha256": "5d7ab1d3672ba877072940189e687f191bc41bcca0ccbd0f57807a7ccfe3cbd0"
+    },
+    {
+      "source_file": "Packs/TIM_Processing/Playbooks/playbook-TIM_-_Process_Indicators_Manual_Review.yml",
+      "source_sha256": "43f907886c9c78b7c6f0d8c62740efe767f1f330c279d4befeb8c67e667b95d8"
+    },
+    {
+      "source_file": "Packs/TIM_Processing/Playbooks/playbook-TIM_-_Review_Indicators_Manually.yml",
+      "source_sha256": "3552f4db6c10582b967b4bf637a9074744056a8cbf0fd13eb890b7c226402fdf"
+    },
+    {
+      "source_file": "Packs/TIM_Processing/Playbooks/playbook-TIM_-_Review_Indicators_Manually_For_Allowlisting.yml",
+      "source_sha256": "a0dbe4d9303be7c357f4dfe253ee77a02f0dc73a57b761eb0900b4273eccddbd"
+    },
+    {
+      "source_file": "Packs/TIM_Processing/Playbooks/playbook-TIM_-_Run_Enrichment_For_All__Indicator_Types.yml",
+      "source_sha256": "33364781fe241455566abf49bb96874eac5a1e0eff7a5682d852f247a975c955"
+    },
+    {
+      "source_file": "Packs/TIM_Processing/Playbooks/playbook-TIM_-_Run_Enrichment_For_Domain_Indicators_6_0_0_.yml",
+      "source_sha256": "ff254205eb96aebad4652dcd15db5ea7b534aa9bbee49fcbd01084d1c8c9f673"
+    },
+    {
+      "source_file": "Packs/TIM_Processing/Playbooks/playbook-TIM_-_Run_Enrichment_For_Hash_Indicators_6_0_0.yml",
+      "source_sha256": "88410053be4a136a3d9e9646b356b761b37137d5e27b7e44c8b53aa6dcd3ffa5"
+    },
+    {
+      "source_file": "Packs/TIM_Processing/Playbooks/playbook-TIM_-_Run_Enrichment_For_IP_Indicators_6_0_0.yml",
+      "source_sha256": "7e7164c68376e90383a9ad837a333b0534bbf14b0c533ab1950cbdcf7cec5b3d"
+    },
+    {
+      "source_file": "Packs/TIM_Processing/Playbooks/playbook-TIM_-_Run_Enrichment_For_Url_Indicators_6_0_0.yml",
+      "source_sha256": "96fad2d9f006fb95abe382a407142de94a9394df497e72088c66b1350c55b440"
+    },
+    {
+      "source_file": "Packs/TIM_Processing/Playbooks/playbook-TIM_-_Update_Indicators_Organizational_External_IP_Tag.yml",
+      "source_sha256": "9480b16d89588e1fbe0cce4cdbea19427bc08d8ef3413b683cfa492ad4eae81e"
+    },
+    {
+      "source_file": "Packs/TIM_SIEM/Playbooks/playbook-TIM_-_Add_All_Indicator_Types_To_SIEM.yml",
+      "source_sha256": "79898f8e712c4da11acb48e20bd4ba1b7a7bb24c73992c5fc6f1a1df79ba6858"
+    },
+    {
+      "source_file": "Packs/TaniumThreatResponse/Playbooks/Tanium_Threat_Response_-_Create_Connection_v2.yml",
+      "source_sha256": "ac89a622bb0e4fc098cc9ef8d54c5a554232553a33f522ded07b05933a669be8"
+    },
+    {
+      "source_file": "Packs/TaniumThreatResponse/Playbooks/Tanium_Threat_Response_-_Request_File_Download_v2.yml",
+      "source_sha256": "b7201d47fce26c4dc7968b7d4aaadb982c62a80712d61cab4596013604a021a5"
+    },
+    {
+      "source_file": "Packs/TaniumThreatResponse/Playbooks/playbook-Tanium_Threat_Response_-_Request_File_Download.yml",
+      "source_sha256": "13e342084203ac59f5d0a8ada17c94c1dabad30984968bcae1bb4e16c60a56c4"
+    },
+    {
+      "source_file": "Packs/TeamManagement/Playbooks/playbook-Set_Team_Members.yml",
+      "source_sha256": "e1106c19efca9dcf634e3463c6d6e70f5de762b45b1fbfd3dedf6ae4054a6bbf"
+    },
+    {
+      "source_file": "Packs/ThinkstCanary/Playbooks/playbook-Enrich_Thinkst_Canary_Events.yml",
+      "source_sha256": "007d44d03c2944344b9905f466aaf8388e25953186c3c63e631bf9e3e9f78c42"
+    },
+    {
+      "source_file": "Packs/ThreatGrid/Playbooks/playbook-Detonate_File_-_ThreatGrid_v2.yml",
+      "source_sha256": "b1c1b3dd9869ffd86560975dc47ea84b99a698f571e1b781f5f17044092dd12f"
+    },
+    {
+      "source_file": "Packs/ThreatGrid/Playbooks/playbook-Detonate_URL_-_ThreatGrid_v2.yml",
+      "source_sha256": "a926a5c017fdea48f38060c4eb9ac298d36b701e87e18968253c91123157d145"
+    },
+    {
+      "source_file": "Packs/ThreatZone/Playbooks/Analyze_File_-_Sandbox_-_ThreatZone.yml",
+      "source_sha256": "d9408ee4c844420de24f8e2d3d20119bba7cc07aa139292197c2be897b25ec52"
+    },
+    {
+      "source_file": "Packs/ThreatZone/Playbooks/Analyze_File_-_Sandbox_-_ThreatZone_v2.yml",
+      "source_sha256": "d9c9c8d4b7b247e52fc19762b266a2203b8f6842ad08bdc04885a85ae81af37b"
+    },
+    {
+      "source_file": "Packs/ThreatZone/Playbooks/Analyze_File_-_Static_Scan_-_ThreatZone.yml",
+      "source_sha256": "5dcb2a5cf846475a20579d208a50cccdb66698460df817f22d8b50683c18b434"
+    },
+    {
+      "source_file": "Packs/ThreatZone/Playbooks/Analyze_File_-_Static_Scan_-_ThreatZone_v2.yml",
+      "source_sha256": "c8ffe9f707d4f3dcd8815abd2cafd93540f0e1141be03fc77556fe1b097273cd"
+    },
+    {
+      "source_file": "Packs/ThreatZone/Playbooks/Analyze_URL_-_ThreatZone.yml",
+      "source_sha256": "6e235fad4a7383d03fd4007aadb54f3a46aeaf5681236934e2956d4f202fd18d"
+    },
+    {
+      "source_file": "Packs/ThreatZone/Playbooks/Sanitize_File_-_CDR_-_ThreatZone.yml",
+      "source_sha256": "462a77726df83e843fbf53302bc54094bf4607b8547db966e3dbaa63c18c0f72"
+    },
+    {
+      "source_file": "Packs/ThreatZone/Playbooks/Sanitize_File_-_CDR_-_ThreatZone_v2.yml",
+      "source_sha256": "1793d40bcce4a203a5270f3f74738a93205084074050715ec2d284d2682550e6"
+    },
+    {
+      "source_file": "Packs/Trello/Playbooks/playbook-Trello_-_Generic.yml",
+      "source_sha256": "37322a5d3a27e15a4ceb3b940ac0545fd80c2232d3dc1d9aa0a3b44d5937a843"
+    },
+    {
+      "source_file": "Packs/TrendMicroApex/Playbooks/playbook-Block_Domain_-_Trend_Micro_Apex_One.yml",
+      "source_sha256": "e7a34976b39c304f7da5173e369ace39ea270c48fb3ce8b877880395eea8cd66"
+    },
+    {
+      "source_file": "Packs/TrendMicroCAS/Playbooks/playbook-Trend_Micro_CAS_-_Indicators_Hunting.yml",
+      "source_sha256": "420c4867cd5b49db98c4a3fff7f0081dff3aa4022f69cef8730f0e2a79832a52"
+    },
+    {
+      "source_file": "Packs/TrendMicroCAS/Playbooks/trendmicro-cas-email-take-action-and-result.yml",
+      "source_sha256": "5a2892b85a71a8dcb04b432551357bf980052fbf64d063317cf3e339e8655828"
+    },
+    {
+      "source_file": "Packs/TrendMicroDDA/Playbooks/playbook-TrendMicro_DDA_DetonateFile.yml",
+      "source_sha256": "c75ae3a37945afa06a432f7aa072bce9eea5a23555b82cc48810947e724c936c"
+    },
+    {
+      "source_file": "Packs/TrendMicroDDA/Playbooks/playbook-TrendMicro_DDA_DetonateURL.yml",
+      "source_sha256": "1d2fd4615486a69c5ca2894681ddabbeadbe6f2b52bad486d7b599736214c0dd"
+    },
+    {
+      "source_file": "Packs/Tripwire/Playbooks/playbook-Tripwire_Incident_IP_Enrichment.yml",
+      "source_sha256": "c12f903119418d84b4c392fda4fd70585544ef5d6695dd3458ff8e07be4affda"
+    },
+    {
+      "source_file": "Packs/Tufin/Playbooks/playbook-Tufin_-_Investigate_Network_Alert.yml",
+      "source_sha256": "9bceda4ebfef4eccf5f719d3a17c2a58b6aa714ed79ee1fdc211648f14d5cb0c"
+    },
+    {
+      "source_file": "Packs/USTAv4/Playbooks/playbook-USTA_Account_Takeover_Prevention_Employee_Credential_Playbook.yml",
+      "source_sha256": "09a0dc33a9a56c320eca2bff2e07727dbb8c44ca0d7fd0295aa2d05eac5231ce"
+    },
+    {
+      "source_file": "Packs/UncoverUnknownMalwareUsingSSDeep/Playbooks/Uncover_Unknown_Malware_Using_SSDeep.yml",
+      "source_sha256": "f8053dc1613d3213fa449875661f66ab2845cd09096df52cd15be69dfc2688d9"
+    },
+    {
+      "source_file": "Packs/Unit42_Threat_Brief_-_Fighting_Ursa/Playbooks/playbook-Fighting_Ursa_Luring_Targets_With_Car_For_Sale.yml",
+      "source_sha256": "4e2c64d7867e541374ec97f13dd2f5fbb9fb58f0bae57116ba9820b60eea2e7b"
+    },
+    {
+      "source_file": "Packs/Uptycs/Playbooks/playbook-Uptycs_-_Bad_IP_Incident.yml",
+      "source_sha256": "4fb7c33851260d75d6cc9420338eaf01ecdbffa56e1f1a2e72a531f4b1aebe3e"
+    },
+    {
+      "source_file": "Packs/Uptycs/Playbooks/playbook-Uptycs_-_Outbound_Connection_to_Threat_IOC_Incident.yml",
+      "source_sha256": "ffc85da2c32cf80f8f265a5e5d996e56f1ee1074a687053553770a17b448ff6a"
+    },
+    {
+      "source_file": "Packs/Use_Case_Builder/Playbooks/Quick_Start_Investigation.yml",
+      "source_sha256": "0239b87774de1afa5dba9e80f982b66a947475515a6776c65887e72fe0e97630"
+    },
+    {
+      "source_file": "Packs/Use_Case_Builder/Playbooks/Quick_Start_Main_Playbook.yml",
+      "source_sha256": "9a2defc9bd9e9c344a5b4a36920deacb02211ff5ab9a1770badb4c80cdae230a"
+    },
+    {
+      "source_file": "Packs/Use_Case_Builder/Playbooks/Quick_Start_Remediation.yml",
+      "source_sha256": "e022c7db7c76da9c89515f69f0931e3d9426ba922c6a467f5ff9d119cb411f9c"
+    },
+    {
+      "source_file": "Packs/VMRay/Playbooks/playbook-VMRay-Detonate-File.yml",
+      "source_sha256": "0182164a65c10d1759cbdde76b313c2f24744a8579349a1dede66e35fcab1b1a"
+    },
+    {
+      "source_file": "Packs/VMRay/Playbooks/playbook-VMRay-Detonate-URL.yml",
+      "source_sha256": "47a7217f25793084ffe74c05be714a02bd7c1c4812796938393045c60f35b17c"
+    },
+    {
+      "source_file": "Packs/VectraRUX/Playbooks/playbook-Expire_Inactive_Detections_-_Vectra_RUX.yml",
+      "source_sha256": "ab8dfdee4421ff5e52a21fe56c0b4eb17052cc84aab0801b14aee6c8c7938251"
+    },
+    {
+      "source_file": "Packs/VectraRUX/Playbooks/playbook-Find_Detection_State_and_Expire_Inactive_Detections_-_Vectra_RUX.yml",
+      "source_sha256": "899577d598ea7a724e49b2ccdf4baf7875a8e6fdced901a511493d0946cb48f2"
+    },
+    {
+      "source_file": "Packs/VectraXDR/Playbooks/playbook-Add_Note_-_Vectra_XDR.yml",
+      "source_sha256": "7a701a79b1589838eeff98e77adb7d8e0bc69a0982ba25aa173666fc00604f2f"
+    },
+    {
+      "source_file": "Packs/VectraXDR/Playbooks/playbook-Detections_Assessment_-_Vectra_XDR.yml",
+      "source_sha256": "9fa65d93e876be3f7f352097abdf99b00e5f3749ae4f105107736ffa079cd04e"
+    },
+    {
+      "source_file": "Packs/VectraXDR/Playbooks/playbook-Dispatch_Incident_-_Vectra_XDR.yml",
+      "source_sha256": "d393ee376075624791a12f0710417fb750042900948c368d334d1d4105e27765"
+    },
+    {
+      "source_file": "Packs/VectraXDR/Playbooks/playbook-MDR_Escalation_Process_-_Vectra_XDR.yml",
+      "source_sha256": "c8f3c7db751125462707c829aa090c85ee64abc3f6c395926f53d3d2dbdef9a9"
+    },
+    {
+      "source_file": "Packs/VectraXDR/Playbooks/playbook-Process_Incident_-_Vectra_XDR.yml",
+      "source_sha256": "e16e073e5b7fda0ab41e4e8a0768e632a2974a1cc5b5b1272c63bce37188dc17"
+    },
+    {
+      "source_file": "Packs/Vectra_AI/Playbooks/playbook-Close_All_Duplicate_XSOAR_Incidents_-_Vectra_Detect.yml",
+      "source_sha256": "a06e8a91cc743021cc5fba36624daec76acc84a396cd1e3743a22cfd13957181"
+    },
+    {
+      "source_file": "Packs/Vectra_AI/Playbooks/playbook-Close_Duplicate_XSOAR_Incidents_-_Vectra_Detect.yml",
+      "source_sha256": "bedab5935c35487ab960c3a97015808221151060aba93a1d0db670d5ce72f7d7"
+    },
+    {
+      "source_file": "Packs/Vectra_AI/Playbooks/playbook-Dispatch_Incident_-_Vectra_Detect.yml",
+      "source_sha256": "ba5243cd10a56f93963a301d7aa07a10109f5446dd424093847a9f991c4b9b0a"
+    },
+    {
+      "source_file": "Packs/Vectra_AI/Playbooks/playbook-Process_Incident_-_Vectra_Detect.yml",
+      "source_sha256": "18d3fd6a0866b15020428dd2ae8f59dc13cc742a784356627e7a37b37e0a1934"
+    },
+    {
+      "source_file": "Packs/VirusTotal/Playbooks/Create_Zip_from_VirusTotal.yml",
+      "source_sha256": "b750d398c52aae3d4e5260c0c2ceb711fff1fc43069264733dd804ddcdd4e498"
+    },
+    {
+      "source_file": "Packs/VirusTotal/Playbooks/Detonate_File-VirusTotal.yml",
+      "source_sha256": "8cab9716e54b73bbc5118b229496ed0eda6fe44ee5ab23032a7686fd61a7c275"
+    },
+    {
+      "source_file": "Packs/VirusTotal/Playbooks/Detonate_File_-_VirusTotal_V3.yml",
+      "source_sha256": "cadae4ce3cd501c1eb064d2e252a99fb1946c48e968089197847322c3907325e"
+    },
+    {
+      "source_file": "Packs/VirusTotal/Playbooks/Detonate_Private_File_-_VirusTotal_V3.yml",
+      "source_sha256": "b8a8e3528c61beccee60698defdf298baea683cfaabaec55bd7a524acc7954b7"
+    },
+    {
+      "source_file": "Packs/VirusTotal/Playbooks/Detonate_URL_-_VirusTotal_V3.yml",
+      "source_sha256": "f496df18c0bb29c14a6f8134958e042db57e5d7a26fc328a3dd76c126a36afb7"
+    },
+    {
+      "source_file": "Packs/VirusTotal/Playbooks/File_Enrichment_-_Virus_Total_v3.yml",
+      "source_sha256": "f66c7d43978393572f2f8594a993a6baebbfa7520e5f3b914175330b546495c5"
+    },
+    {
+      "source_file": "Packs/Whois/Playbooks/playbook-TIM_-_Process_Domains_With_Whois.yml",
+      "source_sha256": "b2014ecd843573f80b91e548d22f7d934be0827897de7a88ffacc3326208e9ee"
+    },
+    {
+      "source_file": "Packs/WindowsForensics/Playbooks/playbook-Acquire_And_Analyze_Host_Forensics.yml",
+      "source_sha256": "0406ee7cc913ca88e28b06a5bb6c48579c331fbe19cafd810e64ed57e19e2875"
+    },
+    {
+      "source_file": "Packs/WindowsForensics/Playbooks/playbook-Forensics_Tools_Analysis.yml",
+      "source_sha256": "56eb1333d3a7d3449bd94f9e1f4997eb227a79da66b08464b2cb65d2f5333592"
+    },
+    {
+      "source_file": "Packs/WindowsForensics/Playbooks/playbook-PS-Remote_Acquire_Host_Forensics.yml",
+      "source_sha256": "8900aa459d95757d5791ab8f629885f0d961bdfc053edbeab123aa97e8fe7b90"
+    },
+    {
+      "source_file": "Packs/WindowsForensics/Playbooks/playbook-PS-Remote_Get_File_Sample_From_Path.yml",
+      "source_sha256": "50ae7daded782c178b09363db09fc742dae275734ade0532e81436a09c1126fd"
+    },
+    {
+      "source_file": "Packs/WindowsForensics/Playbooks/playbook-PS-Remote_Get_MFT.yml",
+      "source_sha256": "15e0de86a76a1b702546c78f159d930a1c42a117382a3bf326c76591e909360d"
+    },
+    {
+      "source_file": "Packs/WindowsForensics/Playbooks/playbook-PS-Remote_Get_Registry.yml",
+      "source_sha256": "c545b1a4b267476f2d799f8f5824045284098e5466da6de82ed870e6246bdd93"
+    },
+    {
+      "source_file": "Packs/WindowsForensics/Playbooks/playbook-Registry_Parse_Data_Analysis.yml",
+      "source_sha256": "34db550c582590c1884c31341d1fc05ce48b9dfab2c42460d76b333a61450dfd"
+    },
+    {
+      "source_file": "Packs/XDRBestPracticeAssessment/Playbooks/XDR_Best_Practice_Assessment_.yml",
+      "source_sha256": "3e9143db9475d0da572f5ce31042c9048f218c694a4f08a01ff8a83529e4b328"
+    },
+    {
+      "source_file": "Packs/XMCyber/Playbooks/Endpoint_Enrichment_By_EntityId_XM_Cyber.yml",
+      "source_sha256": "342dcd7f12a2d7dbf198ccbe080e4c33e70ea42f6e768694bdcab1cbec0e3894"
+    },
+    {
+      "source_file": "Packs/XMCyber/Playbooks/Endpoint_Enrichment_By_Hostname_XM_Cyber.yml",
+      "source_sha256": "3b99b0add421e32d5836723fb82785b1ba29efbc127754f174ef5712fdda814b"
+    },
+    {
+      "source_file": "Packs/XMCyber/Playbooks/Endpoint_Enrichment_By_IP_XM_Cyber.yml",
+      "source_sha256": "d677cf65140cd82555f30131d574e25020d8b90ff1eb3ff81c08034afe03d537"
+    },
+    {
+      "source_file": "Packs/XMCyber/Playbooks/Scan_and_Isolate_XM_Cyber.yml",
+      "source_sha256": "ac2d9b9fd2ee6896eef1ec1ac5e60593a88918888168385767eacc7d5f882aec"
+    },
+    {
+      "source_file": "Packs/XMCyber/Playbooks/playbook-Incident_Enrichment_-_XM_Cyber.yml",
+      "source_sha256": "7c163b950d17784fb78aef8b9cdf226f3765cdf3f485364b8e92f1f310447d7d"
+    },
+    {
+      "source_file": "Packs/XSOAR-SimpleDevToProd/Playbooks/playbook-JOB_-_XSOAR_-_Export_Selected_Custom_Content.yml",
+      "source_sha256": "342521982c777f8ee0b82a3f93c7c0fe6462f00b8d4d483915498742eeb9dba1"
+    },
+    {
+      "source_file": "Packs/XSOAR-SimpleDevToProd/Playbooks/playbook-JOB_-_XSOAR_-_Simple_Dev_to_Prod.yml",
+      "source_sha256": "33b2b176bbf5b8f4429a2351bd4fb9ce5f0d186598c11a30e0e6addf00f9c7d1"
+    },
+    {
+      "source_file": "Packs/ZeroTrustAnalyticsPlatform/Playbooks/playbook-ZTAP_Alert.yml",
+      "source_sha256": "fc5ecc6a153419580f5345128bc95e5c346a5657bb205a7399cb30d873c70dae"
+    },
+    {
+      "source_file": "Packs/Zimperium/Playbooks/playbook-Zimperium_Incident_Enrichment.yml",
+      "source_sha256": "2a92ca1dfac8d17889af0575aa1914804cfa804738100162d0ce3b7f86e8510e"
+    },
+    {
+      "source_file": "Packs/Zscaler/Playbooks/playbook-Block_Domain_-_Zscaler.yml",
+      "source_sha256": "692178aba0e87d6a14d570dd232b45eb164a0e4a49a9f35403101041aef083dd"
+    },
+    {
+      "source_file": "Packs/ctf01/Playbooks/playbook-Cortex_XDR_-_Get_entity_alerts_by_MITRE_tactics_CTF.yml",
+      "source_sha256": "1e3f3e910d2260867c3efa8fb78c317d1e1953495f3c3046bf7342789de5039c"
+    },
+    {
+      "source_file": "Packs/ctf01/Playbooks/playbook-Cortex_XDR_-_Possible_External_RDP_Brute-Force_CTF.yml",
+      "source_sha256": "96a78c772f95bd16042a4cbccfbac2daf18d79e445abd0354e307319191320dd"
+    },
+    {
+      "source_file": "Packs/ctf01/Playbooks/playbook-Cortex_XDR_Alerts_Handling_CTF.yml",
+      "source_sha256": "f3ecb25a028b29cb5b32ac1f4daa0eeb43f050845f1595c754d99f716a97f419"
+    },
+    {
+      "source_file": "Packs/ctf01/Playbooks/playbook-Cortex_XDR_incident_handling_v3_CTF.yml",
+      "source_sha256": "ed6d8455c012bc751ae01892a919d18a2c663cf6cb34d4baa7157eb3afbf2a91"
+    },
+    {
+      "source_file": "Packs/fireeye/Playbooks/playbook-Detonate_File_-_FireEye_AX.yml",
+      "source_sha256": "e2bcda4e8cfc9fb7e14d4aa851fc0f87322442fbd8580ddd1fd88d1b41f52a0d"
+    },
+    {
+      "source_file": "Packs/fireeye/Playbooks/playbook-Detonate_URL_-_FireEye_AX.yml",
+      "source_sha256": "5b385552f12f1e404d53da3d5ea4ef9ff288be1dca3454fea9bbdfc26287a7d0"
+    },
+    {
+      "source_file": "Packs/qualys/Playbooks/playbook-Launch_And_Fetch_Remediation_Report_-_Qualys.yml",
+      "source_sha256": "9fb006fdfb97647a82cdfc215f107fcfcb3a777c50cd27ca41d559c8effa6baa"
+    },
+    {
+      "source_file": "Packs/qualys/Playbooks/playbook-Vulnerability_Management_-_Qualys_(Job)_-_V2.yml",
+      "source_sha256": "fb678a3238a20ad251e88602fe8fea281cce816b468efbaa8396175e6276d1f1"
+    }
+  ],
+  "membership_rule": "FROZEN_V2_AUTO_INCLUDE_ONLY",
+  "method_v33_manifest_sha256": "430c7414cebba8860d4f8742bb95927c12ecd46bbf068f23ab5a8e96c8e72db7",
+  "ordered_source_file_and_sha256": "1ac739854ed0421c37750d592f18dbd436fac2e9fff173af906b58795d446538",
+  "ordered_source_file_sha256": "72bccbe3c9e72843d37127955f32219c715ac8f9636a199eb145ddfe81f2b059",
+  "original_anchor_csv_sha256": "067d18357f02b849c0e85c809a2608d3e84cb7eb75bdd7b87dc8a05aa9157136",
+  "r2_transition_csv_sha256": "11353cad89130667171026df53093dada7a018d6baa099684957ba5d5061a7ee",
+  "rules_sha256": "dbbdb310331ea3145ac29c94ac78cfeec0cb8363269d1d4479a5595074ca7922",
+  "schema": "E06_P4_P7_P2_CORPUS_MEMBERSHIP_V1",
+  "scientific_experiment_executed": false,
+  "source_commit": "31e7712111e5b33615a8decd82caa45f51a87346",
+  "source_frame_path": "manifests/electronics/E06_P4_P7_P2_source_frame_1606.json",
+  "source_frame_sha256": "88cd3c7dcc689c6c56416c79082d842d6dcc051345d15dac5491a87d8667e619",
+  "unresolved_means_ineligible": false
+}
