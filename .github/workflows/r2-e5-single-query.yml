@@ -1,0 +1,29 @@
+name: R2 E5 single-query CPU MPS probe
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  r2-e5-probe:
+    runs-on: macos-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.10"
+      - name: Install model-pinned environment
+        run: python -m pip install -r requirements-replay.txt
+      - name: Recover frozen source
+        run: |
+          mkdir -p replay_inputs
+          unzip -q input_packages/SOAR_FROZEN_INPUTS_AUTHOR_APPROVED_20261025.zip 'frozen_inputs/*' -d replay_inputs
+      - name: Run R2 CPU MPS comparison
+        run: python scripts/r2_e5_single_query_probe.py replay_inputs/frozen_inputs r2_evidence
+      - name: Upload numerical fingerprint
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: r2-e5-single-query-probe
+          path: r2_evidence/
+          if-no-files-found: warn
