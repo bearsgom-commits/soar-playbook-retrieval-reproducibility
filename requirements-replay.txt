@@ -6,3 +6,7 @@ pandas==2.2.2
 scikit-learn==1.7.1
 sentence-transformers==5.3.0
 torch==2.10.0
+transformers==4.57.6
+tokenizers==0.22.2
+huggingface-hub==0.34.3
+safetensors==0.5.3
