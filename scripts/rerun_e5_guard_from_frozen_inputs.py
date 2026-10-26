@@ -141,8 +141,7 @@ def main():
     import torch
     import sentence_transformers
     from sentence_transformers import SentenceTransformer
-    from sklearn.metrics.pairwise import cosine_similarity
-
+    
     if args.device == "mps" and not torch.backends.mps.is_available():
         raise EnvironmentError("MPS requested but unavailable")
     model = SentenceTransformer(MODEL_ID, revision=MODEL_REV, device=args.device)
@@ -210,7 +209,7 @@ def main():
         "claim_boundary": "CPU mismatch is diagnostic; MPS exact agreement requires source-compatible versions and input.",
     }
     for track, (q_emb, p_emb, ids) in tracks.items():
-        raw_score = cosine_similarity(q_emb, p_emb)
+        raw_score = q_emb @ p_emb.T
         raw_rankings = rank_top11(raw_score, query_ids, ids)
         write_jsonl(args.out / (track + "_RAW_fresh.jsonl"), [
             {"query_id": qid, "top_scored": [{"electronics_id": id, "score": score} for id, score in vals]}
@@ -224,7 +223,7 @@ def main():
                 for seed in SEEDS:
                     q_guard = apply_guard_repr(q_emb, eps, seed)
                     p_guard = apply_guard_repr(p_emb, eps, seed)
-                    guarded = cosine_similarity(q_guard, p_guard)
+                    guarded = q_guard @ p_guard.T
                     found = rank_top11(guarded, query_ids, ids)
                     n10, n1, score_err = compare_guard(track, eps, seed, found, ref[track])
                     done += len(query_ids)
