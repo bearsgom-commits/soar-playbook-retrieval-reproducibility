@@ -44,7 +44,7 @@ jobs:
           python scripts/rerun_e5_guard_from_frozen_inputs.py \
             --inputs replay_inputs/frozen_inputs \
             --device mps \
-            --batch-size 4 \
+            --batch-size 16 \
             --out fresh_replay_results
       - name: Publish rerun comparison evidence
         if: always()
