@@ -18,7 +18,11 @@ def main():
  plan,_,_,_=prepare_inputs(base)
  model=SentenceTransformer(MODEL_ID,revision=MODEL_REV,device="cpu")
  assert model.max_seq_length==512 and model.default_prompt_name is None
- assert getattr(model[0].auto_model.config,"_commit_hash",None)==MODEL_REV
+ from huggingface_hub import hf_hub_download
+ rev=getattr(model[0].auto_model.config,"_commit_hash",None)
+ config=hf_hub_download(repo_id=MODEL_ID,filename="config.json",revision=MODEL_REV,local_files_only=True)
+ snapshot_ok=("/snapshots/"+MODEL_REV+"/") in str(Path(config)).replace("\\\\","/")
+ assert str(rev)==MODEL_REV or (rev is None and snapshot_ok), "MODEL_PINNED_SNAPSHOT_MISMATCH"
  q=model.encode(plan["arrays"]["B0_query"],batch_size=16,convert_to_numpy=True,normalize_embeddings=True,show_progress_bar=False,prompt="")
  p=model.encode(plan["arrays"]["B0_anchor"],batch_size=16,convert_to_numpy=True,normalize_embeddings=True,show_progress_bar=False,prompt="")
  assert q.shape==(30,768) and p.shape==(50,768) and q.dtype==np.float32 and p.dtype==np.float32
