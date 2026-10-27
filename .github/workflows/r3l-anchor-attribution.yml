@@ -1,0 +1,35 @@
+name: R3-L E5 anchor numerical attribution
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  r3l:
+    runs-on: macos-latest
+    timeout-minutes: 75
+    env:
+      VECLIB_MAXIMUM_THREADS: "1"
+      OMP_NUM_THREADS: "1"
+      MKL_NUM_THREADS: "1"
+      OPENBLAS_NUM_THREADS: "1"
+      NUMEXPR_NUM_THREADS: "1"
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.10"
+      - name: Install pinned packages
+        run: python -m pip install -r requirements-replay.txt
+      - name: Recover frozen input
+        run: |
+          mkdir -p replay_inputs
+          unzip -q input_packages/SOAR_FROZEN_INPUTS_AUTHOR_APPROVED_20261025.zip 'frozen_inputs/*' -d replay_inputs
+      - name: Attribute raw embedding, projection and quantization differences
+        run: python scripts/r3l_anchor_attribution.py replay_inputs/frozen_inputs r3l_evidence
+      - name: Upload evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: r3l-anchor-numerical-attribution
+          path: r3l_evidence/
+          if-no-files-found: warn
