@@ -1,0 +1,41 @@
+name: R3-M same-runner H versus L CPU context
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  context:
+    runs-on: macos-latest
+    timeout-minutes: 80
+    env:
+      VECLIB_MAXIMUM_THREADS: "1"
+      OMP_NUM_THREADS: "1"
+      MKL_NUM_THREADS: "1"
+      OPENBLAS_NUM_THREADS: "1"
+      NUMEXPR_NUM_THREADS: "1"
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.10"
+      - run: python -m pip install -r requirements-replay.txt
+      - name: Restore frozen inputs
+        run: |
+          mkdir -p replay_inputs
+          unzip -q input_packages/SOAR_FROZEN_INPUTS_AUTHOR_APPROVED_20261025.zip 'frozen_inputs/*' -d replay_inputs
+      - name: Reproduce R3-H controlled CPU within current runner
+        run: python scripts/r3h_cpu_control.py replay_inputs/frozen_inputs r3m_h controlled 1
+      - name: Reproduce R3-L CPU within same runner
+        run: python scripts/r3l_anchor_attribution.py replay_inputs/frozen_inputs r3m_l
+      - name: Compare actual raw embeddings and threading context
+        run: python scripts/r3m_compare_context.py r3m_h r3m_l r3m_summary
+      - name: Upload evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: r3m-same-runner-cpu-context
+          path: |
+            r3m_h/
+            r3m_l/
+            r3m_summary/
+          if-no-files-found: warn
