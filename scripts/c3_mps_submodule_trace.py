@@ -19,7 +19,7 @@ def tensor(z):
  return None
 def trace(model,text):
  core=model[0].auto_model;outputs={};handles=[]
- regex=re.compile(r"^(embeddings|encoder\\.layer\\.\\d+\\.(attention\\.self|attention\\.output|intermediate|output))$")
+ regex=re.compile(r"^(embeddings|encoder\.layer\.\d+\.(attention\.self|attention\.output|intermediate|output))$")
  for name,module in core.named_modules():
   if not regex.fullmatch(name):continue
   def hook(mod,inp,out,name=name):
