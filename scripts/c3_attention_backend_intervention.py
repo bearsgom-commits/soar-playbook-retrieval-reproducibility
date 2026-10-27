@@ -17,14 +17,13 @@ def main():
  for device in ("cpu","mps"):
   if device=="mps" and not torch.backends.mps.is_available():raise RuntimeError("MPS_NOT_AVAILABLE")
   for mode in ("default","eager"):
-   model=SentenceTransformer(MODEL_ID,revision=MODEL_REV,device=device)
+   model=SentenceTransformer(MODEL_ID,revision=MODEL_REV,device=device,
+                             model_kwargs=({"attn_implementation":"eager"} if mode=="eager" else None))
    impl_before=getattr(model[0].auto_model.config,"_attn_implementation",None)
-   if mode=="eager":
-    setter=getattr(model[0].auto_model,"set_attn_implementation",None)
-    if setter is None:raise RuntimeError("SET_ATTN_IMPLEMENTATION_NOT_SUPPORTED")
-    setter("eager")
-    if getattr(model[0].auto_model.config,"_attn_implementation",None)!="eager":
-     raise RuntimeError("EAGER_NOT_APPLIED")
+   # XLM-R attention implementation must be selected when the model is loaded.
+   # Dynamic set_attn_implementation is unsupported by this model family.
+   if mode=="eager" and getattr(model[0].auto_model.config,"_attn_implementation",None)!="eager":
+    raise RuntimeError("EAGER_LOAD_CONFIGURATION_NOT_APPLIED")
    impl_after=getattr(model[0].auto_model.config,"_attn_implementation",None)
    v=model.encode([q],batch_size=16,convert_to_numpy=True,normalize_embeddings=True,prompt="",show_progress_bar=False).astype(np.float32)[0]
    vectors[(device,mode)]=v
