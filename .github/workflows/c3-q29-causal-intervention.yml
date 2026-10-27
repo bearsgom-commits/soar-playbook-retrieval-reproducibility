@@ -1,0 +1,34 @@
+name: C3 focused causal CPU intervention
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  c3-cpu:
+    runs-on: macos-latest
+    timeout-minutes: 70
+    env:
+      VECLIB_MAXIMUM_THREADS: "1"
+      OMP_NUM_THREADS: "1"
+      MKL_NUM_THREADS: "1"
+      OPENBLAS_NUM_THREADS: "1"
+      NUMEXPR_NUM_THREADS: "1"
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.10"
+      - run: python -m pip install -r requirements-replay.txt
+      - name: Restore immutable input package
+        run: |
+          mkdir -p replay_inputs
+          unzip -q input_packages/SOAR_FROZEN_INPUTS_AUTHOR_APPROVED_20261025.zip 'frozen_inputs/*' -d replay_inputs
+      - name: Run Q29 causal batch/quantization intervention
+        run: python scripts/c3_q29_causal_intervention.py replay_inputs/frozen_inputs c3_evidence
+      - name: Upload C3 evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: c3-q29-causal-intervention
+          path: c3_evidence/
+          if-no-files-found: error
