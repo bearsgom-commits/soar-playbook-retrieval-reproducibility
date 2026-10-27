@@ -1,0 +1,28 @@
+name: C3-2 MPS attention backend intervention
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  c3-attention:
+    runs-on: macos-latest
+    timeout-minutes: 65
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.10"
+      - run: python -m pip install -r requirements-replay.txt
+      - name: Restore frozen input
+        run: |
+          mkdir -p replay_inputs
+          unzip -q input_packages/SOAR_FROZEN_INPUTS_AUTHOR_APPROVED_20261025.zip 'frozen_inputs/*' -d replay_inputs
+      - name: Compare default vs eager attention on CPU and MPS for Q01
+        run: python scripts/c3_attention_backend_intervention.py replay_inputs/frozen_inputs c3_attention_evidence
+      - name: Upload test evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: c3-attention-intervention
+          path: c3_attention_evidence/
+          if-no-files-found: error
