@@ -1,0 +1,27 @@
+name: C1 targeted CPU ranking forensic
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+  actions: read
+jobs:
+  forensic:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - name: Download R4 immutable outcome
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          mkdir -p c1_r4
+          gh run download 40480603149 -R ${{ github.repository }} -n r4-full-cpu-replay-2520 -D c1_r4
+      - name: Classify all 14 rank inversions and score gaps
+        run: python scripts/c1_cpu_rank_forensic.py --r4 c1_r4 --out c1_report
+      - name: Store forensic evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: c1-cpu-rank-forensic
+          path: c1_report/
+          if-no-files-found: error
